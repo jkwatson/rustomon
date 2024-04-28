@@ -1,27 +1,34 @@
 use crate::data::{Monster, RawMonster};
 
 pub fn load_monsters() -> Vec<Monster> {
-    let core_file = include_str!("core.json");
+    let mut raw_monsters = Vec::new();
+    let files = vec![
+        include_str!("core.json"),
+        include_str!("cs1.json"),
+        include_str!("cs2.json"),
+        include_str!("cs3.json"),
+        include_str!("custom.json"),
+        include_str!("unnatural_selection.json"),
+    ];
+    for file in files {
+        raw_monsters.append(&mut load_raw_monsters(file));
+    }
 
-    let raw_monsters = load_raw_monsters(core_file);
-    let monsters = convert_to_monsters(raw_monsters);
-    monsters
+    convert_to_monsters(raw_monsters)
 }
 
-pub fn load_raw_monsters(core_file: &str) -> Vec<RawMonster> {
-    let raw_monsters = match serde_json::from_str::<Vec<RawMonster>>(core_file) {
+pub fn load_raw_monsters(file: &str) -> Vec<RawMonster> {
+    let raw_monsters = match serde_json::from_str::<Vec<RawMonster>>(file) {
         Ok(monsters) => monsters,
         Err(e) => {
-            eprintln!("Error parsing core.json: {}", e);
+            eprintln!("Error parsing file {}: {}", file, e);
             std::process::exit(1);
         }
     };
     raw_monsters
 }
 
-pub fn convert_to_monsters(
-    raw_monsters: Vec<RawMonster>,
-) -> Vec<Monster> {
+pub fn convert_to_monsters(raw_monsters: Vec<RawMonster>) -> Vec<Monster> {
     let monsters = raw_monsters.iter().map(|monster| Monster {
         name: monster.name.clone(),
         tags: monster

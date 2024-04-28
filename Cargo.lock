@@ -86,7 +86,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rustbook"
+name = "randommon"
 version = "0.1.0"
 dependencies = [
  "rand",
