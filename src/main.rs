@@ -13,7 +13,7 @@ fn main() {
     loop {
         choices = choose(&wrangler, choices);
         let randomness = read_randomness();
-        choices = choices.with_randomness(Some(randomness as u8));
+        choices = choices.with_randomness(Some(randomness));
         println!("Choices: {}, Randomness: {}", choices.state(), randomness);
         choices.cluster(5, &wrangler).iter().for_each(|monster| {
             println!("{}", monster.detailed_summary());
@@ -21,7 +21,7 @@ fn main() {
     }
 }
 
-fn read_randomness() -> i32 {
+fn read_randomness() -> u8 {
     loop {
         println!("Randomness? [1-5] (default 1):");
         let mut input = String::new();

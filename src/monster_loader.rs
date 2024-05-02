@@ -1,4 +1,4 @@
-use crate::data::{Monsters, Monster, RawMonster, MonsterId};
+use crate::data::{Monsters, Monster, RawMonster, MonsterId, StatBlock};
 
 pub fn get_monster_graph() -> Monsters {
     Monsters::new(load_monsters())
@@ -21,7 +21,7 @@ pub fn load_monsters() -> Vec<Monster> {
     return convert_to_monsters(raw_monsters);
 }
 
-pub fn load_raw_monsters(file: &str) -> Vec<RawMonster> {
+fn load_raw_monsters(file: &str) -> Vec<RawMonster> {
     let raw_monsters = match serde_json::from_str::<Vec<RawMonster>>(file) {
         Ok(monsters) => monsters,
         Err(e) => {
@@ -32,7 +32,7 @@ pub fn load_raw_monsters(file: &str) -> Vec<RawMonster> {
     return raw_monsters;
 }
 
-pub fn convert_to_monsters(raw_monsters: Vec<RawMonster>) -> Vec<Monster> {
+fn convert_to_monsters(raw_monsters: Vec<RawMonster>) -> Vec<Monster> {
     let mut id : MonsterId = 0;
     let monsters = raw_monsters.iter().map(|monster| {
         let monster = Monster {
@@ -59,8 +59,9 @@ pub fn convert_to_monsters(raw_monsters: Vec<RawMonster>) -> Vec<Monster> {
             move_amount: monster.move_amount.clone(),
             attack: monster.attack.clone(),
             page: monster.page.clone(),
-            stat_block: monster.stat_block.clone(),
+            raw_stat_block: monster.stat_block.clone(),
             source: monster.source.clone(),
+            stat_block: StatBlock::parse(&monster.stat_block)
         };
         id = id + 1;
         monster

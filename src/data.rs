@@ -29,40 +29,41 @@ pub struct Monster {
     pub move_amount: String,
     pub attack: String,
     pub page: String,
-    pub stat_block: String,
+    pub raw_stat_block: String,
     pub source: String,
+    pub stat_block: StatBlock,
 }
 
-struct StatBlock {
+#[derive(Debug, Clone, Hash)]
+pub struct StatBlock {
     move_amount: String,
     attack: String,
     ac: String,
     hp: String,
-    stats: String,
+    _stats: String,
 }
 
 impl StatBlock {
-    fn parse(full: &String) -> StatBlock {
-        let pieces :Vec<&str> = full.split(",").collect();
+    pub(crate) fn parse(full: &String) -> StatBlock {
+        let pieces: Vec<&str> = full.split(",").collect();
 
         StatBlock {
             ac: pieces[0].to_string(),
             hp: pieces[1].to_string(),
             attack: pieces[2].trim().to_string(),
             move_amount: pieces[3].to_string(),
-            stats: pieces[4].to_string()
+            _stats: pieces[4..].join(","),
         }
     }
 }
 
 impl Monster {
     pub fn summary(&self) -> String {
-        format!("{}: {} {}", self.name, self.level, self.stat_block,)
+        format!("{}: {} {}", self.name, self.level, self.raw_stat_block, )
     }
 
     pub fn detailed_summary(&self) -> String {
-        let stat_block = StatBlock::parse(&self.stat_block);
-        format!("{} [ref: {}]\n\t{}\t{}\tLV:{}\tAL:{}\n\t{}", self.name, self.page, stat_block.ac, stat_block.move_amount, self.level, self.alignment, stat_block.attack)
+        format!("{} [ref: {}]\n\t{}\t{}\t{}\tLV:{}\tAL:{}\n\t{}", self.name, self.page, self.stat_block.ac, self.stat_block.hp, self.stat_block.move_amount, self.level, self.alignment, self.stat_block.attack)
     }
 }
 
@@ -91,7 +92,7 @@ impl Monsters {
     pub fn all(self: &Monsters) -> Vec<&Monster> {
         self.vertices.values().collect()
     }
-    
+
     pub fn len(self: &Monsters) -> usize {
         self.vertices.len()
     }
