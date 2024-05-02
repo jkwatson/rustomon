@@ -57,10 +57,10 @@ impl Choices {
         let mut returned = 0;
         for monster in adjacent {
             returned += 1;
-            result.push(monster.clone());
-            if returned > size {
+            if returned > number {
                 break;
             }
+            result.push(monster.clone());
         }
         result
     }

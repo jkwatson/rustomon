@@ -9,8 +9,9 @@ fn main() {
     println!("Loaded {} monsters", monsters.len());
 
     let wrangler = MonsterWrangler::new(monsters);
+    let mut choices = wrangler.choices();
     loop {
-        let mut choices = choose(&wrangler);
+        choices = choose(&wrangler, choices);
         let randomness = read_randomness();
         choices = choices.with_randomness(Some(randomness as u8));
         println!("Choices: {}, Randomness: {}", choices.state(), randomness);
@@ -34,8 +35,8 @@ fn read_randomness() -> i32 {
     }
 }
 
-fn choose(wrangler: &MonsterWrangler) -> Choices {
-    let mut choices = wrangler.choices();
+fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
+    let mut choices = choices;
     loop {
         println!(
             "\nChoose: [1:Level, 2:Biome, 3:Tag, 4: Search, 5: List, q:done] (current: {}):",
@@ -52,20 +53,20 @@ fn choose(wrangler: &MonsterWrangler) -> Choices {
         let choice = input.trim().parse();
         match choice {
             Ok(1) => {
-                let level = choose_level(&wrangler, &mut choices);
+                let level = choose_level(&wrangler, &choices);
                 choices = choices.with_level(level);
             }
             Ok(2) => {
-                let biome = choose_biome(&wrangler, &mut choices);
+                let biome = choose_biome(&wrangler, &choices);
                 choices = choices.with_biome(biome);
             }
             Ok(3) => {
-                let tag = choose_tag(&wrangler, &mut choices);
+                let tag = choose_tag(&wrangler, &choices);
                 choices = choices.with_tag(tag);
             }
             Ok(4) => {
                 println!("Search: ");
-                search(wrangler, &mut choices);
+                search(wrangler, &choices);
             }
             Ok(5) => {
                 let monsters = wrangler.list(&choices);
@@ -81,7 +82,7 @@ fn choose(wrangler: &MonsterWrangler) -> Choices {
     choices
 }
 
-fn search(wrangler: &MonsterWrangler, choices: &mut Choices) {
+fn search(wrangler: &MonsterWrangler, choices: &Choices) {
     let mut search_term = String::new();
     std::io::stdin().read_line(&mut search_term).unwrap();
     let search = search_term.trim().to_string();
@@ -91,7 +92,7 @@ fn search(wrangler: &MonsterWrangler, choices: &mut Choices) {
     }
 }
 
-fn choose_tag(wrangler: &&MonsterWrangler, choices: &mut Choices) -> String {
+fn choose_tag(wrangler: &&MonsterWrangler, choices: &Choices) -> String {
     println!("tag? (default random) {:?}: ", choices.tags(&wrangler));
     loop {
         let mut tag = String::new();
@@ -104,7 +105,7 @@ fn choose_tag(wrangler: &&MonsterWrangler, choices: &mut Choices) -> String {
     }
 }
 
-fn choose_biome(wrangler: &&MonsterWrangler, choices: &mut Choices) -> String {
+fn choose_biome(wrangler: &&MonsterWrangler, choices: &Choices) -> String {
     println!("biome? (default random) {:?}: ", choices.biomes(&wrangler));
     loop {
         let mut biome = String::new();
@@ -117,7 +118,7 @@ fn choose_biome(wrangler: &&MonsterWrangler, choices: &mut Choices) -> String {
     }
 }
 
-fn choose_level(wrangler: &&MonsterWrangler, choices: &mut Choices) -> Option<u8> {
+fn choose_level(wrangler: &&MonsterWrangler, choices: &Choices) -> Option<u8> {
     println!(
         "dungeon level? (default random) {:?}: ",
         choices.levels(&wrangler)
