@@ -52,6 +52,8 @@ pub fn convert_to_monsters(raw_monsters: Vec<RawMonster>) -> Vec<Monster> {
                 .biome
                 .split(',')
                 .map(|s| s.trim().to_string())
+                .filter(|b| !b.is_empty())
+                .filter(|b| b != "*")
                 .collect(),
             alignment: monster.alignment.clone(),
             move_amount: monster.move_amount.clone(),

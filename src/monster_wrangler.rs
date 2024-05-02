@@ -214,7 +214,8 @@ impl Choices {
 
 #[cfg(test)]
 mod tests {
-    use crate::monster_wrangler::Choices;
+    use crate::monster_loader;
+    use crate::monster_wrangler::{Choices, MonsterWrangler};
 
     #[test]
     fn state_empty() {
@@ -249,5 +250,14 @@ mod tests {
             randomness: None,
         };
         assert_eq!(choices.state(), "level=4, biome=forest, tag=cheese");
+    }
+
+    #[test]
+    fn no_empty_biomes() {
+        let monsters = monster_loader::get_monster_graph();
+        let wrangler = MonsterWrangler::new(monsters);
+        let biomes = wrangler.choices().biomes(&wrangler);
+        assert!(!biomes.contains(&"".to_string()));
+        assert!(!biomes.contains(&"*".to_string()));
     }
 }
