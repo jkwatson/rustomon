@@ -57,7 +57,7 @@ pub fn convert_to_monsters(raw_monsters: Vec<RawMonster>) -> Vec<Monster> {
             move_amount: monster.move_amount.clone(),
             attack: monster.attack.clone(),
             page: monster.page.clone(),
-            statblock: monster.statblock.clone(),
+            stat_block: monster.stat_block.clone(),
             source: monster.source.clone(),
         };
         id = id + 1;

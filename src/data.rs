@@ -13,7 +13,8 @@ pub struct RawMonster {
     pub move_amount: String,
     pub attack: String,
     pub page: String,
-    pub statblock: String,
+    #[serde(rename = "statblock")]
+    pub stat_block: String,
     pub source: String,
 }
 
@@ -28,7 +29,7 @@ pub struct Monster {
     pub move_amount: String,
     pub attack: String,
     pub page: String,
-    pub statblock: String,
+    pub stat_block: String,
     pub source: String,
 }
 
@@ -56,12 +57,12 @@ impl StatBlock {
 
 impl Monster {
     pub fn summary(&self) -> String {
-        format!("{}: {} {}", self.name, self.level, self.statblock,)
+        format!("{}: {} {}", self.name, self.level, self.stat_block,)
     }
 
     pub fn detailed_summary(&self) -> String {
-        let stat_block = StatBlock::parse(&self.statblock);
-        format!("{} [{}]\n\t{}\t{}\tLV:{}\tAL:{}\n\t{}", self.name, self.page, stat_block.ac, stat_block.move_amount, self.level, self.alignment, stat_block.attack)
+        let stat_block = StatBlock::parse(&self.stat_block);
+        format!("{} [ref: {}]\n\t{}\t{}\tLV:{}\tAL:{}\n\t{}", self.name, self.page, stat_block.ac, stat_block.move_amount, self.level, self.alignment, stat_block.attack)
     }
 }
 
