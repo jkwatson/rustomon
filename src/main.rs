@@ -16,7 +16,7 @@ fn main() {
         choices = choices.with_randomness(Some(randomness as u8));
         println!("Choices: {}, Randomness: {}", choices.state(), randomness);
         choices.cluster(5, &wrangler).iter().for_each(|monster| {
-            println!("{}", monster.summary());
+            println!("{}", monster.detailed_summary());
         });
     }
 }

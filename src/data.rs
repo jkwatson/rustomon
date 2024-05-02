@@ -32,9 +32,36 @@ pub struct Monster {
     pub source: String,
 }
 
+struct StatBlock {
+    move_amount: String,
+    attack: String,
+    ac: String,
+    hp: String,
+    stats: String,
+}
+
+impl StatBlock {
+    fn parse(full: &String) -> StatBlock {
+        let pieces :Vec<&str> = full.split(",").collect();
+
+        StatBlock {
+            ac: pieces[0].to_string(),
+            hp: pieces[1].to_string(),
+            attack: pieces[2].trim().to_string(),
+            move_amount: pieces[3].to_string(),
+            stats: pieces[4].to_string()
+        }
+    }
+}
+
 impl Monster {
-    pub(crate) fn summary(&self) -> String {
+    pub fn summary(&self) -> String {
         format!("{}: {} {}", self.name, self.level, self.statblock,)
+    }
+
+    pub fn detailed_summary(&self) -> String {
+        let stat_block = StatBlock::parse(&self.statblock);
+        format!("{} [{}]\n\t{}\t{}\tLV:{}\tAL:{}\n\t{}", self.name, self.page, stat_block.ac, stat_block.move_amount, self.level, self.alignment, stat_block.attack)
     }
 }
 
