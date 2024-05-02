@@ -22,7 +22,7 @@ pub struct Monster {
     pub id: MonsterId,
     pub name: String,
     pub tags: Vec<String>,
-    pub level: i32,
+    pub level: u8,
     pub biomes: Vec<String>,
     pub alignment: String,
     pub move_amount: String,
@@ -60,12 +60,12 @@ impl Monsters {
         graph
     }
 
+    pub fn all(self: &Monsters) -> Vec<&Monster> {
+        self.vertices.values().collect()
+    }
+    
     pub fn len(self: &Monsters) -> usize {
         self.vertices.len()
-    }
-
-    pub fn get(self: &Monsters, id: MonsterId) -> Option<&Monster> {
-        self.vertices.get(&id)
     }
 
     fn build_graph(self: &mut Monsters, vs: Vec<Monster>) {
@@ -92,7 +92,7 @@ impl Monsters {
     fn calculate_connection_strength(m1: &Monster, m2: &Monster) -> Strength {
         let common_tags = m1.tags.iter().filter(|t| m2.tags.contains(t)).count() as i32;
         let common_biomes = m1.biomes.iter().filter(|t| m2.biomes.contains(t)).count() as i32;
-        let level_strength = 30 - 10 * (m1.level - m2.level).abs();
+        let level_strength = 30 - 10 * (m1.level as i32 - m2.level as i32).abs();
         let alignment_bonus = if m1.alignment == m2.alignment { 30 } else { 0 };
         let biome_bonus = 20 * common_biomes.min(3);
         let tag_bonus = 10 * common_tags;
