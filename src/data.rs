@@ -125,7 +125,8 @@ impl Monsters {
         let alignment_bonus = if m1.alignment == m2.alignment { 30 } else { 0 };
         let biome_bonus = 20 * common_biomes.min(3);
         let tag_bonus = 10 * common_tags;
-        level_strength + tag_bonus + biome_bonus + alignment_bonus
+        let source_bonus = if m1.source == m2.source { 30 } else { 0 };
+        level_strength + tag_bonus + biome_bonus + alignment_bonus + source_bonus
     }
 
     pub fn get_adjacent(self: &Monsters, seed: &Monster, limit: u32) -> Vec<&Monster> {
