@@ -71,7 +71,7 @@ fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
             Ok(5) => {
                 let monsters = wrangler.list(&choices);
                 for monster in monsters {
-                    println!("{}", monster.summary());
+                    println!("{}", monster.detailed_summary());
                 }
             }
             _ => {
@@ -88,7 +88,7 @@ fn search(wrangler: &MonsterWrangler, choices: &Choices) {
     let search = search_term.trim().to_string();
     let results = wrangler.search(&choices, &search);
     for monster in results {
-        println!("{}", monster.summary());
+        println!("{}", monster.detailed_summary());
     }
 }
 
