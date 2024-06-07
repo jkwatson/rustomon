@@ -39,7 +39,7 @@ fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
     let mut choices = choices;
     loop {
         println!(
-            "\nChoose: [1:Level, 2:Biome, 3:Tag, 4: Search, 5: List, q:done] (current: {}):",
+            "\nChoose: [1:Level, 2:Biome, 3:Tag, 4: Search, 5: List, 6: Random, q:done] (current: {}):",
             choices.state()
         );
 
@@ -74,6 +74,10 @@ fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
                     println!("{}", monster.detailed_summary());
                 }
             }
+            Ok(6) => {
+                let monster = wrangler.rando(&choices);
+                println!("{}", monster.detailed_summary());
+            }  
             _ => {
                 println!("Invalid choice");
             }

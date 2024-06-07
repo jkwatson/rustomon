@@ -17,6 +17,10 @@ impl MonsterWrangler {
     pub fn list(&self, choices: &Choices) -> Vec<Monster> {
         choices.apply_filters(&self.monsters)
     }
+    
+    pub fn rando(&self, choices: &Choices) -> Monster {
+        choices.rando(&self.monsters)
+    }
 
     pub fn search(&self, choices: &Choices, search_term: &String) -> Vec<Monster> {
         let search_term = search_term.to_lowercase();
@@ -65,7 +69,7 @@ impl Choices {
         result
     }
 
-    fn rando(&self, monsters: &Monsters) -> Monster {
+    pub fn rando(&self, monsters: &Monsters) -> Monster {
         let filtered = self.apply_filters(monsters);
         let mut rng = thread_rng();
         let index = rng.gen_range(0..filtered.len());
