@@ -1380,6 +1380,102 @@
     "source": "us"
   },
   {
+    "name": "TIGER",
+    "tags": "animal",
+    "level": "4",
+    "biome": "forest,cave,arctic,river/coast,swamp,grassland,mountain,jungle,desert",
+    "alignment": "N",
+    "move": "near",
+    "attack": "2 claw +5 (1d6) and 1 bite +5 (1d8)",
+    "page": "US-127",
+    "statblock": "AC 12, HP 22, ATK 2 claw +5 (1d6) and 1 bite +5 (1d8), MV near, S +3, D +2, C +2, I -3, W +1, Ch -3, AL N, LV 4",
+    "source": "us"
+  },
+  {
+    "name": "TIGER, GIANT",
+    "tags": "animal, giant",
+    "level": "11",
+    "biome": "forest,cave,arctic,river/coast,swamp,grassland,mountain,jungle,desert",
+    "alignment": "N",
+    "move": "double near",
+    "attack": "2 claw +10 (1d10) and 1 bite +10 (2d10)",
+    "page": "US-127",
+    "statblock": "AC 14, HP 56, ATK 2 claw +10 (1d10) and 1 bite +10 (2d10), MV double near, S +5, D +2, C +2, I -3, W +1, Ch -3, AL N, LV 11",
+    "source": "us"
+  },
+  {
+    "name": "TOAD, MAGMA",
+    "tags": "template",
+    "level": "3",
+    "biome": "deeps,desert",
+    "alignment": "N",
+    "move": "near (leap)",
+    "attack": "1 magma tongue +3 (near 1d8 + grab)",
+    "page": "US-127",
+    "statblock": "AC 14, HP 12, ATK 1 magma tongue +3 (near 1d8 + grab), MV near (leap), S +0, D +1, C +0, I -3, W +1, Ch -3, AL N, LV 3",
+    "source": "us"
+  },
+  {
+    "name": "TRAPJAW",
+    "tags": "beast, monstrosity",
+    "level": "12",
+    "biome": "urban,forest,cave,tomb,arctic,river/coast,swamp,grassland,mountain,ocean,ruins,deeps,jungle,desert",
+    "alignment": "N",
+    "move": "near (burrow)",
+    "attack": "1 chomp (3d8) or 1 scoop (3d8)",
+    "page": "US-127",
+    "statblock": "AC 15, HP 64, ATK 1 chomp (3d8) or 1 scoop (3d8), MV near (burrow), S +5, D +1, C +3, I -2, W+2, Ch -3, AL N, LV 12",
+    "source": "us"
+  },
+  {
+    "name": "TREANT, BIRCH",
+    "tags": "plant, tree",
+    "level": "6",
+    "biome": "forest,river/coast,mountain",
+    "alignment": "N",
+    "move": "near",
+    "attack": "2 slam +6 (1d10)",
+    "page": "US-128",
+    "statblock": "AC 14, HP 27, ATK 2 slam +6 (1d10), MV near, S +4, D -1, C +2, I+2, W +3, Ch +1, AL C, LV 6",
+    "source": "us"
+  },
+  {
+    "name": "TREANT, OAK",
+    "tags": "plant, tree",
+    "level": "6",
+    "biome": "forest,river/coast,mountain",
+    "alignment": "N",
+    "move": "half near",
+    "attack": "2 slam +6 (1d10)",
+    "page": "US-128",
+    "statblock": "AC 14, HP 38, ATK 2 slam +6 (1d10), MV half near, S +6, D -2, C+4, I +2, W +3, Ch +1, AL C, LV 6",
+    "source": "us"
+  },
+  {
+    "name": "TREANT, PINE",
+    "tags": "plant, tree",
+    "level": "6",
+    "biome": "forest,river/coast,mountain",
+    "alignment": "N",
+    "move": "near",
+    "attack": "2 sap +6 (near 1d6 + sticky)",
+    "page": "US-128",
+    "statblock": "AC 14, HP 32, ATK 2 sap +6 (near 1d6 + sticky), MV near, S +4, D +1, C +2, I +2, W +3, Ch +1, AL C, LV 6",
+    "source": "us"
+  },
+  {
+    "name": "TREANT, WILLOW",
+    "tags": "plant, tree",
+    "level": "6",
+    "biome": "forest,river/coast,mountain",
+    "alignment": "N",
+    "move": "near",
+    "attack": "2 slam +6 (near 1d10 + grab)",
+    "page": "US-128",
+    "statblock": "AC 14, HP 22, ATK 2 slam +6 (near 1d10 + grab), MV near, S +2, D +3, C +2, I+2, W +3, Ch +1, AL C, LV 6",
+    "source": "us"
+  },
+  {
     "name": "TEMPLATE",
     "tags": "template",
     "level": "100",
@@ -1387,7 +1483,7 @@
     "alignment": "N",
     "move": "near",
     "attack": "",
-    "page": "US-127",
+    "page": "US-129",
     "statblock": ",,,,,,,",
     "source": "us"
   }
