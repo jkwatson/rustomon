@@ -58,10 +58,6 @@ impl StatBlock {
 }
 
 impl Monster {
-    pub fn summary(&self) -> String {
-        format!("{}: {} {}", self.name, self.level, self.raw_stat_block, )
-    }
-
     pub fn detailed_summary(&self) -> String {
         format!("{} [ref: {}]\n\t{}\t{}\t{}\tLV:{}\tAL:{}\n\t{}\n\t{}", self.name, self.page, self.stat_block.ac, self.stat_block.hp, self.stat_block.move_amount, self.level, self.alignment, self.stat_block.attack, self.stat_block.stats)
     }
