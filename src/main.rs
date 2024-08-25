@@ -39,14 +39,14 @@ fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
     let mut choices = choices;
     loop {
         println!(
-            "\nChoose: [1:Level, 2:Biome, 3:Tag, 4: Search, 5: List, 6: Random, q:done] (current: {}):",
+            "\nChoose: [1:Level, 2:Biome, 3:Tag, 4: Search, 5: List, 6: Random, g: Generate Group] (current: {}):",
             choices.state()
         );
 
         let mut input = String::new();
         std::io::stdin().read_line(&mut input).unwrap();
         input = input.trim().to_string();
-        if input.is_empty() || input.trim() == "q" {
+        if input.is_empty() || input.trim() == "g" {
             break;
         }
 
