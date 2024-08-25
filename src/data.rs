@@ -118,10 +118,10 @@ impl Monsters {
         let common_tags = m1.tags.iter().filter(|t| m2.tags.contains(t)).count() as i32;
         let common_biomes = m1.biomes.iter().filter(|t| m2.biomes.contains(t)).count() as i32;
         let level_strength = 30 - 10 * (m1.level as i32 - m2.level as i32).abs();
-        let alignment_bonus = if m1.alignment == m2.alignment { 30 } else { 0 };
+        let alignment_bonus = if m1.alignment == m2.alignment { 20 } else { 0 };
         let biome_bonus = 20 * common_biomes.min(3);
         let tag_bonus = 10 * common_tags;
-        let source_bonus = if m1.source == m2.source { 10 } else { 0 };
+        let source_bonus = if m1.source == m2.source { 20 } else { 0 };
         level_strength + tag_bonus + biome_bonus + alignment_bonus + source_bonus
     }
 
