@@ -17,7 +17,7 @@ impl MonsterWrangler {
     pub fn list(&self, choices: &Choices) -> Vec<Monster> {
         choices.apply_filters(&self.monsters)
     }
-    
+
     pub fn rando(&self, choices: &Choices) -> Monster {
         choices.rando(&self.monsters)
     }
@@ -53,18 +53,33 @@ pub struct Choices {
 
 impl Choices {
     pub fn cluster(&self, number: i32, monster_wrangler: &MonsterWrangler) -> Vec<Monster> {
-        let seed = self.rando(&monster_wrangler.monsters);
-        let size = self.randomness.unwrap() as i32 * number;
-        let adjacent = monster_wrangler.monsters.get_adjacent(&seed, size as u32);
-        let mut result = vec![seed];
-        result.shuffle(&mut thread_rng());
-        let mut returned = 0;
-        for monster in adjacent {
-            returned += 1;
-            if returned > number {
-                break;
-            }
-            result.push(monster.clone());
+        let seed_monster = self.rando(&monster_wrangler.monsters);
+        let randomness = self.randomness.unwrap();
+        let size = randomness as i32 * number;
+        let adjacent = monster_wrangler
+            .monsters
+            .get_adjacent(&seed_monster, size as u32);
+        let mut result = vec![seed_monster];
+        if randomness > 1 {
+            result.shuffle(&mut thread_rng());
+        }
+        for i in 0..number.min(adjacent.len() as i32) {
+            result.push(adjacent[i as usize].clone());
+        }
+        result
+    }
+
+    pub fn walk(&self, number: i32, monster_wrangler: &MonsterWrangler) -> Vec<Monster> {
+        let seed_monster = self.rando(&monster_wrangler.monsters);
+        let mut cur_monster = seed_monster.clone();
+        let mut result = vec![seed_monster];
+        for _ in 0..number {
+            let randomness = &thread_rng().gen_range(1..10);
+            cur_monster = monster_wrangler
+                .monsters
+                .get_neighbor_excluding(&cur_monster, &result, randomness)
+                .clone();
+            result.push(cur_monster.clone());
         }
         result
     }
@@ -82,7 +97,7 @@ impl Choices {
             .iter()
             .filter(|&&monster| match &self.biome {
                 None => true,
-                Some(biome) => monster.biomes.contains(biome),
+                Some(biome) => monster.biomes.contains(biome) || monster.biomes.contains(&"*".to_string()),
             })
             .filter(|&&monster| match &self.level {
                 None => true,
@@ -138,6 +153,11 @@ impl Choices {
             monster.biomes.clone()
         });
         all.sort_unstable();
+        all = all
+            .iter()
+            .filter(|biome| !biome.eq(&"*"))
+            .map(|biome| biome.clone())
+            .collect();
         all.dedup();
         all
     }

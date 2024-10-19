@@ -1,5 +1,6 @@
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
+use std::fmt;
 use std::hash::Hash;
 
 #[derive(Serialize, Deserialize, Debug)]
@@ -69,8 +70,22 @@ impl PartialEq for Monster {
     }
 }
 
-pub type Strength = i32;
 pub type MonsterId = u32;
+
+pub struct Strength {
+    pub total: i32,
+    pub level: i32,
+    pub tag: i32,
+    pub biome: i32,
+    pub alignment: i32,
+    pub source: i32,
+}
+
+impl fmt::Display for Strength {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "strength: {} (lvl: {} tag: {} bio: {} al: {} src: {})", self.total, self.level, self.tag, self.biome, self.alignment, self.source)
+    }
+}
 
 #[derive(Default)]
 pub struct Monsters {
@@ -102,27 +117,50 @@ impl Monsters {
                 if v == other {
                     continue;
                 }
-                let strength = Self::calculate_connection_strength(v, other);
-                if strength > 0 {
+                let strength = Self::calculate_connection_strength(v, other, false);
+                if strength.total > 0 {
                     let adjacent_to_from = self.adjacency.entry(v.id).or_default();
                     adjacent_to_from.push((other.id, strength));
                 }
             }
         }
         for adjacents in self.adjacency.values_mut() {
-            adjacents.sort_by(|a, b| b.1.cmp(&a.1));
+            adjacents.sort_by(|a, b| b.1.total.cmp(&a.1.total));
         }
     }
 
-    fn calculate_connection_strength(m1: &Monster, m2: &Monster) -> Strength {
+    fn calculate_connection_strength(m1: &Monster, m2: &Monster, debug: bool) -> Strength {
         let common_tags = m1.tags.iter().filter(|t| m2.tags.contains(t)).count() as i32;
-        let common_biomes = m1.biomes.iter().filter(|t| m2.biomes.contains(t)).count() as i32;
-        let level_strength = 30 - 10 * (m1.level as i32 - m2.level as i32).abs();
-        let alignment_bonus = if m1.alignment == m2.alignment { 20 } else { 0 };
-        let biome_bonus = 20 * common_biomes.min(3);
+        let common_biomes: i32;
+        if m1.biomes.contains(&"*".to_string()) {
+            common_biomes = m2.biomes.len() as i32;
+        } else if m2.biomes.contains(&"*".to_string()) {
+            common_biomes = m1.biomes.len() as i32;
+        } else {
+            common_biomes = m1.biomes.iter().filter(|t| m2.biomes.contains(t)).count() as i32;
+        }
+        
+        let level_strength = 10 - 7 * (m1.level as i32 - m2.level as i32).abs();
+        let alignment_bonus = if m1.alignment == m2.alignment { 15 } else { 0 };
+        let biome_bonus = 5 * common_biomes.min(3);
         let tag_bonus = 10 * common_tags;
-        let source_bonus = if m1.source == m2.source { 20 } else { 0 };
-        level_strength + tag_bonus + biome_bonus + alignment_bonus + source_bonus
+        let source_bonus = if m1.source == m2.source { 10 } else { 0 };
+        let result = level_strength + tag_bonus + biome_bonus + alignment_bonus + source_bonus;
+        let strength = Strength {
+            total: result,
+            level: level_strength,
+            tag: tag_bonus,
+            biome: biome_bonus,
+            alignment: alignment_bonus,
+            source: source_bonus,
+        };
+        if debug {
+            println!(
+                "{} -> {}: {} = {}",
+                m1.name, m2.name, result, strength
+            );
+        }
+        return strength;
     }
 
     pub fn get_adjacent(self: &Monsters, seed: &Monster, limit: u32) -> Vec<&Monster> {
@@ -133,12 +171,31 @@ impl Monsters {
                 if count >= limit {
                     break;
                 }
-                if let Some(neighbor) = self.vertices.get(id) {
+                let neighbor = self.vertices.get(id);
+                Self::calculate_connection_strength(seed, neighbor.unwrap(), true);
+                if let Some(neighbor) = neighbor {
                     adjacent.push(neighbor);
                 }
                 count = count + 1;
             }
         }
         adjacent
+    }
+    
+    pub fn get_neighbor_excluding(self: &Monsters, seed: &Monster, excluding: &Vec<Monster>, distance: &i32) -> &Monster {
+        let options: &Vec<(MonsterId, Strength)> = self.adjacency.get(&seed.id).unwrap();
+        let excluded_ids: Vec<_>= excluding.iter().map(|m| m.id).collect();
+        let mut count = 0;
+        for (id, strength) in options {
+            count = count + 1;
+            if count < *distance {
+                continue;
+            }
+            if !excluded_ids.contains(id) {
+                println!("{} -> {} @ {}: {}", seed.name, self.vertices.get(id).unwrap().name, distance, strength);
+                return self.vertices.get(id).unwrap();
+            }
+        }
+        panic!("No valid neighbors found");
     }
 }

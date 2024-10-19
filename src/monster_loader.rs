@@ -18,7 +18,7 @@ pub fn load_monsters() -> Vec<Monster> {
         raw_monsters.append(&mut load_raw_monsters(file));
     }
 
-    return convert_to_monsters(raw_monsters);
+    convert_to_monsters(raw_monsters)
 }
 
 fn load_raw_monsters(file: &str) -> Vec<RawMonster> {
@@ -29,7 +29,7 @@ fn load_raw_monsters(file: &str) -> Vec<RawMonster> {
             std::process::exit(1);
         }
     };
-    return raw_monsters;
+    raw_monsters
 }
 
 fn convert_to_monsters(raw_monsters: Vec<RawMonster>) -> Vec<Monster> {
@@ -53,7 +53,6 @@ fn convert_to_monsters(raw_monsters: Vec<RawMonster>) -> Vec<Monster> {
                 .split(',')
                 .map(|s| s.trim().to_string())
                 .filter(|b| !b.is_empty())
-                .filter(|b| b != "*")
                 .collect(),
             alignment: monster.alignment.clone(),
             move_amount: monster.move_amount.clone(),
