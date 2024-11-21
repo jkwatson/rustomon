@@ -13,6 +13,7 @@ pub fn load_monsters() -> Vec<Monster> {
         include_str!("cs3.json"),
         include_str!("custom.json"),
         include_str!("unnatural_selection.json"),
+        include_str!("dragontown.json"),
     ];
     for file in files {
         raw_monsters.append(&mut load_raw_monsters(file));
