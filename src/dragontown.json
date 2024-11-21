@@ -7,7 +7,7 @@
     "alignment": "C",
     "move": "near (fly)",
     "attack": "1 bite +2 (1d6 + venom)",
-    "page": "N/A",
+    "page": "DTS-N/A",
     "statblock": "AC 12, HP 11, ATK 1 bite +2 (1d6 + venom), MV near (fly), S +1, D +2, C+2, I +2, W +3, Ch +0, AL C, LV 2",
     "source": "DTS"
   },
@@ -19,7 +19,7 @@
     "alignment": "C",
     "move": "near (fly)",
     "attack": "12 death touch +3 (1d8 + life drain) or 1 possess",
-    "page": "N/A",
+    "page": "DTS-N/A",
     "statblock": "AC 13, HP 8, ATK 12 death touch +3 (1d8 + life drain) or 1 possess, MV near (fly), S -2, D +3, C +0, I +2,W +3, Ch +0, AL C, LV 4",
     "source": "DTS"
   },
@@ -31,7 +31,7 @@
     "alignment": "C",
     "move": "near (fly)",
     "attack": "1 ram -2 (1d4)",
-    "page": "N/A",
+    "page": "DTS-N/A",
     "statblock": "AC 9, HP 5, ATK 1 ram -2 (1d4), MV near (fly), S -4, D +2, C +0, I +0,W +0, Ch -2, AL C, LV 2",
     "source": "DTS"
   },
@@ -43,7 +43,7 @@
     "alignment": "C",
     "move": "near (burrow, climb)",
     "attack": "1 smash +6 (2d6) and 1 bite +6 (1d8)",
-    "page": "N/A",
+    "page": "DTS-N/A",
     "statblock": "AC 10, HP 30, ATK 1 smash +6 (2d6) and 1 bite +6 (1d8), MV near (burrow, climb),S +4,D -1,C +3,I -3,W -2,Ch -2,AL C,LV 6",
     "source": "DTS"
   },
@@ -55,7 +55,7 @@
     "alignment": "C",
     "move": "near (burrow, climb)",
     "attack": "2 smash +7 (2d8) and 1 bite +7 (1d12)",
-    "page": "N/A",
+    "page": "DTS-N/A",
     "statblock": "AC 13, HP 38, ATK 2 smash +7 (2d8) and 1 bite +7 (1d12), MV near (burrow, climb),S +5,D -1,C +4,I -3,W -2,Ch -3,AL C,LV 9",
     "source": "DTS"
   },
@@ -67,7 +67,7 @@
     "alignment": "N",
     "move": "near (float)",
     "attack": "1 fire beam",
-    "page": "N/A",
+    "page": "DTS-N/A",
     "statblock": "AC 15, HP 58, ATK 1 fire beam, MV near (float), S +4, D -4, C -4, I -4, W -4, Ch -4, AL N, LV 12",
     "source": "DTS"
   },
@@ -79,7 +79,7 @@
     "alignment": "N",
     "move": "close (bounce)",
     "attack": "2 tentacle slap +3 (corrosive acid) or 1 crushing slap +3 (1d8)",
-    "page": "N/A",
+    "page": "DTS-N/A",
     "statblock": "AC 9, HP 20, ATK 2 tentacle slap +3 (corrosive acid) or 1 crushing slap +3 (1d8), MV close (bounce),S +3,D -2,C +2,I -4,W -3,Ch -4,AL N,LV 4",
     "source": "DTS"
   },
@@ -91,7 +91,7 @@
     "alignment": "N",
     "move": "close (bounce)",
     "attack": "tentacle slap +3 (corrosive acid)",
-    "page": "N/A",
+    "page": "DTS-N/A",
     "statblock": "AC 9, HP 10, ATK tentacle slap +3 (corrosive acid), MV close (bounce),S +3,D -2,C +2,I -4,W -3,Ch -4,AL N,LV 2",
     "source": "DTS"
   },
@@ -103,7 +103,7 @@
     "alignment": "N",
     "move": "close (bounce)",
     "attack": "tentacle slap +1 (corrosive acid)",
-    "page": "N/A",
+    "page": "DTS-N/A",
     "statblock": "AC 9, HP 5, ATK tentacle slap +1 (corrosive acid), MV close (bounce),S +3,D -2,C +2,I -4,W -3,Ch -4,AL N,LV 2",
     "source": "DTS"
   },
@@ -115,7 +115,7 @@
     "alignment": "C",
     "move": "double near (climb)",
     "attack": "2 bite +4 (2d6/3d6) or 1 spell or 1 eat magic",
-    "page": "N/A",
+    "page": "DTS-N/A",
     "statblock": "AC 13, HP 35, ATK 2 bite +4 (2d6/3d6) or 1 spell or 1 eat magic, MV double near (climb), S +3, D +1, C +3, I -0, W +2, Ch +0, AL C, LV 8",
     "source": "DTS"
   },
@@ -127,7 +127,7 @@
     "alignment": "C",
     "move": "near",
     "attack": "1 ram -2 (1d4)",
-    "page": "N/A",
+    "page": "DTS-N/A",
     "statblock": "AC 9, HP 5, ATK 1 ram -2 (1d4), MV near (fly), S -4, D +2, C +0, I +0,W +0, Ch -2, AL C, LV 2",
     "source": "DTS"
   }
