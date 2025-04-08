@@ -1,0 +1,86 @@
+[
+  {
+    "name": "ASCHENDÄMON",
+    "tags": "demon",
+    "level": "2",
+    "biome": "desert, grassland, hills, mountain, ruins, urban, woods, forest, swamp, cave, deeps, rural",
+    "alignment": "C",
+    "move": "half near (run), double near (fly)",
+    "attack": "1 bite +2 (1d4 + blood drain)",
+    "page": "SB1-4",
+    "statblock": "AC 12, HP 9, ATK 1 bite +2 (1d4 + blood drain), MV half near (run), double near (fl y), S -2, D +2, C +1, I -2, W +2, Ch -2, AL C, LV 2",
+    "source": "SB1"
+  },
+  {
+    "name": "BRUXA LULA",
+    "tags": "fiend",
+    "level": "5",
+    "biome": "aquatic, river/coast, swamp",
+    "alignment": "C",
+    "move": "near",
+    "attack": "2 claw +4 (1d6 + disease), or Tentacle Grab (drain 1d6 / heal 1d6)",
+    "page": "SB1-7",
+    "statblock": "AC 13 HP 23, ATK 2 claw +4 (1d6 + disease), or Tentacle Grab (drain 1d6 / heal 1d6), MV near, S +0, D +1, C +2, I +2, W +1, Ch +1, AL C, LV 5",
+    "source": "SB1"
+  },
+  {
+    "name": "FLYING MONKEY",
+    "tags": "animal, beast",
+    "level": "1",
+    "biome": "aquatic, river/coast, grassland, hills, mountain, rural, ruins, urban, woods, forest, swamp",
+    "alignment": "C",
+    "move": "double near (fly)",
+    "attack": "1 bite +3 (1d4) or Screech",
+    "page": "SB1-8",
+    "statblock": "AC 13 (15 in flight), HP 4, ATK 1 bite +3 (1d4) or Screech (see below) MV double near (fly), S +1, D +3, C +0, I -2, W +0, Ch -2, AL C, LV 1",
+    "source": "SB1"
+  },
+  {
+    "name": "FROSCHMÖNCH",
+    "tags": "aberration",
+    "level": "2",
+    "biome": "aquatic, river/coast, grassland, hills, mountain, rural, swamp, ruins, urban, woods, forest, swamp",
+    "alignment": "C",
+    "move": "double near (hop)",
+    "attack": "1 club +2 (1d4)",
+    "page": "SB1-10",
+    "statblock": "AC 11, HP 9, ATK 1 club +2 (1d4), MV double near (hop), near (swim), S +1, D +1, C +2, I +0, W +1, Ch +1, AL C, LV 2",
+    "source": "SB1"
+  },
+  {
+    "name": "HUSCHENKLEIN",
+    "tags": "beast",
+    "level": "1",
+    "biome": "grassland, rural, woods, forest, swamp",
+    "alignment": "N",
+    "move": "double near (run and climb)",
+    "attack": "1 bite +1 (1d4)",
+    "page": "SB1-12",
+    "statblock": "AC 15, HP 4, ATK 1 bite +1 (1d4), MV double near (run and climb), S -1, D +4, C +0, I +0, W +0, Ch +0, AL N, LV 1",
+    "source": "SB1"
+  },
+  {
+    "name": "KINDERDRACHE",
+    "tags": "",
+    "level": "3",
+    "biome": "hills, mountain, rural, ruins",
+    "alignment": "C",
+    "move": "near (swim)",
+    "attack": "2 claw/tail swipes +4 (1d4), or 1 bite +4 (1d6), or Flame Breath +3 (2d6)",
+    "page": "SB1-14",
+    "statblock": "AC 16, HP 16, ATK 2 Claw/Tail Swipes +4 (1d4), or 1 bite +4 (1d6), or Flame Breath +3 (2d6) MV near (swim), S +4, D +3, C +3, I +0, W +1, Ch -2, AL C, LV 3",
+    "source": "SB1"
+  },
+  {
+    "name": "SB TEMPLATE",
+    "tags": "",
+    "level": "2",
+    "biome": "*",
+    "alignment": "C",
+    "move": "near",
+    "attack": "",
+    "page": "SB1-4",
+    "statblock": "AC 9, HP 5, ATK 1 ram -2 (1d4), MV near (fly), S -4, D +2, C +0, I +0,W +0, Ch -2, AL C, LV 2",
+    "source": "SB1"
+  }
+]
