@@ -40,7 +40,7 @@ fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
     let mut choices = choices;
     loop {
         println!(
-            "\nChoose: [1:Level, 2:Biome, 3:Tag, 4: Search, 5: List, 6: Random, 7: Walk Group, 8: Select Seed, g: Generate Group] (current: {}):",
+            "\nChoose: [1:Level, 2:Biome, 3:Tag, 4: Search, 5: List, 6: Random, 7: Walk Group, g: Generate Group] (current: {}):",
             choices.state()
         );
 
@@ -96,53 +96,12 @@ fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
                     println!("{}", monster.detailed_summary());
                 });
             }
-
-            Ok(8) => {
-                let seed_monster = choose_seed_monster(wrangler, &choices);
-                choices = choices.with_seed_monster(seed_monster);
-            }
-
             _ => {
                 println!("Invalid choice");
             }
         }
     }
     choices
-}
-
-fn choose_seed_monster(wrangler: &MonsterWrangler, choices: &Choices) -> Option<Monster> {
-    println!("Enter a search term to find a seed monster (or leave empty to clear seed):");
-    let mut search_term = String::new();
-    std::io::stdin().read_line(&mut search_term).unwrap();
-    let search = search_term.trim().to_string();
-
-    if search.is_empty() {
-        return None;
-    }
-
-    let results = wrangler.search(choices, &search);
-    if results.is_empty() {
-        println!("No monsters found matching that search term.");
-        return None;
-    }
-
-    println!("Select a monster by number (or 0 to cancel):");
-    for (i, monster) in results.iter().enumerate() {
-        println!("{}. {}", i + 1, monster.name);
-    }
-
-    let mut input = String::new();
-    std::io::stdin().read_line(&mut input).unwrap();
-    let choice = input.trim().parse::<usize>().unwrap_or(0);
-
-    if choice == 0 || choice > results.len() {
-        println!("No seed monster selected.");
-        return None;
-    }
-
-    let selected_monster = results[choice - 1].clone();
-    println!("Selected seed monster: {}", selected_monster.name);
-    Some(selected_monster)
 }
 
 fn search(wrangler: &MonsterWrangler, choices: &Choices) -> Option<Monster> {
