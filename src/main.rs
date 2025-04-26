@@ -2,6 +2,7 @@ mod data;
 mod monster_loader;
 mod monster_wrangler;
 
+use crate::data::Monster;
 use crate::monster_wrangler::{Choices, MonsterWrangler};
 
 fn main() {
@@ -39,7 +40,7 @@ fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
     let mut choices = choices;
     loop {
         println!(
-            "\nChoose: [1:Level, 2:Biome, 3:Tag, 4: Search, 5: List, 6: Random, 7: Walk Group, g: Generate Group] (current: {}):",
+            "\nChoose: [1:Level, 2:Biome, 3:Tag, 4: Search, 5: List, 6: Random, 7: Walk Group, 8: Select Seed, g: Generate Group] (current: {}):",
             choices.state()
         );
 
@@ -66,7 +67,10 @@ fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
             }
             Ok(4) => {
                 println!("Search: ");
-                search(wrangler, &choices);
+                let seed_monster = search(wrangler, &choices);
+                if seed_monster.is_some() {
+                    choices = choices.with_seed_monster(seed_monster);
+                }
             }
             Ok(5) => {
                 let monsters = wrangler.list(&choices);
@@ -77,12 +81,27 @@ fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
             Ok(6) => {
                 let monster = wrangler.rando(&choices);
                 println!("{}", monster.detailed_summary());
-            }  
+
+                // Ask if the user wants to use this monster as a seed
+                println!("\nWould you like to use this monster as a seed? (y/n):");
+                let mut input = String::new();
+                std::io::stdin().read_line(&mut input).unwrap();
+                if input.trim().to_lowercase() == "y" {
+                    choices = choices.with_seed_monster(Some(monster.clone()));
+                    println!("Selected seed monster: {}", monster.name);
+                }
+            }
             Ok(7) => {
                 choices.walk(5, &wrangler).iter().for_each(|monster| {
                     println!("{}", monster.detailed_summary());
                 });
             }
+
+            Ok(8) => {
+                let seed_monster = choose_seed_monster(wrangler, &choices);
+                choices = choices.with_seed_monster(seed_monster);
+            }
+
             _ => {
                 println!("Invalid choice");
             }
@@ -91,14 +110,70 @@ fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
     choices
 }
 
-fn search(wrangler: &MonsterWrangler, choices: &Choices) {
+fn choose_seed_monster(wrangler: &MonsterWrangler, choices: &Choices) -> Option<Monster> {
+    println!("Enter a search term to find a seed monster (or leave empty to clear seed):");
+    let mut search_term = String::new();
+    std::io::stdin().read_line(&mut search_term).unwrap();
+    let search = search_term.trim().to_string();
+
+    if search.is_empty() {
+        return None;
+    }
+
+    let results = wrangler.search(choices, &search);
+    if results.is_empty() {
+        println!("No monsters found matching that search term.");
+        return None;
+    }
+
+    println!("Select a monster by number (or 0 to cancel):");
+    for (i, monster) in results.iter().enumerate() {
+        println!("{}. {}", i + 1, monster.name);
+    }
+
+    let mut input = String::new();
+    std::io::stdin().read_line(&mut input).unwrap();
+    let choice = input.trim().parse::<usize>().unwrap_or(0);
+
+    if choice == 0 || choice > results.len() {
+        println!("No seed monster selected.");
+        return None;
+    }
+
+    let selected_monster = results[choice - 1].clone();
+    println!("Selected seed monster: {}", selected_monster.name);
+    Some(selected_monster)
+}
+
+fn search(wrangler: &MonsterWrangler, choices: &Choices) -> Option<Monster> {
     let mut search_term = String::new();
     std::io::stdin().read_line(&mut search_term).unwrap();
     let search = search_term.trim().to_string();
     let results = wrangler.search(&choices, &search);
-    for monster in results {
-        println!("{}", monster.detailed_summary());
+
+    if results.is_empty() {
+        println!("No monsters found matching that search term.");
+        return None;
     }
+
+    // Display the search results with numbers
+    for (i, monster) in results.iter().enumerate() {
+        println!("{}. {}", i + 1, monster.detailed_summary());
+    }
+
+    // Ask if the user wants to use one as a seed monster
+    println!("\nWould you like to use one of these monsters as a seed? Enter the number (or 0 to skip):");
+    let mut input = String::new();
+    std::io::stdin().read_line(&mut input).unwrap();
+    let choice = input.trim().parse::<usize>().unwrap_or(0);
+
+    if choice == 0 || choice > results.len() {
+        return None;
+    }
+
+    let selected_monster = results[choice - 1].clone();
+    println!("Selected seed monster: {}", selected_monster.name);
+    Some(selected_monster)
 }
 
 fn choose_tag(wrangler: &&MonsterWrangler, choices: &Choices) -> String {

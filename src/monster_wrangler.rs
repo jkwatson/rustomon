@@ -49,11 +49,17 @@ pub struct Choices {
     biome: Option<String>,
     tag: Option<String>,
     randomness: Option<u8>,
+    seed_monster: Option<Monster>,
 }
 
 impl Choices {
     pub fn cluster(&self, number: i32, monster_wrangler: &MonsterWrangler) -> Vec<Monster> {
-        let seed_monster = self.rando(&monster_wrangler.monsters);
+        // Use the seed monster if provided, otherwise get a random one
+        let seed_monster = match &self.seed_monster {
+            Some(monster) => monster.clone(),
+            None => self.rando(&monster_wrangler.monsters),
+        };
+
         let randomness = self.randomness.unwrap();
         let size = randomness as i32 * number;
         let adjacent = monster_wrangler
@@ -70,7 +76,12 @@ impl Choices {
     }
 
     pub fn walk(&self, number: i32, monster_wrangler: &MonsterWrangler) -> Vec<Monster> {
-        let seed_monster = self.rando(&monster_wrangler.monsters);
+        // Use the seed monster if provided, otherwise get a random one
+        let seed_monster = match &self.seed_monster {
+            Some(monster) => monster.clone(),
+            None => self.rando(&monster_wrangler.monsters),
+        };
+
         let mut cur_monster = seed_monster.clone();
         let mut result = vec![seed_monster];
         for _ in 0..number {
@@ -111,12 +122,23 @@ impl Choices {
             .collect()
     }
 
+    pub fn with_seed_monster(&self, seed_monster: Option<Monster>) -> Choices {
+        Choices {
+            level: self.level,
+            biome: self.biome.clone(),
+            tag: self.tag.clone(),
+            randomness: self.randomness,
+            seed_monster,
+        }
+    }
+    
     pub fn with_biome(&self, biome: String) -> Choices {
         Choices {
             level: self.level,
             biome: if biome.is_empty() { None } else { Some(biome) },
             tag: self.tag.clone(),
             randomness: self.randomness,
+            seed_monster: self.seed_monster.clone(),
         }
     }
 
@@ -126,6 +148,7 @@ impl Choices {
             biome: self.biome.clone(),
             tag: if tag.is_empty() { None } else { Some(tag) },
             randomness: self.randomness,
+            seed_monster: self.seed_monster.clone(),
         }
     }
 
@@ -135,6 +158,7 @@ impl Choices {
             biome: self.biome.clone(),
             tag: self.tag.clone(),
             randomness: self.randomness,
+            seed_monster: self.seed_monster.clone(),
         }
     }
 
@@ -144,6 +168,7 @@ impl Choices {
             biome: self.biome.clone(),
             tag: self.tag.clone(),
             randomness,
+            seed_monster: self.seed_monster.clone(),
         }
     }
 
@@ -202,9 +227,21 @@ impl Choices {
 
     pub(crate) fn state(&self) -> String {
         let mut result = "".to_string();
+
+        // Add seed monster info if present
+        if let Some(monster) = &self.seed_monster {
+            result.push_str(&format!("Seed: {}", monster.name));
+        }
+
         result = match &self.level {
             None => result,
-            Some(x) => result + &format!("level={}", x),
+            Some(x) => {
+                if result.is_empty() {
+                    result + &format!("level={}", x)
+                } else {
+                    result + &format!(", level={}", x)
+                }
+            }
         };
 
         result = match &self.biome {
@@ -272,6 +309,7 @@ mod tests {
             biome: Some(String::from("forest")),
             tag: Some(String::from("cheese")),
             randomness: None,
+            seed_monster: None,
         };
         assert_eq!(choices.state(), "level=4, biome=forest, tag=cheese");
     }
