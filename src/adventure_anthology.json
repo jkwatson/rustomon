@@ -21,7 +21,7 @@
     "page": "AA-100",
     "source": "AA",
     "statblock": "AC 14, HP 38, ATK 1 snake bite +6 (1d6 + poison) and 1 Xaolung scimitar +8 (1d8+2), MV near, S +2, D +1, C +2, I +2, W +3, Ch +4, AL C, LV 8",
-    "tags": "elemental, humanoid, beast"
+    "tags": "humanoid"
   },
   {
     "alignment": "N",
@@ -117,7 +117,7 @@
     "page": "AA-190",
     "source": "AA",
     "statblock": "AC 10, HP 4, ATK 1 tendril +1 (1d4 + 1 DEX damage), MV close (climb), S -1, D -3, C +1, I -4, W +0, Ch -4, AL N, LV 0",
-    "tags": "elemental, ooze"
+    "tags": "ooze"
   },
   {
     "alignment": "C",
@@ -158,7 +158,7 @@
   {
     "alignment": "N",
     "attack": "2 cutlass +3 (1d6) or 1 dagger (close/ near) +1 (1d4)",
-    "biome": "coastal",
+    "biome": "river/coast, urban, ocean",
     "level": "4",
     "move": "near",
     "name": "CAPTAIN CROKE",
@@ -194,7 +194,7 @@
   {
     "alignment": "N",
     "attack": "1 cutlass +1 (1d6) or 1 dagger (close/ near) +1 (1d4)",
-    "biome": "coastal, urban",
+    "biome": "river/coast, urban",
     "level": "1",
     "move": "near",
     "name": "CREW",
@@ -254,7 +254,7 @@
   {
     "alignment": "L",
     "attack": "2 great axe +3 (1d10)",
-    "biome": "coastal",
+    "biome": "river/coast",
     "level": "4",
     "move": "near",
     "name": "DRAR FJORG",
@@ -338,7 +338,7 @@
   {
     "alignment": "C",
     "attack": "3 bite +7 (1d12)",
-    "biome": "coastal, water",
+    "biome": "river/coast, ocean",
     "level": "15",
     "move": "near",
     "name": "FINAL FORM",
@@ -357,7 +357,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 7, HP 18, ATK 1 bite +4 (1d8 + infection), MV near, S +2, D -3, C +2, I -4, W -1, Ch -4, AL C, LV 6",
-    "tags": "elemental, aberration"
+    "tags": "aberration"
   },
   {
     "alignment": "C",
@@ -369,7 +369,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 12, HP 16, ATK 1 bite +3 (1d8 + latch) and 1 tentacle (WIS 12+ or 1d3 CON loss) MV near (fly), S +2, D +0, C +3, I -3, W +2, Ch -3, AL C, LV 4",
-    "tags": "elemental, humanoid, orc, aberration, ooze, monstrosity, beast"
+    "tags": "aberration, monstrosity"
   },
   {
     "alignment": "N",
@@ -405,7 +405,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 14, HP 14, ATK 1 bite +2 (1d6), MV near (burrow), S +2, D +2, C +1, I -2, W +1, Ch -2, AL N, LV 2",
-    "tags": "elemental, vermin, giant"
+    "tags": "vermin, giant"
   },
   {
     "alignment": "N",
@@ -446,7 +446,7 @@
   {
     "alignment": "N",
     "attack": "1 bite +3 (1d4 + poison)",
-    "biome": "woods, underground, cave",
+    "biome": "forest, underground, cave",
     "level": "3",
     "move": "near",
     "name": "GIANT SPIDER",
@@ -489,19 +489,19 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 17, HP 76, ATK bite +8 (1d12), MV double near (fly), S +5, +6, C +4, I +4, W +5, Ch +5, AL L, LV 16",
-    "tags": "elemental"
+    "tags": "beast, giant"
   },
   {
     "alignment": "C",
     "attack": "2 claw +4 (1d6) and 1 bite +4 (1d10) or 1 spell +1",
-    "biome": "underground, coastal, mountain, cave",
+    "biome": "underground, river/coast, mountain, cave",
     "level": "6",
     "move": "near",
     "name": "GORT, TROLL BOSS",
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 12, HP 29, ATK 2 claw +4 (1d6) and 1 bite +4 (1d10) or 1 spell +1, MV near, S +3, D +2, C +2, I -1, W +0, Ch -1, AL C, LV 6",
-    "tags": "elemental, troll, aberration, elf, giant"
+    "tags": "troll, giant"
   },
   {
     "alignment": "C",
@@ -513,7 +513,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 12 (leather), HP 24, ATK 2 life drain +3 or 1 spell +5, MV near, S +3, D +1, C +2, I +1, W +0, Ch +3, AL C, LV 5",
-    "tags": "elemental, undead, beast, orc"
+    "tags": "undead"
   },
   {
     "alignment": "C",
@@ -609,19 +609,19 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 12, HP 16, ATK 1 dagger +1 (1d4) or 1 spell +2, MV near, S -2, D +2, C +0, I +4, W +1, Ch +2, AL L, LV 6",
-    "tags": "elemental, humanoid, orc"
+    "tags": "humanoid"
   },
   {
     "alignment": "N",
     "attack": "3 slam +8 (1d10) or 1 rock (far) +8 (2d12)",
-    "biome": "woods, forest, mountain",
+    "biome": "forest, mountain",
     "level": "8",
     "move": "near",
     "name": "HERALD OF THE HUNT, TREANT",
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 14, HP 38, ATK 3 slam +8 (1d10) or 1 rock (far) +8 (2d12), MV near, S +4, D -1, C +2, I +2, W +3, Ch +1, AL N, LV 8",
-    "tags": "elemental"
+    "tags": "elemental, fey"
   },
   {
     "alignment": "C",
@@ -645,12 +645,12 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 15, HP 40, ATK 1 horn +5 (4d6), MV near (burrow), S +5, D +0, C +3, I -3, W +0, Ch -2, AL N, LV 6",
-    "tags": "elemental, humanoid, undead, aberration, vermin, plant, beast"
+    "tags": "giant, aberration, vermin, beast"
   },
   {
     "alignment": "N",
     "attack": "1 Bite +0 (1d6)",
-    "biome": "coastal",
+    "biome": "river/coast",
     "level": "1",
     "move": "near",
     "name": "HORNED WORMS",
@@ -662,14 +662,14 @@
   {
     "alignment": "C",
     "attack": "2 greatclub +6 (2d6)",
-    "biome": "coastal, water, rural",
+    "biome": "arctic,forest,mountain,ruins,swamp",
     "level": "6",
     "move": "near",
     "name": "INJURED OGRE",
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 9, HP 18, ATK 2 greatclub +6 (2d6), MV near, S +4, D -1, C +3, -2, I W -2, Ch -2, AL C, LV 6",
-    "tags": "elemental, orc, giant"
+    "tags": "giant"
   },
   {
     "alignment": "C",
@@ -741,7 +741,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 15 (leather), HP 23, ATK 2 longsword +4 (1d8) or 2 longbow (far) +5 (1d8), MV near (climb), S +2, D +3, C +1, I +2, W +3, Ch +3, AL L, LV 6",
-    "tags": "elemental, aberration"
+    "tags": "humanoid"
   },
   {
     "alignment": "C",
@@ -753,7 +753,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 13, HP 15, ATK 2 claw +3 (1d4), MV near (fly), S +3, D +1, C +2, I +0, W +1, Ch -1, AL C, LV 4",
-    "tags": "elemental, humanoid, fiend, construct"
+    "tags": "fiend, construct"
   },
   {
     "alignment": "L",
@@ -765,7 +765,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 17 (plate mail + shield), HP 40, ATK 2 bastard sword +7 (1d8), MV near, S +3, D +0, C +1, I +0, W +0, Ch +1, AL L, LV 4",
-    "tags": "elemental, humanoid, giant"
+    "tags": "humanoid, giant"
   },
   {
     "alignment": "C",
@@ -789,7 +789,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 13 (leather + shield), HP 14, ATK 1 longsword +1 (1d8) or 1 crossbow (far) +0 (1d6), MV near, S +1, D +0, C +1, I +2, W +0, Ch +1, AL L, LV 3",
-    "tags": "elemental, humanoid, orc"
+    "tags": "humanoid"
   },
   {
     "alignment": "C",
@@ -830,7 +830,7 @@
   {
     "alignment": "C",
     "attack": "2 claw +4 (1d6) and 1 bite +4 (1d10)",
-    "biome": "hills, mountain, swamp, woods, forest",
+    "biome": "hills, mountain, swamp, forest",
     "level": "5",
     "move": "near",
     "name": "MOOR TROLL",
@@ -854,7 +854,7 @@
   {
     "alignment": "C",
     "attack": "1 smash +0 (1 + daub) or 1 mud glob (near) +0 (1 + daub)",
-    "biome": "woods, hills, cave, dungeon, underground",
+    "biome": "forest, hills, cave, dungeon, underground",
     "level": "1",
     "move": "near",
     "name": "MUDLING",
@@ -897,7 +897,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 9, HP 14, ATK 2 smash +2 (1d4 + daub) or 1 mud glob (near) +0 (1 + daub), MV near, S +3, D -1, C +1, I -2, W +1, Ch -3, AL C, LV 3",
-    "tags": "elemental, humanoid"
+    "tags": "elemental"
   },
   {
     "alignment": "C",
@@ -1046,26 +1046,26 @@
   {
     "alignment": "N",
     "attack": "1 dagger (close/near) +2 (1d4) or 1 shortsword +0 (1d6)",
-    "biome": "ruins, urban, water, mountain",
+    "biome": "ruins, urban, mountain",
     "level": "3",
     "move": "near",
     "name": "RATCATCHER, GANG LORD",
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 13 (leather), HP 13, ATK 1 dagger (close/near) +2 (1d4) or 1 shortsword +0 (1d6), MV near, S +0, D +2, C +0, I +0, W +0, Ch +1, AL N, LV 3",
-    "tags": "elemental, humanoid, troll, elf, beast, giant"
+    "tags": "humanoid, troll, elf, beast, giant"
   },
   {
     "alignment": "C",
     "attack": "1 bite +3 (1d8)",
-    "biome": "deeps, water, ruins, coastal, cave, dungeon, underground, mountain",
+    "biome": "deeps, ruins, river/coast, cave, dungeon, underground, mountain",
     "level": "2",
     "move": "near",
     "name": "ROCK BURROWING ANNELIDS",
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 10 HP 11, ATK 1 bite +3 (1d8), MV near (burrow), S +1, D +0, C +1, I -3, W -2, Ch -1, AL C, LV 2",
-    "tags": "elemental, humanoid, vermin, ooze, beast, giant"
+    "tags": "humanoid, vermin, ooze, beast, giant"
   },
   {
     "alignment": "L",
@@ -1077,7 +1077,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 17 (plate mail + shield), HP 33, ATK 2 axe +3 (1d8), MV near, S +3, D +0, C +1, I +0, W +0, Ch +1, AL L, LV 6",
-    "tags": "elemental, dwarf"
+    "tags": "dwarf"
   },
   {
     "alignment": "C",
@@ -1089,7 +1089,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 14 (chainmail), HP 33, ATK 2 Sword +6 (1d8) or 1 crossbow (far) +4 (1d6), MV near, S +3, D +1, C +2, I +0, W +0, Ch +2, AL C, LV 7",
-    "tags": "elemental, humanoid"
+    "tags": "humanoid"
   },
   {
     "alignment": "N",
@@ -1305,7 +1305,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 14 (leather), HP 36, ATK 4 tentacle +5 (1d8 + latch) or 1 mind blast or 1 mind control, MV near, S +2, D +3, C +0, I +4, W +2, Ch +4, AL C, LV 8",
-    "tags": "elemental, humanoid, troll, aberration, monstrosity, beast, giant"
+    "tags": "aberration, monstrosity, beast, giant"
   },
   {
     "alignment": "L",
@@ -1322,14 +1322,14 @@
   {
     "alignment": "C",
     "attack": "2 bite +4 (1d10 + poison)",
-    "biome": "coastal, mountain",
+    "biome": "river/coast, mountain",
     "level": "7",
     "move": "near",
     "name": "TROLLSPIDER",
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 12, HP 33, ATK 2 bite +4 (1d10 + poison), MV near (climb), S +3, D +2, C +2, I -1, W +0, Ch -1, AL C, LV 7",
-    "tags": "elemental, troll, aberration, vermin, giant"
+    "tags": "troll, aberration, vermin, giant"
   },
   {
     "alignment": "N",
@@ -1377,7 +1377,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 12, HP 10, ATK 2 Bite +3 (1d8), MV near, S +3, D +0, C +1, I -2, W +1, Ch -2, AL N, LV 2",
-    "tags": "elemental, aberration"
+    "tags": "aberration"
   },
   {
     "alignment": "C",
@@ -1449,7 +1449,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 12, HP 56, ATK 1d6 eyestalk rays, MV near (fly), S +2, D +1, C +2, I +3, W +4, Ch +3, AL C, LV 12",
-    "tags": "elemental, aberration"
+    "tags": "aberration"
   },
   {
     "alignment": "N",
@@ -1473,7 +1473,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 15, HP 1, ATK 1 bite +1 (1d2 + poison), MV near (burrow/spider climb), S +1, D +0, C +2, I +0, W +0, Ch -1, AL N, LV 1",
-    "tags": "elemental, aberration, vermin"
+    "tags": "aberration, vermin"
   },
   {
     "alignment": "C",
@@ -1485,7 +1485,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 12, HP 22, ATK 1 dagger +3 (1d4) or 1 spell +5, MV near, S -2, D +2, C +0, I +1, W +1, Ch -2, AL C, LV 5",
-    "tags": "elemental, humanoid, beast, orc"
+    "tags": "humanoid, beast, orc"
   },
   {
     "alignment": "C",
@@ -1509,7 +1509,7 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 12, HP 35, ATK 2 Tongue lash +6 (2d6), MV near (fly), S +4, D +0, C +4, -2, I W +1, Ch -2, AL N, LV 7",
-    "tags": "elemental, aberration, monstrosity"
+    "tags": "aberration, monstrosity"
   },
   {
     "alignment": "C",
@@ -1521,6 +1521,6 @@
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 16, HP 15, ATK 1 fist +4 (1d8), MV near, S +3, D +1, C +2, I +0, W +1, Ch -1, AL C, LV 4",
-    "tags": "elemental, orc, goblin"
+    "tags": "orc, goblin"
   }
 ]
