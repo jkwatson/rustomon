@@ -62,9 +62,8 @@ impl Choices {
 
         let randomness = self.randomness.unwrap();
         let size = randomness as i32 * number;
-        let adjacent = monster_wrangler
-            .monsters
-            .get_adjacent(&seed_monster, size as u32);
+        let filtered_monsters = Monsters::new(self.apply_filters(&monster_wrangler.monsters));
+        let adjacent = filtered_monsters.get_adjacent(&seed_monster, size as u32);
         let mut result = vec![seed_monster];
         if randomness > 1 {
             result.shuffle(&mut thread_rng());
@@ -84,10 +83,10 @@ impl Choices {
 
         let mut cur_monster = seed_monster.clone();
         let mut result = vec![seed_monster];
+        let filtered_monsters = Monsters::new(self.apply_filters(&monster_wrangler.monsters));
         for _ in 0..number {
             let randomness = &thread_rng().gen_range(1..10);
-            cur_monster = monster_wrangler
-                .monsters
+            cur_monster = filtered_monsters
                 .get_neighbor_excluding(&cur_monster, &result, randomness)
                 .clone();
             result.push(cur_monster.clone());
@@ -108,7 +107,9 @@ impl Choices {
             .iter()
             .filter(|&&monster| match &self.biome {
                 None => true,
-                Some(biome) => monster.biomes.contains(biome) || monster.biomes.contains(&"*".to_string()),
+                Some(biome) => {
+                    monster.biomes.contains(biome) || monster.biomes.contains(&"*".to_string())
+                }
             })
             .filter(|&&monster| match &self.level {
                 None => true,
@@ -131,7 +132,7 @@ impl Choices {
             seed_monster,
         }
     }
-    
+
     pub fn with_biome(&self, biome: String) -> Choices {
         Choices {
             level: self.level,

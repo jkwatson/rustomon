@@ -2775,7 +2775,7 @@
     "name": "WILL-O'-WISP",
     "tags": "undead",
     "level": "2",
-    "biome": "*",
+    "biome": "swamp,tomb",
     "alignment": "C",
     "move": "fly",
     "attack": "life drain",
