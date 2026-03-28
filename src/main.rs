@@ -2,7 +2,7 @@ mod data;
 mod monster_loader;
 mod monster_wrangler;
 
-use crate::data::Monster;
+use crate::data::{Monster, OutputFormat};
 use crate::monster_wrangler::{Choices, MonsterWrangler};
 
 fn main() {
@@ -11,14 +11,33 @@ fn main() {
 
     let wrangler = MonsterWrangler::new(monsters);
     let mut choices = wrangler.choices();
+    let output_format = read_output_format();
+
     loop {
-        choices = choose(&wrangler, choices);
+        choices = choose(&wrangler, choices, output_format);
         let randomness = read_randomness();
         choices = choices.with_randomness(Some(randomness));
         println!("Choices: {}, Randomness: {}", choices.state(), randomness);
-        choices.cluster(5, &wrangler).iter().for_each(|monster| {
-            println!("{}", monster.detailed_summary());
-        });
+
+        choices
+            .cluster(5, &wrangler)
+            .iter()
+            .for_each(|monster| println!("{}", monster.render(output_format)));
+    }
+}
+
+fn read_output_format() -> OutputFormat {
+    loop {
+        println!("Output format? [standard | name | html] (default standard):");
+        let mut input = String::new();
+        std::io::stdin().read_line(&mut input).unwrap();
+
+        match input.trim().to_lowercase().as_str() {
+            "" | "standard" => return OutputFormat::Standard,
+            "name" => return OutputFormat::Name,
+            "html" => return OutputFormat::Html,
+            _ => println!("Invalid output format"),
+        }
     }
 }
 
@@ -36,7 +55,7 @@ fn read_randomness() -> u8 {
     }
 }
 
-fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
+fn choose(wrangler: &MonsterWrangler, choices: Choices, output_format: OutputFormat) -> Choices {
     let mut choices = choices;
     loop {
         println!(
@@ -67,7 +86,7 @@ fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
             }
             Ok(4) => {
                 println!("Search: ");
-                let seed_monster = search(wrangler, &choices);
+                let seed_monster = search(wrangler, &choices, output_format);
                 if seed_monster.is_some() {
                     choices = choices.with_seed_monster(seed_monster);
                 }
@@ -75,14 +94,13 @@ fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
             Ok(5) => {
                 let monsters = wrangler.list(&choices);
                 for monster in monsters {
-                    println!("{}", monster.detailed_summary());
+                    println!("{}", monster.render(output_format));
                 }
             }
             Ok(6) => {
                 let monster = wrangler.rando(&choices);
-                println!("{}", monster.detailed_summary());
+                println!("{}", monster.render(output_format));
 
-                // Ask if the user wants to use this monster as a seed
                 println!("\nWould you like to use this monster as a seed? (y/n):");
                 let mut input = String::new();
                 std::io::stdin().read_line(&mut input).unwrap();
@@ -92,9 +110,10 @@ fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
                 }
             }
             Ok(7) => {
-                choices.walk(5, &wrangler).iter().for_each(|monster| {
-                    println!("{}", monster.detailed_summary());
-                });
+                choices
+                    .walk(5, &wrangler)
+                    .iter()
+                    .for_each(|monster| println!("{}", monster.render(output_format)));
             }
             _ => {
                 println!("Invalid choice");
@@ -104,7 +123,11 @@ fn choose(wrangler: &MonsterWrangler, choices: Choices) -> Choices {
     choices
 }
 
-fn search(wrangler: &MonsterWrangler, choices: &Choices) -> Option<Monster> {
+fn search(
+    wrangler: &MonsterWrangler,
+    choices: &Choices,
+    output_format: OutputFormat,
+) -> Option<Monster> {
     let mut search_term = String::new();
     std::io::stdin().read_line(&mut search_term).unwrap();
     let search = search_term.trim().to_string();
@@ -115,12 +138,10 @@ fn search(wrangler: &MonsterWrangler, choices: &Choices) -> Option<Monster> {
         return None;
     }
 
-    // Display the search results with numbers
     for (i, monster) in results.iter().enumerate() {
-        println!("{}. {}", i + 1, monster.detailed_summary());
+        println!("{}. {}", i + 1, monster.render(output_format));
     }
 
-    // Ask if the user wants to use one as a seed monster
     println!("\nWould you like to use one of these monsters as a seed? Enter the number (or 0 to skip):");
     let mut input = String::new();
     std::io::stdin().read_line(&mut input).unwrap();
@@ -178,7 +199,7 @@ fn choose_level(wrangler: &&MonsterWrangler, choices: &Choices) -> Option<u8> {
             Err(_) => {
                 println!("Level must be a number");
                 continue;
-            },
+            }
         };
         if (choices.levels(&wrangler).contains(&level)) || level == 0 {
             return Some(level);

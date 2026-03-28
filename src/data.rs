@@ -44,6 +44,13 @@ pub struct StatBlock {
     stats: String,
 }
 
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OutputFormat {
+    Standard,
+    Name,
+    Html,
+}
+
 impl StatBlock {
     pub(crate) fn parse(full: &String) -> StatBlock {
         let pieces: Vec<&str> = full.split(",").collect();
@@ -60,7 +67,41 @@ impl StatBlock {
 
 impl Monster {
     pub fn detailed_summary(&self) -> String {
-        format!("{} [ref: {}]\n\t{}\t{}\t{}\tLV:{}\tAL:{}\n\t{}\n\t{}", self.name, self.page, self.stat_block.ac, self.stat_block.hp, self.stat_block.move_amount, self.level, self.alignment, self.stat_block.attack, self.stat_block.stats)
+        format!(
+            "{} [ref: {}]\n\t{}\t{}\t{}\tLV:{}\tAL:{}\n\t{}\n\t{}",
+            self.name,
+            self.page,
+            self.stat_block.ac,
+            self.stat_block.hp,
+            self.stat_block.move_amount,
+            self.level,
+            self.alignment,
+            self.stat_block.attack,
+            self.stat_block.stats
+        )
+    }
+
+    pub fn html_summary(&self) -> String {
+        format!(
+            "<b>{}</b> (ref: {})<br>{},{}, {},{}, {}, AL {}, LV {}",
+            self.name,
+            self.page,
+            self.stat_block.ac,
+            self.stat_block.hp,
+            self.stat_block.attack,
+            self.stat_block.move_amount,
+            self.stat_block.stats,
+            self.alignment,
+            self.level,
+        )
+    }
+
+    pub fn render(&self, format: OutputFormat) -> String {
+        match format {
+            OutputFormat::Standard => self.detailed_summary(),
+            OutputFormat::Name => self.name.clone(),
+            OutputFormat::Html => self.html_summary(),
+        }
     }
 }
 
