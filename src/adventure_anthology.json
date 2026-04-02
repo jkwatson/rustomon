@@ -234,7 +234,7 @@
     "level": "4",
     "move": "near",
     "name": "CYCLOPS SKELETON",
-    "page": "AA-0000",
+    "page": "AA-183",
     "source": "AA",
     "statblock": "AC 10, HP 20, ATK 1 greatclub +2 (2d8) , MV near, S +5, D +0, C +2, I -1, W -2, Ch +0, AL C, LV 4",
     "tags": "aberration, undead, giant"
@@ -294,7 +294,7 @@
     "level": "2",
     "move": "near",
     "name": "DWARF SKELETON",
-    "page": "AA-0000",
+    "page": "AA-183",
     "source": "AA",
     "statblock": "AC 17 (plate mail + shield), HP 11, ATK 1 greataxe +1 (1d8), MV near, S +1, D +0, C +2, I -2, W +0, Ch -1, AL C, LV 2",
     "tags": "undead, dwarf"
@@ -698,14 +698,14 @@
   {
     "alignment": "N",
     "attack": "1 dagger (close/near) +2 (1d4 + Ghoulsheen) or 1 shortsword +0 (1d6)",
-    "biome": "ruins, underground, cave",
+    "biome": "ruins, urban, underground, cave",
     "level": "5",
     "move": "near",
     "name": "JESTER, DUNGART DUKE LEADER",
-    "page": "AA-0000",
+    "page": "AA-70",
     "source": "AA",
     "statblock": "AC 14 (leather), HP 22, ATK 1 dagger (close/near) +2 (1d4 + Ghoulsheen) or 1 shortsword +0 (1d6), MV near, S +0, D +3, C +0, I +0, W +0, Ch +1, AL N, LV 5",
-    "tags": "undead, beast"
+    "tags": "humanoid"
   },
   {
     "alignment": "N",
@@ -810,7 +810,7 @@
     "level": "4",
     "move": "near",
     "name": "MIMETTE, SPECTRE",
-    "page": "AA-0000",
+    "page": "AA-90",
     "source": "AA",
     "statblock": "AC 14, HP 18, ATK 2 death touch +2 (1d10 + life drain), MV near (fly), S -4, D +4, C +0, I +0, W +0, Ch +3, AL C, LV 4",
     "tags": "undead, beast, spirit"
@@ -1146,7 +1146,7 @@
     "level": "3",
     "move": "double near",
     "name": "SKELETAL HORSEMEN",
-    "page": "AA-0000",
+    "page": "AA-196",
     "source": "AA",
     "statblock": "AC 13 (chainmail), HP 15, ATK 1 spear +1 (1d6), MV double near, S +1, D +0, C +2, I -2, W +0, Ch -1, AL C, LV 3",
     "tags": "aberration, undead"
@@ -1158,7 +1158,7 @@
     "level": "2",
     "move": "near",
     "name": "SKELETAL MERCENARY",
-    "page": "AA-0000",
+    "page": "AA-124",
     "source": "AA",
     "statblock": "AC 13 (chainmail), HP 11, ATK 1 shortsword +1 (1d6) or 1 shortbow (far) +0 (1d4), MV near, S +1, D +0, C +2, I -2, W +0, Ch -1, AL C, LV 2",
     "tags": "aberration, undead"
@@ -1170,7 +1170,7 @@
     "level": "2",
     "move": "near",
     "name": "SKELETAL WARRIOR",
-    "page": "AA-0000",
+    "page": "AA-152",
     "source": "AA",
     "statblock": "AC 13 (chainmail), HP 11, ATK 1 shortsword +1 (1d6) or 1 shortbow (far) +0 (1d4), MV near, S +1, D +0, C +2, I -2, W +0, Ch -1, AL C, LV 2",
     "tags": "aberration, humanoid, undead"
@@ -1181,8 +1181,8 @@
     "biome": "underground, ruins, dungeon",
     "level": "2",
     "move": "near",
-    "name": "SKELETON, LONGSWORD",
-    "page": "AA-0000",
+    "name": "SKELETON, CURVED SWORD",
+    "page": "AA-201",
     "source": "AA",
     "statblock": "AC 12, HP 11, ATK 1 curved sword +1 (1d8), MV near, S +1, D +0, C +2, I -2, W +0, Ch -1, AL C, LV 2",
     "tags": "aberration, undead"
@@ -1326,7 +1326,7 @@
     "level": "18",
     "move": "double near",
     "name": "UNDEAD DRAGON",
-    "page": "AA-0000",
+    "page": "AA-202",
     "source": "AA",
     "statblock": "AC 15, HP 86, ATK 4 rend +9 (2d10) or 1 death breath, MV double near (fly), S +4, D +1, C +5, I -3, W +0, Ch -3, AL N, LV 18",
     "tags": "undead, dragon"
