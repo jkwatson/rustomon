@@ -1,4 +1,4 @@
-use crate::data::{Monsters, Monster, RawMonster, MonsterId, StatBlock};
+use crate::data::{Ability, Monsters, Monster, RawMonster, MonsterId, StatBlock};
 
 pub fn get_monster_graph() -> Monsters {
     Monsters::new(load_monsters())
@@ -17,6 +17,7 @@ pub fn load_monsters() -> Vec<Monster> {
         include_str!("shadow_beasties.json"),
         include_str!("monster_monday.json"),
         include_str!("adventure_anthology.json"),
+        include_str!("gamemaster_companion.json"),
     ];
     for file in files {
         raw_monsters.append(&mut load_raw_monsters(file));
@@ -64,7 +65,14 @@ fn convert_to_monsters(raw_monsters: Vec<RawMonster>) -> Vec<Monster> {
             page: monster.page.clone(),
             raw_stat_block: monster.stat_block.clone(),
             source: monster.source.clone(),
-            stat_block: StatBlock::parse(&monster.stat_block)
+            stat_block: StatBlock::parse(&monster.stat_block),
+            description: monster.description.clone(),
+            abilities: monster.abilities.as_ref().map(|abilities| {
+                abilities.iter().map(|a| Ability {
+                    name: a.name.clone(),
+                    description: a.description.clone(),
+                }).collect()
+            }),
         };
         id = id + 1;
         monster

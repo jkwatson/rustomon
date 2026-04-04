@@ -398,14 +398,14 @@
   {
     "alignment": "N",
     "attack": "1 bite +2 (1d6)",
-    "biome": "underground",
+    "biome": "forest, cave, grassland, mountain, underground, ruins, jungle, desert",
     "level": "2",
     "move": "near",
     "name": "GIANT ANT",
     "page": "AA-0000",
     "source": "AA",
     "statblock": "AC 14, HP 14, ATK 1 bite +2 (1d6), MV near (burrow), S +2, D +2, C +1, I -2, W +1, Ch -2, AL N, LV 2",
-    "tags": "vermin, giant"
+    "tags": "insect, giant"
   },
   {
     "alignment": "N",

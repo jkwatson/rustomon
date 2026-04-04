@@ -3,6 +3,12 @@ use std::collections::HashMap;
 use std::fmt;
 use std::hash::Hash;
 
+#[derive(Serialize, Deserialize, Debug, Clone)]
+pub struct RawAbility {
+    pub name: String,
+    pub description: String,
+}
+
 #[derive(Serialize, Deserialize, Debug)]
 pub struct RawMonster {
     pub name: String,
@@ -17,6 +23,14 @@ pub struct RawMonster {
     #[serde(rename = "statblock")]
     pub stat_block: String,
     pub source: String,
+    pub description: Option<String>,
+    pub abilities: Option<Vec<RawAbility>>,
+}
+
+#[derive(Debug, Clone, Hash)]
+pub struct Ability {
+    pub name: String,
+    pub description: String,
 }
 
 #[derive(Debug, Clone, Hash)]
@@ -33,6 +47,8 @@ pub struct Monster {
     pub raw_stat_block: String,
     pub source: String,
     pub stat_block: StatBlock,
+    pub description: Option<String>,
+    pub abilities: Option<Vec<Ability>>,
 }
 
 #[derive(Debug, Clone, Hash)]
@@ -82,7 +98,7 @@ impl Monster {
     }
 
     pub fn html_summary(&self) -> String {
-        format!(
+        let mut out = format!(
             "<b>{}</b> (ref: {})<br>{},{}, {},{}, {}, AL {}, LV {}",
             self.name,
             self.page,
@@ -93,7 +109,16 @@ impl Monster {
             self.stat_block.stats,
             self.alignment,
             self.level,
-        )
+        );
+        if let Some(desc) = &self.description {
+            out.push_str(&format!("<br><i>{}</i>", desc));
+        }
+        if let Some(abilities) = &self.abilities {
+            for ability in abilities {
+                out.push_str(&format!("<br><b>{}.</b> {}", ability.name, ability.description));
+            }
+        }
+        out
     }
 
     pub fn render(&self, format: OutputFormat) -> String {
