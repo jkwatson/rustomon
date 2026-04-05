@@ -530,5 +530,529 @@
         "description": "Metal that is chewed upon is destroyed on a d6 roll of 1-3."
       }
     ]
+  },
+  {
+    "name": "BASSRANKEN GOBLINOID",
+    "tags": "humanoid, goblin",
+    "level": "3",
+    "biome": "hills, mountain, grassland, rural, forest, swamp, ruins",
+    "alignment": "C",
+    "move": "near",
+    "attack": "1 bite +3 (1d6), or weapon",
+    "page": "SB2-4",
+    "statblock": "AC 13 HP 14, ATK 1 bite +3 (1d6), or weapon (see below), MV near, S +3, D +0, C +3, I -1, W -1, Ch -1, AL C, LV 3",
+    "source": "SB2",
+    "description": "Oversized goblins magically transformed into large, bloated creatures known for their foul temper and cruel dispositions. Their great horns connect them to demonic forces of magic and grant them partial immunity to magic — though this immunity also means they can never use magic items or become a spellcaster. They prefer to work as hired muscle for the highest bidder.",
+    "abilities": [
+      {
+        "name": "Keen Senses",
+        "description": "Can't be surprised."
+      },
+      {
+        "name": "Magic Immunity",
+        "description": "Half effect or damage from magic spells and magic items."
+      },
+      {
+        "name": "Bite",
+        "description": "1d6 DMG."
+      }
+    ]
+  },
+  {
+    "name": "BOSCHSPAWN",
+    "tags": "fiend",
+    "level": "7",
+    "biome": "hills, mountain, rural, forest, swamp, ruins",
+    "alignment": "C",
+    "move": "near",
+    "attack": "2 horn +5 (1d6), 1 bite +5 (1d4 + blood drain)",
+    "page": "SB2-6",
+    "statblock": "AC 12, HP 34, ATK 2 horn +5 (1d6), 1 bite +5 (1d4 + blood drain), MV near, S +2, D +2, C +3, I -1, W -1, Ch -2, AL C, LV 7",
+    "source": "SB2",
+    "description": "Over a thousand years ago Boschspawn fell from the skies in vast numbers during the great Battle of Tondar, uniting former enemies against a common foe. Today they huddle in shadows, weak from bloodthirst and driven mad by living as outcasts in an alien environment for a thousand years.",
+    "abilities": [
+      {
+        "name": "Blood Drain",
+        "description": "Once latched on, heals 2d6 HP and target loses 1d6 HP. DC 12 STR on turn to break free."
+      },
+      {
+        "name": "Leap",
+        "description": "Jump up near in height and double near distance. May attack after leaping."
+      },
+      {
+        "name": "Larva",
+        "description": "Survivors of a bite must pass a DC 12 CON save or become infested with larvae, losing 1d6 CON permanently and suffering fever. Each day, make another CON roll or lose 1d6 more CON; death occurs at 0 CON."
+      }
+    ]
+  },
+  {
+    "name": "DRAKKENHÜND",
+    "tags": "beast",
+    "level": "3",
+    "biome": "hills, mountain, desert, grassland, forest, swamp, ruins",
+    "alignment": "N",
+    "move": "double near",
+    "attack": "1 bite (1d8 + Worry) or 2 claws +2 (1d6) or Flash",
+    "page": "SB2-8",
+    "statblock": "AC 15, HP 14, ATK 1 bite (1d8 + Worry) or 2 claws +2 (1d6) or Flash (see below) MV double near, S +3, D +3, C +1, I -3, W +0, Ch -3, AL N, LV 3",
+    "source": "SB2",
+    "description": "Drakkenhünd are sinewy, scaled lizards with glowing orange eyes and strong dagger-teethed jaws built for leaping and climbing. When angry, their bark rings out like metal striking stone. They feed on deer and other small prey, but crave stone and consider metal a rare delicacy.",
+    "abilities": [
+      {
+        "name": "Worry",
+        "description": "Once locked on with a bite, roll 1d6 DMG each round without needing another attack roll, just using actions to tear at what they have already bit."
+      },
+      {
+        "name": "Flash",
+        "description": "Create a flash of fire, sparks, and ash from mouth. Viewers within Near must make DEX 12 or lose 1d6 rounds blinded, rubbing eyes and panicking."
+      }
+    ]
+  },
+  {
+    "name": "DÜNKLERSCHRODER",
+    "tags": "fey, spirit",
+    "level": "8",
+    "biome": "forest, swamp",
+    "alignment": "N",
+    "move": "double near (walk/fly)",
+    "attack": "2 claws +8 (1d8) or Drain Life +6 (2d6)",
+    "page": "SB2-10",
+    "statblock": "AC 11, HP 38, ATK 2 claws +8 (1d8) or Drain Life +6 (2d6), MV double near (walk/fly), S +4, D +0, C +2, I +0, W +1, Ch +1, AL N, LV 8",
+    "source": "SB2",
+    "description": "Born from a forbidden Elven ritual that bound the fading spirits of ancient forest guardians into one spectral beast, the Dünklerschroder was created to protect the woods from fire and axe. A ghostly being cloaked in moss and dried leaves, once noble, it now knows only vengeance, punishing any who dare defile the natural world.",
+    "abilities": [
+      {
+        "name": "Force of Nature",
+        "description": "Full understanding of nature and what is beneficial and harmful for the forest. Passes through nature without a trace and is immune to magic spells that control nature."
+      },
+      {
+        "name": "Impervious",
+        "description": "Half damage from physical weapons during the day but takes regular damage from magical or holy effects/weapons."
+      },
+      {
+        "name": "Nocturnal Spirit Form",
+        "description": "Only has a physical form during daylight hours and is immune to non-magical attacks at night. May pass through walls and float without support during the night but cannot use physical attacks — must rely on Drain Life only when non-corporeal."
+      }
+    ]
+  },
+  {
+    "name": "FALKWYN",
+    "tags": "beast",
+    "level": "3",
+    "biome": "aquatic, river/coast, hills, mountain, desert, grassland, forest, swamp, ruins",
+    "alignment": "C",
+    "move": "double near (fly)",
+    "attack": "1 bite +3 (1d8) or 1 Wing Slap",
+    "page": "SB2-12",
+    "statblock": "AC 14, HP 14, ATK 1 bite +3 (1d8) or 1 Wing Slap, MV double near (fly), S +0, D +4, C +0, I +0, W +0, Ch +0, AL C, LV 3",
+    "source": "SB2",
+    "description": "A strange cursed bird found near former battlefields almost anywhere across the Known World. The song of the Falkwyn puts fear into the hearts of the bravest warriors. Strangely, most people forget ever encountering a Falkwyn — it emits a mysterious mind fog that selectively erases the memory of having seen it.",
+    "abilities": [
+      {
+        "name": "Bone Breaker Bite",
+        "description": "1d8 DMG. On a critical, one of the target's bones is broken. The target then has half movement, or half Strength/Dex, based on what bone is broken."
+      },
+      {
+        "name": "Wing Slap",
+        "description": "The wings strike the target repeatedly. Targets hit must make a DC 12 CON check or be stunned for 1d6 rounds."
+      },
+      {
+        "name": "Mindfog",
+        "description": "DC 14 WIS or target will forget having seen or encountered the Falkwyn."
+      }
+    ]
+  },
+  {
+    "name": "FEYERFERD",
+    "tags": "beast",
+    "level": "3",
+    "biome": "desert",
+    "alignment": "N",
+    "move": "double near",
+    "attack": "2 Claws +3 (1d4), or 1 bite +3 (1d6)",
+    "page": "SB2-14",
+    "statblock": "AC 13, HP 14, ATK 2 Claws +3 (1d4), or 1 bite +3 (1d6) MV double near, S +3, D +3, C +1, I -1, W +1, Ch -2, AL N, LV 3",
+    "source": "SB2",
+    "description": "These noble beasts were cursed by an ancient demon to harness the element of fire and burst into flame when frightened. Instinctively aware of their threat to forests and dry plains, they are now only encountered in barren deserts or tundra. They are valued for their hides which provide the wearer partial immunity to fire and heat attacks. When a Feyerferd dies they are consumed by flame within a day and leave behind no corpse.",
+    "abilities": [
+      {
+        "name": "Fire Immune",
+        "description": "Immune to heat and fire damage and effects."
+      },
+      {
+        "name": "Burning Body",
+        "description": "Feyerferd catch fire when alert or afraid, creating an aura of flame. Melee attackers and anyone attacked by the creature must make a DC 12 DEX check or take an extra 1d4 DMG from the heat."
+      }
+    ]
+  },
+  {
+    "name": "FROHLICHE",
+    "tags": "fey",
+    "level": "5",
+    "biome": "rural, urban, forest, swamp, ruins",
+    "alignment": "C",
+    "move": "near",
+    "attack": "Club +5 (1d4) or Chaos Power",
+    "page": "SB2-16",
+    "statblock": "AC 13, HP 24, ATK Club +5 (1d4) or Chaos Power, MV near, S +1, D +3, C +1, I +1, W +1, Ch +2, AL C, LV 5",
+    "source": "SB2",
+    "description": "Dwarf-like creatures from a forgotten age, Frohliche are joyful creatures of chaos who delight in the vexation of others. Encountered so rarely that most scholars have declared them extinct, they are often never seen — their pranks and traps are accompanied by mischievous giggles from the shadows. They prefer to live in the attics and haylofts of houses and barns.",
+    "abilities": [
+      {
+        "name": "Stealthy",
+        "description": "Once per day, become invisible for 3 rounds."
+      },
+      {
+        "name": "Slippery",
+        "description": "Hostile spells targeting this creature are DC 15 to cast."
+      },
+      {
+        "name": "Chaos",
+        "description": "DC 12 to trigger a chain of chaotic events like a Rube Goldberg machine, ending in a random effect. Adjust the DC based on severity: DC 10 for mild embarrassment, DC 12 for minor harm (1d4), DC 14 for danger (1d6), DC 16 for major calamity (2d6). Failure means the power cannot be used for the rest of the day."
+      }
+    ]
+  },
+  {
+    "name": "GHULHÜND",
+    "tags": "undead, beast",
+    "level": "4",
+    "biome": "hills, mountain, grassland, rural, forest, swamp, ruins",
+    "alignment": "C",
+    "move": "double near",
+    "attack": "2 rend +3 (1d6) + zombie rot and/or lycanthropy",
+    "page": "SB2-18",
+    "statblock": "AC 11, HP 20, ATK 2 rend +3 (1d6) + zombie rot and/or lycanthropy, MV double near, S +3, D +0, C +2, I -1, W +1, Ch +0, AL C, LV 4",
+    "source": "SB2",
+    "description": "A dangerous stacking of curses has created a deathless zombie that transforms into an undead werewolf on the full moon. The transformative blood of the beast heals regular damage but it is also vulnerable to silver and holy items.",
+    "abilities": [
+      {
+        "name": "Impervious",
+        "description": "Only damaged by holy, silver, or magic sources."
+      },
+      {
+        "name": "Regenerate",
+        "description": "Regains 2d6 HP on its turn unless the wounds were caused by silver, magic, or holy sources."
+      },
+      {
+        "name": "Lycanthropy",
+        "description": "If 12 or more damage from the same Ghulhünd, victim contracts lycanthropy. If the creature is killed before the next full moon the curse does not take."
+      },
+      {
+        "name": "Zombie Rot",
+        "description": "If 12 or more damage is taken, the target will contract Zombie Rot. DC 12 CON each day to recover or lose 1d6 HP. Those who die from zombie rot rise as a zombie in 1d6 rounds."
+      }
+    ]
+  },
+  {
+    "name": "HAGENTIER",
+    "tags": "aberration, monstrosity",
+    "level": "7",
+    "biome": "aquatic, river/coast, hills, mountain, desert, grassland, rural, forest, swamp, ruins",
+    "alignment": "C",
+    "move": "near",
+    "attack": "2 Claws +5 (1d8) and 1 Bite +5 (1d12)",
+    "page": "SB2-20",
+    "statblock": "AC 13, HP 34, ATK 2 Claws +5 (1d8) and 1 Bite +5 (1d12), MV near, S +3, D +2, C +3, I -1, W +1, Ch +0, AL C, LV 7",
+    "source": "SB2",
+    "description": "This beast exists at a quantum level in the universe, seemingly summoned when great successes overtake the expected outcome of the natural order. If a player character has two or more criticals in a row they will attract the wrath of a Hagentier, seeking to restore the balance of nature.",
+    "abilities": [
+      {
+        "name": "Cursed Claws",
+        "description": "1d6 DMG plus the target must successfully roll a DC 15 CON or is cursed. DC 15 CON each day or lose 1d6 HP (can't heal). The curse is broken if the CON roll is successful before the character dies."
+      },
+      {
+        "name": "Tracking",
+        "description": "Can always sense the direction of its chosen quarry."
+      },
+      {
+        "name": "Mythic Beast",
+        "description": "Immune to morale checks. Only damaged by silver, holy or magical sources."
+      }
+    ]
+  },
+  {
+    "name": "KERZENGREIFER",
+    "tags": "fiend",
+    "level": "1",
+    "biome": "aquatic, river/coast, hills, mountain, desert, grassland, rural, forest, swamp, ruins",
+    "alignment": "C",
+    "move": "near",
+    "attack": "Possession",
+    "page": "SB2-22",
+    "statblock": "AC 13, HP 4, ATK Possession, MV near, S -3, D +2, C +0, I +4, W +1, Ch +3, AL C, LV 1",
+    "source": "SB2",
+    "description": "The Kerzengreifer selects the most honourable characters to possess. It crafts a candle from its own wax-like saliva and stolen scraps of the target's belongings. Once lit, the flame binds it to the target's soul, allowing it to mentally control the victim. Destroying the candle or slaying the Kerzengreifer ends the curse.",
+    "abilities": [
+      {
+        "name": "Soul Candle",
+        "description": "A candle crafted from its saliva and the personal items of the target controls the victim's actions. Victim must pass a DC 15 WIS check to resist dangerous or wicked acts. Lasts 30 real minutes, usable once per game day."
+      },
+      {
+        "name": "Secret Knowledge",
+        "description": "Kerzengreifer learn all the deep, dark secrets of their target by peering at the candle's flame and often use dark secrets to sow distrust among a party."
+      }
+    ]
+  },
+  {
+    "name": "LIETUVĒNS",
+    "tags": "undead",
+    "level": "6",
+    "biome": "aquatic, river/coast, hills, mountain, desert, grassland, rural, forest, swamp, ruins",
+    "alignment": "C",
+    "move": "near (climb)",
+    "attack": "2 Claws +6 (1d8)",
+    "page": "SB2-24",
+    "statblock": "AC 13, HP 29, ATK 2 Claws +6 (1d8), MV near (climb), S +4, D +3, C +2, I +0, W +1, Ch +0, AL C, LV 6",
+    "source": "SB2",
+    "description": "The Lietuvēns is the restless corpse of a murdered soul, cursed by the gods to walk the night as an undead fiend for the remainder of its natural life. It paralyzes victims in their sleep and claws them to death, slays livestock, and can only be laid to rest if its remains are found resting during the day and buried with proper honours before it awakens at sunset.",
+    "abilities": [
+      {
+        "name": "Cursed Undead",
+        "description": "Immune to morale checks. Only damaged by silver, holy or magical sources."
+      },
+      {
+        "name": "Paralysis",
+        "description": "Automatically works against sleeping victims. An awakened victim must succeed a DC 12 CHA check to avoid being paralyzed for 1d6 rounds. Further checks to break free may be made at DC 15 during paralysis rounds if the victim wiggles the toes of their left foot."
+      },
+      {
+        "name": "Conditions",
+        "description": "Characters born during daytime are immune to the paralysis. The Lietuvēns cannot heal wounds unless 8 hours of daylight are taken up with a deathlike sleep, during which it cannot defend itself unless it makes a DC 15 WIS check to awaken."
+      }
+    ]
+  },
+  {
+    "name": "MAHIREK",
+    "tags": "beast, aquatic",
+    "level": "6",
+    "biome": "aquatic, river/coast",
+    "alignment": "N",
+    "move": "double near (swim)",
+    "attack": "1 bite +6 (3d6) or 2 tail slaps +6 (2d6)",
+    "page": "SB2-26",
+    "statblock": "AC 14, HP 29, ATK 1 bite +6 (3d6) or 2 tail slaps +6 (2d6), MV double near (swim), S +4, D +3, C +2, I -1, W -1, Ch -2, AL N, LV 6",
+    "source": "SB2",
+    "description": "These sea beasts are twice the size of an elephant and reside near shipping lanes. Experienced sailors always bring a crate or two of livestock to sacrifice to the Mahirek in exchange for safe passage. Mahirek have been known to adopt ships or crew that have been particularly kind or generous to them, some even attacking enemy ships to defend their friends.",
+    "abilities": [
+      {
+        "name": "Ship Sinker",
+        "description": "Can ram a ship or swimmer by moving full distance (double near) and attacking. Rams deal double damage to regular targets. Small boats (up to longboats) capsize immediately. Larger ships sink after 3-6 hits, taking on water and sinking in 2d6 rounds."
+      },
+      {
+        "name": "Hearty",
+        "description": "Mahirek may ignore the first 5 points of damage from non magical sources and attacks."
+      }
+    ]
+  },
+  {
+    "name": "MASKTAIL",
+    "tags": "humanoid",
+    "level": "3",
+    "biome": "rural, urban, forest, swamp, ruins",
+    "alignment": "N",
+    "move": "near (climb)",
+    "attack": "1 sword +3 (1d6) or 3 throwing knives +3 (1d4)",
+    "page": "SB2-28",
+    "statblock": "AC 13, HP 13, ATK 1 sword +3 (1d6) or 3 throwing knives +3 (1d4), MV near (climb), S +0, D +3, C +0, I +2, W +2, Ch +2, AL N, LV 3",
+    "source": "SB2",
+    "description": "Known for incredible stealth and climbing skills, Masktails enjoy great status as burglars, acrobats, and scouts. Every Masktail in The Known Land traces their lineage to a fateful prison transport crash over two hundred years ago that freed them near the northern town of Glen Merk.",
+    "abilities": [
+      {
+        "name": "Stealthy",
+        "description": "ADV on DEX checks to sneak and hide."
+      },
+      {
+        "name": "Backstab",
+        "description": "Deal x2 damage against surprised creatures."
+      },
+      {
+        "name": "Roll With It",
+        "description": "When hit by an attack, Masktail may make a DEX check DC 15. On a success, damage is halved."
+      }
+    ]
+  },
+  {
+    "name": "NAVDA NIEHENS",
+    "tags": "aberration, fey",
+    "level": "3",
+    "biome": "desert, rural, urban, forest, swamp, ruins",
+    "alignment": "C",
+    "move": "near",
+    "attack": "2 Claws +3 (1d6)",
+    "page": "SB2-30",
+    "statblock": "AC 12, HP 15, ATK 2 Claws +3 (1d6), MV near, S +3, D +2, C +2, I +0, W +1, Ch -3, AL C, LV 3",
+    "source": "SB2",
+    "description": "These fear-born phantoms strike from shadow and reflection, vanishing only from a demonstration of hope or true joy. They cannot attack those with Wisdom 14 or higher, but will defend themselves if needed. Slaying one only banishes it until sunset, as it cannot be truly destroyed — for it is not real.",
+    "abilities": [
+      {
+        "name": "Primal Fear",
+        "description": "The simple presence of this creature taps into primal fears. When the creature is near, make a successful morale check or flee for 1d6 rounds. Once a roll succeeds during an encounter, no further checks are needed."
+      },
+      {
+        "name": "It Doesn't Exist",
+        "description": "Foes who succeed on Morale checks convince themselves the creature is a manifestation of fear, causing it to vanish from sight. It returns with a CHA 12 check in 1d6 rounds. If a character shows joy or mirth, it must pass a CHA 15 check to reappear in 24 hours. A critical failure traps it in the nearest reflective surface until exposed to fear again."
+      }
+    ]
+  },
+  {
+    "name": "ONDRAK",
+    "tags": "beast",
+    "level": "3",
+    "biome": "aquatic, river/coast, hills, mountain, desert, grassland, forest, swamp",
+    "alignment": "N",
+    "move": "double near (run)",
+    "attack": "2 claws and 1 bite +4 (1d6) or 2 Tail Swipes +4 (1d8) or 1 Horn +4 (2d6)",
+    "page": "SB2-32",
+    "statblock": "AC 15, HP 13, ATK 2 claws and 1 bite +4 (1d6) or 2 Tail Swipes +4 (1d8) or 1 Horn +4 (2d6), MV double near (run), S +3, D +0, C +1, I -1, W +0, Ch +0, AL N, LV 3",
+    "source": "SB2",
+    "description": "The Ondrak is a dragon-like beast roughly the size of a horse with three horns, terrible claws, and a spiked tail. Ondrak in the wild are rarely encountered, usually hiding or running off long before others are aware of their presence. Trained as a steed by some lizardfolk, it is a loyal and effective ally in any battle. Non-lizardfolk attempting to ride an Ondrak must make a DC 15 CHA check or the creature turns on them.",
+    "abilities": [
+      {
+        "name": "Fireblood",
+        "description": "Fire immune."
+      },
+      {
+        "name": "Hyper Vigilant",
+        "description": "ADV on checks to detect sneaking and hiding creatures and can't be surprised."
+      },
+      {
+        "name": "Charge",
+        "description": "Move up to double near and make 1 horn attack. If hit, x3 damage."
+      }
+    ]
+  },
+  {
+    "name": "SCHEIM FISH",
+    "tags": "beast, aquatic",
+    "level": "1",
+    "biome": "aquatic, river/coast, forest, swamp, ruins",
+    "alignment": "N",
+    "move": "near (crawl/hop), double near (swim)",
+    "attack": "1 bite +1 (1d8)",
+    "page": "SB2-34",
+    "statblock": "AC 11, HP 4, ATK 1 bite +1 (1d8), MV near (crawl/hop), double near (swim), S +0, D +3, C +0, I -3, W +0, Ch -3, AL N, LV 1",
+    "source": "SB2",
+    "description": "Scheim Fish are grapefruit-sized amphibians, not true fish, that spend half their lives crawling on land. At night they emerge from the sea with high-pitched chirps. Typically harmless, they become a menace when food is scarce, swarming and devouring anything unlucky enough to be nearby. Alone they are manageable, but in groups of 5 to 10 they pose a deadly threat.",
+    "abilities": [
+      {
+        "name": "Fearless",
+        "description": "Immune to morale checks."
+      },
+      {
+        "name": "Pack Hunter",
+        "description": "Deals +1 damage while an ally is close."
+      }
+    ]
+  },
+  {
+    "name": "SCHNAPZAHN",
+    "tags": "beast, monstrosity",
+    "level": "7",
+    "biome": "hills, mountain",
+    "alignment": "N",
+    "move": "double near (climb)",
+    "attack": "2 claws +6 (1d10) or 1 tusk strike +6 (2d6)",
+    "page": "SB2-36",
+    "statblock": "AC 15, HP 35, ATK 2 claws +6 (1d10) or 1 tusk strike +6 (2d6), MV double near (climb), S +4, D +0, C +4, I +0, W +1, Ch -3, AL N, LV 7",
+    "source": "SB2",
+    "description": "Haunting the lonely mountain passes, the Schnapzahn is a dangerous and elusive predator. Cursed with over-sized tusks that clatter as they run and are used more in mating rituals than hunting, the beast is a relentless foe. Its talons can tear a man apart with one swipe. It is said that a Schnapzahn never forgets a face and has been known to hold grudges over generations.",
+    "abilities": [
+      {
+        "name": "Sure Footed",
+        "description": "Can climb near sheer surfaces and rolls with ADV on acrobatic DEX checks, rarely falling down."
+      },
+      {
+        "name": "Grab",
+        "description": "DC 15 STR or held. DC 15 STR on turn to break free."
+      },
+      {
+        "name": "Charge",
+        "description": "Move up to double near in straight line and make 1 tusk attack. If hit, x3 damage."
+      }
+    ]
+  },
+  {
+    "name": "SCHNÜFFLER",
+    "tags": "beast",
+    "level": "2",
+    "biome": "hills, mountain, desert, grassland, forest, swamp, ruins",
+    "alignment": "N",
+    "move": "double near",
+    "attack": "2 bite +2 (1d6) or Shriek",
+    "page": "SB2-38",
+    "statblock": "AC 14, HP 11, ATK 2 bite +2 (1d6) or Shriek, MV double near, S +2, D +2, C +2, I -1, W +1, Ch -3, AL N, LV 2",
+    "source": "SB2",
+    "description": "The Schnüffler is a human-sized dragon-animal that relies on a powerful sense of smell to find prey. Its favorite lairs are dark swamps and deep forests, where its scaled hide — which can be tailored into fine armor as strong as chainmail but half the weight — is prized. Though not particularly aggressive, it becomes fiercely territorial if its nest is disturbed. Schnüffler often travel in family units of 2–12.",
+    "abilities": [
+      {
+        "name": "Keen Senses",
+        "description": "Can't be surprised."
+      },
+      {
+        "name": "Pack Animal",
+        "description": "Deal +1 DMG in melee when beside an ally."
+      },
+      {
+        "name": "Tracking",
+        "description": "Instinctively knows the direction of its prey (only one target at a time)."
+      },
+      {
+        "name": "Shriek",
+        "description": "A Schnüffler may shriek causing any who hear it within Near to make a DC 15 WIS check or become disoriented and miss 1d6 rounds."
+      }
+    ]
+  },
+  {
+    "name": "SPUKENMIT",
+    "tags": "aberration",
+    "level": "8",
+    "biome": "aquatic, river/coast, hills, mountain, desert, grassland, forest, swamp, ruins",
+    "alignment": "C",
+    "move": "near",
+    "attack": "1 Tail Swipe +5 (1d6) or Death Song (far) or Life Drain (near) (2d6)",
+    "page": "SB2-40",
+    "statblock": "AC 11, HP 36, ATK 1 Tail Swipe +5 (1d6) or Death Song (far) or Life Drain (near) (2d6), MV near, S -1, D +0, C +0, I +1, W +1, Ch +1, AL C, LV 8",
+    "source": "SB2",
+    "description": "Spukenmit are vaguely lizard-like beings from a collapsed alternate reality. Their eerie song paralyzes listeners with terror. They are always accompanied by a ghost which possesses victims to serve as guards and thralls. The Spukenmit seek to restore their shattered reality by absorbing energy from this one — every life they drain fuels the slow reconstruction of their lost dimension.",
+    "abilities": [
+      {
+        "name": "Partial Immunity",
+        "description": "Half effect or damage from non magical effects."
+      },
+      {
+        "name": "Death Song",
+        "description": "Targets in earshot (up to far) must make a DC 15 CHA or lose the next 1d6 rounds paralyzed in fear."
+      },
+      {
+        "name": "Life Drain",
+        "description": "Use an action to transfer life energy from one target in near. DC 15 CHA or lose 2d6 HP that is then transferred to the Spukenmit."
+      },
+      {
+        "name": "Ghost Pal",
+        "description": "Is always accompanied by at least one ghost that possesses a living being to use as a thrall or guard."
+      }
+    ]
+  },
+  {
+    "name": "UNTERGRÜNKIND",
+    "tags": "fey",
+    "level": "1",
+    "biome": "rural, urban, ruins, underground",
+    "alignment": "C",
+    "move": "near",
+    "attack": "2 claws +1 (1d4) or Curse",
+    "page": "SB2-42",
+    "statblock": "AC 11, HP 5, ATK 2 claws +1 (1d4) or Curse, MV near, S +0, D +1, C +1, I +0, W +1, Ch -3, AL C, LV 1",
+    "source": "SB2",
+    "description": "Also known as the Night Guard, the Untergrünkind inhabits a structure that grants it access to underground chambers such as cellars or crypts, where it prefers to sleep during the day. If awakened or disturbed, it will curse the intruder and attempt to secure the building against those who do not belong. Though it appears comically drowsy during daylight, its fury is unmistakable when provoked.",
+    "abilities": [
+      {
+        "name": "Curse",
+        "description": "The curse of the Untergrünkind is unique to each target but always translates to the character making every roll at a minus 1. There is no roll to save, but a character can only have one curse at a time and curses are not stackable. The Untergrünkind can lift its own curse at any time, and the curse is also lifted if it dies."
+      },
+      {
+        "name": "Tenacious",
+        "description": "If reduced to 0 HP by a non magical source DC 15 CON to go to 1 HP instead."
+      }
+    ]
   }
 ]
