@@ -2,7 +2,7 @@
   {
     "alignment": "N",
     "attack": "1 dagger (close/near) +4 (1d6) and 1 shortsword +4 (1d8)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, ruins, desert",
     "level": "3",
     "move": "near",
     "name": "'TWISTER' SLADE",
@@ -14,19 +14,19 @@
   {
     "alignment": "C",
     "attack": "1 snake bite +6 (1d6 + poison) and 1 Xaolung scimitar +8 (1d8+2)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, ruins, desert",
     "level": "8",
     "move": "near",
     "name": "AGUEDA, MEDUSA",
     "page": "AA-100",
     "source": "AA",
     "statblock": "AC 14, HP 38, ATK 1 snake bite +6 (1d6 + poison) and 1 Xaolung scimitar +8 (1d8+2), MV near, S +2, D +1, C +2, I +2, W +3, Ch +4, AL C, LV 8",
-    "tags": "humanoid"
+    "tags": "aberration, monstrosity"
   },
   {
     "alignment": "N",
     "attack": "3 bite +6 (2d6 + swallow)",
-    "biome": "underground, urban",
+    "biome": "underground, cave, deeps",
     "level": "9",
     "move": "near",
     "name": "BALD DREAD WORM",
@@ -38,19 +38,19 @@
   {
     "alignment": "C",
     "attack": "2 slash +4 (1d8)",
-    "biome": "ruins, underground, cave",
+    "biome": "aquatic, river/coast",
     "level": "6",
     "move": "near",
     "name": "BARNACLE FORM",
     "page": "AA-47",
     "source": "AA",
     "statblock": "AC 12, HP 20, ATK 2 slash +4 (1d8), MV near (swim), S +2, D -1, C +3, I -4, W -1, Ch -4, AL C, LV 6",
-    "tags": "humanoid"
+    "tags": "aberration"
   },
   {
     "alignment": "C",
     "attack": "1 bite +2 (1d6) and 1 spear (close/near) +2 (1d6)",
-    "biome": "ruins, underground, cave",
+    "biome": "desert, ruins",
     "level": "3",
     "move": "near",
     "name": "BEASTMAN WERERAT",
@@ -98,19 +98,19 @@
   {
     "alignment": "C",
     "attack": "2 spear (close/ near) +2 (1d8)",
-    "biome": "ruins, underground, cave",
+    "biome": "swamp, forest, cave",
     "level": "4",
     "move": "near",
     "name": "BLACK CROAKER",
-    "page": "AA-0000",
+    "page": "AA-135",
     "source": "AA-138",
     "statblock": "AC 14, HP 19, ATK 2 spear (close/ near) +2 (1d8), MV near (swim), S +2, D +2, C +1, I +0, W +0, Ch -2, AL C, LV 4",
-    "tags": "humanoid"
+    "tags": "beast"
   },
   {
     "alignment": "N",
     "attack": "1 tendril +1 (1d4 + 1 DEX damage)",
-    "biome": "ruins, underground, cave",
+    "biome": "underground, deeps, cave, mountain",
     "level": "0",
     "move": "close",
     "name": "BORE OOZE",
@@ -122,7 +122,7 @@
   {
     "alignment": "C",
     "attack": "1 bite +2 (1d6)",
-    "biome": "underground, ruins, dungeon",
+    "biome": "underground, deeps, cave, ruins, tomb",
     "level": "2",
     "move": "near",
     "name": "BRAIN-EATING ZOMBIE",
@@ -134,19 +134,19 @@
   {
     "alignment": "C",
     "attack": "2 fist +5 (1d10)",
-    "biome": "ruins, underground, cave, deeps",
+    "biome": "underground, cave, deeps, mountain",
     "level": "7",
     "move": "near",
     "name": "BRUTOX",
     "page": "AA-62",
     "source": "AA",
     "statblock": "AC 11, HP 34, ATK 2 fist +5 (1d10), MV near, S +4, D +1, C +3, I +1, W +2, Ch +1, AL C, LV 7",
-    "tags": "humanoid, aberration"
+    "tags": "aberration"
   },
   {
     "alignment": "N",
     "attack": "2 tentacle +3 (1d6)",
-    "biome": "body",
+    "biome": "ruins, underground",
     "level": "4",
     "move": "near",
     "name": "CANCER CELL",
@@ -158,50 +158,50 @@
   {
     "alignment": "N",
     "attack": "2 cutlass +3 (1d6) or 1 dagger (close/ near) +1 (1d4)",
-    "biome": "river/coast, urban, ocean",
+    "biome": "aquatic, river/coast, urban",
     "level": "4",
     "move": "near",
     "name": "CAPTAIN CROKE",
-    "page": "AA-0000",
+    "page": "AA-44",
     "source": "AA",
     "statblock": "AC 13 (leather), HP 19, ATK 2 cutlass +3 (1d6) or 1 dagger (close/ near) +1 (1d4), MV near, S +2, D +2, C +1, I +2, W +0, Ch +2, AL N, LV 4",
-    "tags": "humanoid, pirate"
+    "tags": "humanoid"
   },
   {
     "alignment": "N",
     "attack": "3 bite +6 (2d6 + swallow)",
-    "biome": "underground",
+    "biome": "swamp, cave, forest",
     "level": "12",
     "move": "near",
     "name": "COLOSSAL FROG",
     "page": "AA-143",
     "source": "AA",
     "statblock": "AC 11, HP 58, ATK 3 bite +6 (2d6 + swallow), MV near (burrow), S +5, D -1, C +4, I -3, W +1, Ch -3, AL N, LV 12",
-    "tags": "giant"
+    "tags": "beast, giant"
   },
   {
     "alignment": "N",
     "attack": "2 bite +6 (2d6) and 1 constrict (near)",
-    "biome": "ruins, underground, cave",
+    "biome": "underground, deeps, cave, forest, swamp",
     "level": "5",
     "move": "near",
     "name": "COLOSSAL SNAKE",
     "page": "AA-175",
     "source": "AA",
     "statblock": "AC 12, HP 40, ATK 2 bite +6 (2d6) and 1 constrict (near), MV near (swim), S +4, D +2, C +1, I -2, W +0, Ch -2, AL N, LV 5",
-    "tags": "giant"
+    "tags": "beast, giant"
   },
   {
     "alignment": "N",
     "attack": "1 cutlass +1 (1d6) or 1 dagger (close/ near) +1 (1d4)",
-    "biome": "river/coast, urban",
+    "biome": "aquatic, river/coast, urban",
     "level": "1",
     "move": "near",
     "name": "CREW",
-    "page": "AA-0000",
+    "page": "AA-44",
     "source": "AA",
     "statblock": "AC 12 (leather), HP 4, ATK 1 cutlass +1 (1d6) or 1 dagger (close/ near) +1 (1d4), MV near, S +1, D +1, C +0, I +0, W +0, Ch +0, AL N, LV 1",
-    "tags": "humanoid, pirate"
+    "tags": "humanoid"
   },
   {
     "alignment": "C",
@@ -210,7 +210,7 @@
     "level": "1",
     "move": "near",
     "name": "CULTIST OF BOK'SURRPESH",
-    "page": "AA-947",
+    "page": "AA-34",
     "source": "AA",
     "statblock": "AC 11 (leather), HP 4, ATK 1 dagger +1 (1d4), MV near, S +1, D +0, C +0, I -1, W +1, Ch -1, AL C, LV 1",
     "tags": "humanoid"
@@ -222,31 +222,31 @@
     "level": "6",
     "move": "near (climb",
     "name": "CYCLOPEAN OOZE",
-    "page": "AA-0000",
+    "page": "AA-126",
     "source": "AA",
     "statblock": "AC 8, HP 30, ATK 2 tendril +3 (1d8), MV near (climb, swim), S +2, D -2, C +3, I -3, W +0, Ch -3, AL N, LV 6",
-    "tags": "aberration, ooze, beast"
+    "tags": "aberration, ooze"
   },
   {
     "alignment": "C",
     "attack": "1 greatclub +2 (2d8)",
-    "biome": "underground, ruins, dungeon",
+    "biome": "underground, deeps, cave, ruins",
     "level": "4",
     "move": "near",
     "name": "CYCLOPS SKELETON",
     "page": "AA-183",
     "source": "AA",
     "statblock": "AC 10, HP 20, ATK 1 greatclub +2 (2d8) , MV near, S +5, D +0, C +2, I -1, W -2, Ch +0, AL C, LV 4",
-    "tags": "aberration, undead, giant"
+    "tags": "undead, giant"
   },
   {
     "alignment": "L",
     "attack": "1 shortsword +2 (1d6)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, ruins, desert",
     "level": "3",
     "move": "near",
     "name": "DOUBLE TROUBLE",
-    "page": "AA-0000",
+    "page": "AA-94",
     "source": "AA",
     "statblock": "AC 13 (chainmail), HP 14, ATK 1 shortsword +2 (1d6), MV near, S +1, D +1, C +1, I +0, W +0, Ch +0, AL L, LV 3",
     "tags": "aberration"
@@ -254,23 +254,23 @@
   {
     "alignment": "L",
     "attack": "2 great axe +3 (1d10)",
-    "biome": "river/coast",
+    "biome": "desert, ruins, mountain",
     "level": "4",
     "move": "near",
     "name": "DRAR FJORG",
-    "page": "AA-0000",
+    "page": "AA-192",
     "source": "AA",
     "statblock": "AC 13 (chain), HP 19, ATK 2 great axe +3 (1d10), MV near, S +3, D +0, C +1, I +0, W +0, Ch +1, AL L, LV 4",
-    "tags": "aberration, elf"
+    "tags": "humanoid"
   },
   {
     "alignment": "N",
     "attack": "none",
-    "biome": "ruins, underground, cave",
+    "biome": "swamp, forest, cave, ruins",
     "level": "2",
     "move": "near",
     "name": "DRUNMOT, BERSERKER",
-    "page": "AA-0000",
+    "page": "AA-135",
     "source": "AA",
     "statblock": "AC 11, HP 1 (10), ATK none, MV near, S +2, D +1, C +1, I +0, W +1, Ch +0, AL N, LV 2",
     "tags": "humanoid"
@@ -278,35 +278,35 @@
   {
     "alignment": "N",
     "attack": "1 dagger (close/near) +2 (1d6)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, ruins",
     "level": "3",
     "move": "near",
     "name": "DUNGART DUKE LIEUTENANT",
-    "page": "AA-0000",
+    "page": "AA-69",
     "source": "AA",
     "statblock": "AC 13 (leather), HP 13, ATK 1 dagger (close/near) +2 (1d6), MV near, S +0, D +2, C +0, I +0, W +0, Ch +1, AL N, LV 3",
-    "tags": "beast"
+    "tags": "humanoid"
   },
   {
     "alignment": "C",
     "attack": "1 greataxe +1 (1d8)",
-    "biome": "ruins, underground, cave",
+    "biome": "underground, deeps, cave, ruins",
     "level": "2",
     "move": "near",
     "name": "DWARF SKELETON",
     "page": "AA-183",
     "source": "AA",
     "statblock": "AC 17 (plate mail + shield), HP 11, ATK 1 greataxe +1 (1d8), MV near, S +1, D +0, C +2, I -2, W +0, Ch -1, AL C, LV 2",
-    "tags": "undead, dwarf"
+    "tags": "undead"
   },
   {
     "alignment": "N",
     "attack": "1 bite +1 (1d8)",
-    "biome": "ruins, underground, cave",
+    "biome": "ruins, underground",
     "level": "1",
     "move": "near",
     "name": "EAR MITE",
-    "page": "AA-0000",
+    "page": "AA-156",
     "source": "AA",
     "statblock": "AC 15, HP 4, ATK 1 bite +1 (1d8), MV near (climb), S +1 D +1, C +0, I -4, W -3, Ch -4, AL N, LV 1",
     "tags": "vermin"
@@ -318,7 +318,7 @@
     "level": "0",
     "move": "near",
     "name": "EARGOFF GOBLIN",
-    "page": "AA-593",
+    "page": "AA-23",
     "source": "AA",
     "statblock": "AC 12, HP 3, ATK 1 shortsword +0 (1d6), MV near, S -2, D +2, C -1, I +0, W +0, Ch -1, AL C, LV 0",
     "tags": "humanoid, goblin"
@@ -326,35 +326,35 @@
   {
     "alignment": "C",
     "attack": "2 bastard sword +4 (1d8 + 2)",
-    "biome": "desert, urban",
+    "biome": "urban, ruins, desert",
     "level": "6",
     "move": "near",
     "name": "SETOYA",
-    "page": "AA-0000",
+    "page": "AA-94",
     "source": "AA",
     "statblock": "AC 17 (plate mail + shield), HP 25, ATK 2 bastard sword +4 (1d8 + 2), MV near, S +3, D +0, C +1, I +0, W +0, Ch +2, AL C, LV 6",
-    "tags": "elf, humanoid"
-  },
-  {
-    "alignment": "C",
-    "attack": "3 bite +7 (1d12)",
-    "biome": "river/coast, ocean",
-    "level": "15",
-    "move": "near",
-    "name": "FINAL FORM",
-    "page": "AA-0000",
-    "source": "AA",
-    "statblock": "AC 6, HP 71, ATK 3 bite +7 (1d12), MV near (swim), S +4, D -4, C +4, I -4, W -1, Ch -4, AL C, LV 15",
     "tags": "humanoid"
   },
   {
     "alignment": "C",
+    "attack": "3 bite +7 (1d12)",
+    "biome": "aquatic, river/coast",
+    "level": "15",
+    "move": "near",
+    "name": "FINAL FORM",
+    "page": "AA-44",
+    "source": "AA",
+    "statblock": "AC 6, HP 71, ATK 3 bite +7 (1d12), MV near (swim), S +4, D -4, C +4, I -4, W -1, Ch -4, AL C, LV 15",
+    "tags": "aberration"
+  },
+  {
+    "alignment": "C",
     "attack": "1 bite +4 (1d8 + infection)",
-    "biome": "ruins, underground, cave",
+    "biome": "aquatic, river/coast",
     "level": "6",
     "move": "near",
     "name": "FLESH POD",
-    "page": "AA-0000",
+    "page": "AA-44",
     "source": "AA",
     "statblock": "AC 7, HP 18, ATK 1 bite +4 (1d8 + infection), MV near, S +2, D -3, C +2, I -4, W -1, Ch -4, AL C, LV 6",
     "tags": "aberration"
@@ -362,11 +362,11 @@
   {
     "alignment": "C",
     "attack": "1 bite +3 (1d8 + latch) and 1 tentacle (WIS 12+ or 1d3 CON loss) MV near (fly)",
-    "biome": "ruins, underground, cave",
+    "biome": "desert, ruins, tomb",
     "level": "4",
     "move": "near",
     "name": "FLOATING HORROR",
-    "page": "AA-0000",
+    "page": "AA-192",
     "source": "AA",
     "statblock": "AC 12, HP 16, ATK 1 bite +3 (1d8 + latch) and 1 tentacle (WIS 12+ or 1d3 CON loss) MV near (fly), S +2, D +0, C +3, I -3, W +2, Ch -3, AL C, LV 4",
     "tags": "aberration, monstrosity"
@@ -374,35 +374,35 @@
   {
     "alignment": "N",
     "attack": "1 slam +1 (1d4)",
-    "biome": "ruins, underground, cave",
+    "biome": "ruins, underground",
     "level": "2",
     "move": "near",
     "name": "FLURP",
-    "page": "AA-0000",
+    "page": "AA-156",
     "source": "AA",
     "statblock": "AC 9, HP 7, ATK 1 slam +1 (1d4), MV near, S +2, D -1, C +0, I -2, W +1, Ch -1, AL N, LV 2",
-    "tags": "elf, humanoid"
+    "tags": "humanoid"
   },
   {
     "alignment": "C",
     "attack": "+4 (1d8 + WIS 8+ or suffer a hallucinations for 1d6 days)",
-    "biome": "underground",
+    "biome": "swamp, cave, forest",
     "level": "3",
     "move": "near",
     "name": "FREAKISH BATBEAKS",
-    "page": "AA-0000",
+    "page": "AA-135",
     "source": "AA",
     "statblock": "AC 12, HP 10, ATK +4 (1d8 + WIS 8+ or suffer a hallucinations for 1d6 days), MV near (fly), S +1, D +2, C +1, I +0, W +2, Ch -2, AL C, LV 3",
-    "tags": "vermin"
+    "tags": "vermin, beast"
   },
   {
     "alignment": "N",
     "attack": "1 bite +2 (1d6)",
-    "biome": "forest, cave, grassland, mountain, underground, ruins, jungle, desert",
+    "biome": "forest, cave, grassland, mountain, underground, ruins, desert",
     "level": "2",
     "move": "near",
     "name": "GIANT ANT",
-    "page": "AA-0000",
+    "page": "AA-108",
     "source": "AA",
     "statblock": "AC 14, HP 14, ATK 1 bite +2 (1d6), MV near (burrow), S +2, D +2, C +1, I -2, W +1, Ch -2, AL N, LV 2",
     "tags": "insect, giant"
@@ -410,11 +410,11 @@
   {
     "alignment": "N",
     "attack": "1 bite +1 (1d4 + poison)",
-    "biome": "ruins, hills, mountain",
+    "biome": "ruins, underground, cave, hills, mountain",
     "level": "1",
     "move": "near",
     "name": "GIANT CENTIPEDE",
-    "page": "AA-0000",
+    "page": "AA-126",
     "source": "AA",
     "statblock": "AC 11, HP 10, ATK 1 bite +1 (1d4 + poison), MV near (climb), S -3, D +1, C +0, I -4, W -3, Ch -4, AL N, LV 1",
     "tags": "vermin, giant"
@@ -422,26 +422,26 @@
   {
     "alignment": "N",
     "attack": "2 bite +4 (1d6 + poison) and 1 constrict (near)",
-    "biome": "ruins, hills, mountain",
+    "biome": "underground, cave, forest, swamp, mountain",
     "level": "5",
     "move": "near",
     "name": "GIANT SERPENT",
-    "page": "AA-0000",
+    "page": "AA-23",
     "source": "AA",
     "statblock": "AC 12, HP 23, ATK 2 bite +4 (1d6 + poison) and 1 constrict (near), MV near (climb), S +3, D +2, C +1, I -2, W +0, Ch -2, AL N, LV 5",
-    "tags": "giant"
+    "tags": "beast, giant"
   },
   {
     "alignment": "N",
     "attack": "2 bite +4 (1d6) and 1 constrict (near)",
-    "biome": "ruins, hills, mountain",
+    "biome": "underground, cave, forest, swamp",
     "level": "5",
     "move": "near",
     "name": "GIANT SNAKE",
-    "page": "AA-0000",
+    "page": "AA-212",
     "source": "AA",
     "statblock": "AC 12, HP 23, ATK 2 bite +4 (1d6) and 1 constrict (near), MV near (climb), S +3, D +2, C +1, I -2, W +0, Ch -2, AL N, LV 5",
-    "tags": "giant"
+    "tags": "beast"
   },
   {
     "alignment": "N",
@@ -450,7 +450,7 @@
     "level": "3",
     "move": "near",
     "name": "GIANT SPIDER",
-    "page": "AA-0000",
+    "page": "AA-212",
     "source": "AA",
     "statblock": "AC 13, HP 20, ATK 1 bite +3 (1d4 + poison), MV near (climb), S +2, D +3, C +0, I -2, W +1, Ch -2, AL N, LV 3",
     "tags": "vermin, beast, giant"
@@ -462,7 +462,7 @@
     "level": "6",
     "move": "near",
     "name": "GOAT GOLEM",
-    "page": "AA-1546",
+    "page": "AA-55",
     "source": "AA",
     "statblock": "AC 18, HP 31, ATK 3 slam +4 (1d12), MV near, S +4, D -1, C +4, I -1, W +1, Ch -3, AL N, LV 6",
     "tags": "construct, golem"
@@ -470,11 +470,11 @@
   {
     "alignment": "L",
     "attack": "1 longsword +2 (1d8)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, ruins, desert",
     "level": "2",
     "move": "near",
     "name": "GORDAAL",
-    "page": "AA-0000",
+    "page": "AA-94",
     "source": "AA",
     "statblock": "AC 15 (chainmail + shield), HP 10, ATK 1 longsword +2 (1d8), MV near, S +2, D +0, C +1, I +0, W +0, Ch +0, AL L, LV 2",
     "tags": "humanoid"
@@ -482,11 +482,11 @@
   {
     "alignment": "L",
     "attack": "bite +8 (1d12)",
-    "biome": "ruins, underground, cave",
+    "biome": "forest, mountain, hills, ruins",
     "level": "16",
     "move": "double near",
     "name": "GORRUG",
-    "page": "AA-0000",
+    "page": "AA-117",
     "source": "AA",
     "statblock": "AC 17, HP 76, ATK bite +8 (1d12), MV double near (fly), S +5, +6, C +4, I +4, W +5, Ch +5, AL L, LV 16",
     "tags": "beast, giant"
@@ -494,7 +494,7 @@
   {
     "alignment": "C",
     "attack": "2 claw +4 (1d6) and 1 bite +4 (1d10) or 1 spell +1",
-    "biome": "underground, river/coast, mountain, cave",
+    "biome": "forest, hills, river/coast, ruins",
     "level": "6",
     "move": "near",
     "name": "GORT, TROLL BOSS",
@@ -522,7 +522,7 @@
     "level": "4",
     "move": "near",
     "name": "GRAND HIGH HOBNOBBLER, EARGOFF BOSS",
-    "page": "AA-603",
+    "page": "AA-23",
     "source": "AA",
     "statblock": "AC 12, HP 18, ATK 1 dagger +3 (1d4 + poison), MV near, S +1, D +2, C +0, I +1, W +2, Ch +2, AL C, LV 4",
     "tags": "humanoid, goblin"
@@ -530,14 +530,14 @@
   {
     "alignment": "C",
     "attack": "2 spear (close/ near) +2 (1d6)",
-    "biome": "ruins, underground, cave",
+    "biome": "swamp, forest, cave",
     "level": "2",
     "move": "near",
     "name": "GREEN CROAKER",
-    "page": "AA-0000",
+    "page": "AA-135",
     "source": "AA",
     "statblock": "AC 13, HP 10, ATK 2 spear (close/ near) +2 (1d6), MV near (swim), S +2, D +1, C +1, I -2, W +0, Ch -2, AL C, LV 2",
-    "tags": "humanoid"
+    "tags": "beast"
   },
   {
     "alignment": "C",
@@ -546,7 +546,7 @@
     "level": "2",
     "move": "NA",
     "name": "GREEN SLIME",
-    "page": "AA-635",
+    "page": "AA-23",
     "source": "AA",
     "statblock": "AC 8, HP 10, ATK 1 globule (close/near) +0 (1d4 + transmute), MV NA, S -1, D +0, C +0, I -4, W -4, Ch -4, AL C, LV 2",
     "tags": "ooze"
@@ -554,23 +554,23 @@
   {
     "alignment": "C",
     "attack": "2 spear (close/ near) +3 (1d8)",
-    "biome": "ruins, underground, cave",
+    "biome": "swamp, forest, cave",
     "level": "3",
     "move": "near",
     "name": "GREY CROAKER",
-    "page": "AA-0000",
+    "page": "AA-135",
     "source": "AA",
     "statblock": "AC 13, HP 14, ATK 2 spear (close/ near) +3 (1d8), MV near (swim), S +3, D +1, C +1, I -2, W +0, Ch -2, AL C, LV 3",
-    "tags": "humanoid"
+    "tags": "beast"
   },
   {
     "alignment": "N",
     "attack": "1 greataxe +2 (1d10) or 1 spear (close) +2 (1d6)",
-    "biome": "ruins, underground, cave",
+    "biome": "hills, ruins",
     "level": "2",
     "move": "near",
     "name": "GREY TOOTH BERSERKERS",
-    "page": "AA-0000",
+    "page": "AA-108",
     "source": "AA",
     "statblock": "AC 12 (leather), HP 10, ATK 1 greataxe +2 (1d10) or 1 spear (close) +2 (1d6), MV near, S +2, D +1, C +1, I +0, W +1, Ch +0, AL N, LV 2",
     "tags": "humanoid"
@@ -578,11 +578,11 @@
   {
     "alignment": "N",
     "attack": "as weapon +3",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, underground, ruins",
     "level": "3",
     "move": "near",
     "name": "GRINDO",
-    "page": "AA-0000",
+    "page": "AA-212",
     "source": "AA",
     "statblock": "AC 12, HP 13, ATK as weapon +3, MV near, S +1, D +2, C +0, I +1, W +1, Ch +1, AL N, LV 3",
     "tags": "beast"
@@ -594,7 +594,7 @@
     "level": "0",
     "move": "near",
     "name": "GRYNDERSNOUT GOBLIN",
-    "page": "AA-573",
+    "page": "AA-23",
     "source": "AA",
     "statblock": "AC 11, HP 4, ATK 1 spear +0 (1d6), MV near, S -1, D +2, C +0, I +0, W +0, Ch -1, AL C, LV 0",
     "tags": "humanoid, goblin"
@@ -602,11 +602,11 @@
   {
     "alignment": "L",
     "attack": "1 dagger +1 (1d4) or 1 spell +2",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, underground",
     "level": "6",
     "move": "near",
     "name": "GWIDEON - WIZARD",
-    "page": "AA-0000",
+    "page": "AA-212",
     "source": "AA",
     "statblock": "AC 12, HP 16, ATK 1 dagger +1 (1d4) or 1 spell +2, MV near, S -2, D +2, C +0, I +4, W +1, Ch +2, AL L, LV 6",
     "tags": "humanoid"
@@ -614,23 +614,23 @@
   {
     "alignment": "N",
     "attack": "3 slam +8 (1d10) or 1 rock (far) +8 (2d12)",
-    "biome": "forest, mountain",
+    "biome": "forest, mountain, hills",
     "level": "8",
     "move": "near",
     "name": "HERALD OF THE HUNT, TREANT",
-    "page": "AA-0000",
+    "page": "AA-117",
     "source": "AA",
     "statblock": "AC 14, HP 38, ATK 3 slam +8 (1d10) or 1 rock (far) +8 (2d12), MV near, S +4, D -1, C +2, I +2, W +3, Ch +1, AL N, LV 8",
-    "tags": "elemental, fey"
+    "tags": "plant, fey"
   },
   {
     "alignment": "C",
     "attack": "1 war axe +2 (1d6)",
-    "biome": "urban",
+    "biome": "underground, mountain, hills",
     "level": "2",
     "move": "near",
     "name": "HORGAK, BARBARIAN TRACKER",
-    "page": "AA-0000",
+    "page": "AA-55",
     "source": "AA",
     "statblock": "AC 13 (leathers + shield), HP 12, ATK 1 war axe +2 (1d6), MV near, S +2, D +0, C +3, I +0, W -1, Ch -1, AL C, LV 2",
     "tags": "humanoid"
@@ -638,23 +638,23 @@
   {
     "alignment": "N",
     "attack": "1 horn +5 (4d6)",
-    "biome": "hills, ruins, underground, urban, mountain",
+    "biome": "hills, ruins, forest, mountain",
     "level": "6",
     "move": "near",
     "name": "HORN CRAWLER",
-    "page": "AA-0000",
+    "page": "AA-146",
     "source": "AA",
     "statblock": "AC 15, HP 40, ATK 1 horn +5 (4d6), MV near (burrow), S +5, D +0, C +3, I -3, W +0, Ch -2, AL N, LV 6",
-    "tags": "giant, aberration, vermin, beast"
+    "tags": "aberration, vermin"
   },
   {
     "alignment": "N",
     "attack": "1 Bite +0 (1d6)",
-    "biome": "river/coast",
+    "biome": "hills, ruins, forest",
     "level": "1",
     "move": "near",
     "name": "HORNED WORMS",
-    "page": "AA-0000",
+    "page": "AA-108",
     "source": "AA",
     "statblock": "AC 11, HP 3, ATK 1 Bite +0 (1d6), MV near, S -2, D +0, C +0, I -2, W +0, Ch -2, AL N, LV 1",
     "tags": "vermin"
@@ -662,11 +662,11 @@
   {
     "alignment": "C",
     "attack": "2 greatclub +6 (2d6)",
-    "biome": "arctic,forest,mountain,ruins,swamp",
+    "biome": "hills, forest, mountain, ruins, grassland",
     "level": "6",
     "move": "near",
     "name": "INJURED OGRE",
-    "page": "AA-0000",
+    "page": "AA-7",
     "source": "AA",
     "statblock": "AC 9, HP 18, ATK 2 greatclub +6 (2d6), MV near, S +4, D -1, C +3, -2, I W -2, Ch -2, AL C, LV 6",
     "tags": "giant"
@@ -678,7 +678,7 @@
     "level": "5",
     "move": "near",
     "name": "JABBERNOOK BROTHERS, BOSS DUO",
-    "page": "AA-565",
+    "page": "AA-23",
     "source": "AA",
     "statblock": "AC 13 (leather), HP 23, ATK 3 blades +4 (1d6), MV near, S +0, D +2, C +1, I +0, W +1, Ch +2, AL C, LV 5",
     "tags": "humanoid, goblin"
@@ -690,7 +690,7 @@
     "level": "0",
     "move": "near",
     "name": "JAWJACK GOBLIN",
-    "page": "AA-542",
+    "page": "AA-23",
     "source": "AA",
     "statblock": "AC 11, HP 5, ATK 1 bite +1 (1d6 + goblin rabies), MV near, S +0, D +1, C +0, I +0, W +0, Ch -1, AL C, LV 0",
     "tags": "humanoid, goblin"
@@ -698,7 +698,7 @@
   {
     "alignment": "N",
     "attack": "1 dagger (close/near) +2 (1d4 + Ghoulsheen) or 1 shortsword +0 (1d6)",
-    "biome": "ruins, urban, underground, cave",
+    "biome": "urban, ruins",
     "level": "5",
     "move": "near",
     "name": "JESTER, DUNGART DUKE LEADER",
@@ -710,11 +710,11 @@
   {
     "alignment": "N",
     "attack": "2 (close/near) +4 (1d8+1)",
-    "biome": "ruins, underground, cave",
+    "biome": "desert, ruins, mountain",
     "level": "5",
     "move": "near S D +1",
     "name": "KARG TORGAK, BEASTMAN CHIEF",
-    "page": "AA-0000",
+    "page": "AA-205",
     "source": "AA",
     "statblock": "AC 12 (leather), HP 25, ATK 2 (close/near) +4 (1d8+1), MV near (climb) S D +1, C +3, -2, I W +1, Ch -2, AL N, LV 5",
     "tags": "humanoid, beast"
@@ -722,11 +722,11 @@
   {
     "alignment": "N",
     "attack": "1 sword +3 (1d8) and 1 axe +6 (1d8)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, ruins, desert",
     "level": "2",
     "move": "near",
     "name": "KHRON",
-    "page": "AA-0000",
+    "page": "AA-94",
     "source": "AA",
     "statblock": "AC 12 (leather, plumed helm), HP 20, ATK 1 sword +3 (1d8) and 1 axe +6 (1d8), MV near, S +2, D +1, C +1, I +0, W +1, Ch +0, AL N, LV 2",
     "tags": "humanoid"
@@ -734,11 +734,11 @@
   {
     "alignment": "L",
     "attack": "2 longsword +4 (1d8) or 2 longbow (far) +5 (1d8)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, underground",
     "level": "6",
     "move": "near",
     "name": "KROTH, PRIEST",
-    "page": "AA-0000",
+    "page": "AA-212",
     "source": "AA",
     "statblock": "AC 15 (leather), HP 23, ATK 2 longsword +4 (1d8) or 2 longbow (far) +5 (1d8), MV near (climb), S +2, D +3, C +1, I +2, W +3, Ch +3, AL L, LV 6",
     "tags": "humanoid"
@@ -746,35 +746,35 @@
   {
     "alignment": "C",
     "attack": "2 claw +3 (1d4)",
-    "biome": "underground",
+    "biome": "hills, ruins",
     "level": "4",
     "move": "near",
     "name": "LESSER GARGOYLE",
-    "page": "AA-0000",
+    "page": "AA-7",
     "source": "AA",
     "statblock": "AC 13, HP 15, ATK 2 claw +3 (1d4), MV near (fly), S +3, D +1, C +2, I +0, W +1, Ch -1, AL C, LV 4",
-    "tags": "fiend, construct"
+    "tags": "construct"
   },
   {
     "alignment": "L",
     "attack": "2 bastard sword +7 (1d8)",
-    "biome": "underground",
+    "biome": "urban, ruins, desert",
     "level": "4",
     "move": "near",
     "name": "LOFVIRR",
-    "page": "AA-0000",
+    "page": "AA-94",
     "source": "AA",
     "statblock": "AC 17 (plate mail + shield), HP 40, ATK 2 bastard sword +7 (1d8), MV near, S +3, D +0, C +1, I +0, W +0, Ch +1, AL L, LV 4",
-    "tags": "humanoid, giant"
+    "tags": "giant"
   },
   {
     "alignment": "C",
     "attack": "2 greataxe +5 (1d10) or 1 spear (close/near) +2 (1d6)",
-    "biome": "ruins, underground, cave",
+    "biome": "hills, ruins",
     "level": "6",
     "move": "near",
     "name": "MALMOGG, GREY TOOTH CHIEF",
-    "page": "AA-0000",
+    "page": "AA-108",
     "source": "AA",
     "statblock": "AC 12 (leather), HP 29, ATK 2 greataxe +5 (1d10) or 1 spear (close/near) +2 (1d6), MV near, S +4, D +1, C +2, I +0, W +1, Ch +2, AL C, LV 6",
     "tags": "humanoid"
@@ -782,11 +782,11 @@
   {
     "alignment": "L",
     "attack": "1 longsword +1 (1d8) or 1 crossbow (far) +0 (1d6)",
-    "biome": "ruins, underground, cave",
+    "biome": "swamp, forest, cave, ruins",
     "level": "3",
     "move": "near",
     "name": "MASTER ROVOS, ANTIQUITIES DEALER",
-    "page": "AA-0000",
+    "page": "AA-135",
     "source": "AA",
     "statblock": "AC 13 (leather + shield), HP 14, ATK 1 longsword +1 (1d8) or 1 crossbow (far) +0 (1d6), MV near, S +1, D +0, C +1, I +2, W +0, Ch +1, AL L, LV 3",
     "tags": "humanoid"
@@ -794,38 +794,38 @@
   {
     "alignment": "C",
     "attack": "1 longsword +2 (1d8) or 1 crossbow (far) +1 (1d6)",
-    "biome": "ruins, underground, cave",
+    "biome": "ruins, hills, mountain, grassland",
     "level": "3",
     "move": "near",
     "name": "MERCENARY",
-    "page": "AA-0000",
+    "page": "AA-126",
     "source": "AA",
     "statblock": "AC 15 (chainmail + shield), HP 14, ATK 1 longsword +2 (1d8) or 1 crossbow (far) +1 (1d6), MV near, S +1, D +0, C +1, I +0, W +0, Ch +0, AL C, LV 3",
-    "tags": "aberration"
+    "tags": "humanoid"
   },
   {
     "alignment": "C",
     "attack": "2 death touch +2 (1d10 + life drain)",
-    "biome": "ruins, underground, cave",
+    "biome": "grassland, forest, rural, ruins",
     "level": "4",
     "move": "near",
     "name": "MIMETTE, SPECTRE",
     "page": "AA-90",
     "source": "AA",
     "statblock": "AC 14, HP 18, ATK 2 death touch +2 (1d10 + life drain), MV near (fly), S -4, D +4, C +0, I +0, W +0, Ch +3, AL C, LV 4",
-    "tags": "undead, beast, spirit"
+    "tags": "undead"
   },
   {
     "alignment": "C",
     "attack": "2 rend +3 (1d6+1)",
-    "biome": "ruins, underground, cave",
+    "biome": "forest, mountain, ruins, grassland",
     "level": "4",
     "move": "double near",
     "name": "MOGRU AND ORMUS, WEREWOLVES",
-    "page": "AA-0000",
+    "page": "AA-117",
     "source": "AA",
     "statblock": "AC 12, HP 20, ATK 2 rend +3 (1d6+1), MV double near, S +3, D +2, C +2, I +0, W +1, Ch +0, AL C, LV 4",
-    "tags": "humanoid"
+    "tags": "humanoid, beast"
   },
   {
     "alignment": "C",
@@ -834,7 +834,7 @@
     "level": "5",
     "move": "near",
     "name": "MOOR TROLL",
-    "page": "AA-2254",
+    "page": "AA-80",
     "source": "AA",
     "statblock": "AC 12, HP 24, ATK 2 claw +4 (1d6) and 1 bite +4 (1d10), MV near, S +3, D +2, C +2, I -1, W +0, Ch -1, AL C, LV 5",
     "tags": "giant, troll"
@@ -842,11 +842,11 @@
   {
     "alignment": "C",
     "attack": "2 ritual dagger +3 (1d4)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, ruins",
     "level": "5",
     "move": "near",
     "name": "MORGAINE, CLERIC OF BOK'SURRPESH",
-    "page": "AA-0000",
+    "page": "AA-34",
     "source": "AA",
     "statblock": "AC 13, HP 22, ATK 2 ritual dagger +3 (1d4), MV near, S +3, D +0, C +0, I -1, W +2, Ch +2, AL C, LV 5",
     "tags": "humanoid"
@@ -855,43 +855,43 @@
     "name": "MUDLING",
     "alignment": "C",
     "attack": "1 smash +0 (1 + daub) or 1 mud glob (near) +0 (1 + daub)",
-    "biome": "forest, hills, cave, dungeon, underground",
+    "biome": "underground, cave, swamp, forest",
     "level": "1",
     "move": "near",
     "page": "AA-170",
     "source": "AA",
     "statblock": "AC 9, HP 5, ATK 1 smash +0 (1 + daub) or 1 mud glob (near) +0 (1 + daub), MV near, S +3, D -1, C +1, I -2, W +1, Ch -3, AL C, LV 1",
-    "tags": "ooze, humanoid"
+    "tags": "ooze, elemental"
   },
   {
     "name": "MUDMAN CARETAKER",
     "alignment": "C",
     "attack": "none",
-    "biome": "ruins, underground, cave",
+    "biome": "underground, cave, swamp",
     "level": "1",
     "move": "near",
     "page": "AA-171",
     "source": "AA",
     "statblock": "AC 9, HP 5, ATK none, MV near, S +3, D -1, C +1, I -2, W +1, Ch -3, AL C, LV 1",
-    "tags": "humanoid"
+    "tags": "elemental"
   },
   {
     "name": "MUDMAN CORE",
     "alignment": "C",
     "attack": "2 big glob (far) +5 (1d8 + engulf)",
-    "biome": "hills",
+    "biome": "underground, cave, swamp",
     "level": "20",
     "move": "none",
     "page": "AA-171",
     "source": "AA",
     "statblock": "AC 15, HP 91, ATK 2 big glob (far) +5 (1d8 + engulf), MV none, S +3, D -1, C +1, I -2, W +1, Ch -3, AL C, LV 20",
-    "tags": "humanoid"
+    "tags": "elemental"
   },
   {
     "name": "MUDMAN DRONE",
     "alignment": "C",
     "attack": "2 smash +2 (1d4 + daub) or 1 mud glob (near) +0 (1 + daub)",
-    "biome": "ruins, underground, cave",
+    "biome": "underground, cave, swamp, forest",
     "level": "3",
     "move": "near",
     "page": "AA-164",
@@ -902,35 +902,35 @@
   {
     "alignment": "C",
     "attack": "2 smash +4 (1d8 + daub) or 1 mud glob (near) +4 (1 + daub)",
-    "biome": "ruins, underground, cave",
+    "biome": "underground, cave, swamp",
     "level": "5",
     "move": "near",
     "name": "MUDMAN HIVEGUARD",
     "page": "AA-171",
     "source": "AA",
     "statblock": "AC 12, HP 23, ATK 2 smash +4 (1d8 + daub) or 1 mud glob (near) +4 (1 + daub), MV near, S +3, D -1, C +1, I -2, W +1, Ch -3, AL C, LV 5",
-    "tags": "humanoid"
+    "tags": "elemental"
   },
   {
     "alignment": "C",
     "attack": "2 smash +3 (1d8 + daub) or 1 mud glob (near) +0 (1 + daub)",
-    "biome": "ruins, underground, cave",
+    "biome": "underground, cave, swamp",
     "level": "4",
     "move": "near",
     "name": "MUDMAN SENTRY",
     "page": "AA-169",
     "source": "AA",
     "statblock": "AC 9, HP 19, ATK 2 smash +3 (1d8 + daub) or 1 mud glob (near) +0 (1 + daub), MV near, S +3, D -1, C +1, I -2, W +1, Ch -3, AL C, LV 4",
-    "tags": "humanoid"
+    "tags": "elemental"
   },
   {
     "alignment": "C",
     "attack": "1 bite +4 (1d8) + 1 temporal warp",
-    "biome": "ruins, underground, cave",
+    "biome": "grassland, forest, rural",
     "level": "5",
     "move": "near",
     "name": "N'TARC",
-    "page": "AA-0000",
+    "page": "AA-80",
     "source": "AA",
     "statblock": "AC 11, HP 22, ATK 1 bite +4 (1d8) + 1 temporal warp, MV near (fly), S +1, D +1, C -1, I +3, W +2, Ch +2, AL C, LV 5",
     "tags": "aberration"
@@ -938,11 +938,11 @@
   {
     "alignment": "C",
     "attack": "2 bite +4 (1d6)",
-    "biome": "ruins, underground, cave, deeps",
+    "biome": "grassland, forest, rural",
     "level": "5",
     "move": "double near",
     "name": "N'TARC HOUND",
-    "page": "AA-2338",
+    "page": "AA-80",
     "source": "AA",
     "statblock": "AC 12, HP 23, ATK 2 bite +4 (1d6), MV double near, S +3, D +2, C +1, I +0, W +1, Ch +0, AL C, LV 5",
     "tags": "beast, aberration"
@@ -950,11 +950,11 @@
   {
     "alignment": "N",
     "attack": "2 poisoned dagger (close/near) +6 (2d4)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, underground",
     "level": "6",
     "move": "near",
     "name": "NEBBERS, THIEF",
-    "page": "AA-0000",
+    "page": "AA-212",
     "source": "AA",
     "statblock": "AC 15 (leather), HP 17, ATK 2 poisoned dagger (close/near) +6 (2d4), MV near (climb), S +2, D +4, C +2, I +2, W +3, Ch +3, AL N, LV 6",
     "tags": "humanoid"
@@ -962,11 +962,11 @@
   {
     "alignment": "C",
     "attack": "2 fist +1 (1d4)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, ruins",
     "level": "2",
     "move": "near",
     "name": "NOX, HEAD SLAVER",
-    "page": "AA-0000",
+    "page": "AA-34",
     "source": "AA",
     "statblock": "AC 11, HP 6, ATK 2 fist +1 (1d4), MV near, S +2, D +1, C +0, I -1, W +1, Ch -1, AL C, LV 2",
     "tags": "dragon"
@@ -974,11 +974,11 @@
   {
     "alignment": "C",
     "attack": "1 club +3 (1d4) or 1 spell +5",
-    "biome": "ruins, underground, cave",
+    "biome": "underground, deeps, cave, mountain",
     "level": "3",
     "move": "near",
     "name": "OCHNIMYRU, URGOZER",
-    "page": "AA-0000",
+    "page": "AA-184",
     "source": "AA",
     "statblock": "AC 13 (leather), HP 15, ATK 1 club +3 (1d4) or 1 spell +5, MV near, S +1, D +2, C +2, I +3, W +1, Ch -2, AL C, LV 3",
     "tags": "plant, humanoid"
@@ -986,11 +986,11 @@
   {
     "alignment": "L",
     "attack": "1 mace +2 (1d6)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, ruins, desert",
     "level": "3",
     "move": "near",
     "name": "ORTU",
-    "page": "AA-0000",
+    "page": "AA-94",
     "source": "AA",
     "statblock": "AC 12 (leather), HP 14, ATK 1 mace +2 (1d6), MV near, S +2, D +1, C +1, I +0, W +0, Ch +0, AL L, LV 3",
     "tags": "humanoid"
@@ -998,11 +998,11 @@
   {
     "alignment": "L",
     "attack": "1 club +0 (1d4) or 1 shortbow (far) +0 (1d4)",
-    "biome": "ruins, underground, cave",
+    "biome": "rural, urban, grassland",
     "level": "1",
     "move": "near",
     "name": "PEASANT, ARMED",
-    "page": "AA-0000",
+    "page": "AA-7",
     "source": "AA",
     "statblock": "AC 10, HP 4, ATK 1 club +0 (1d4) or 1 shortbow (far) +0 (1d4), MV near, S +0, D +0, C +0, I +0, W +0, Ch +0, AL L, LV 1",
     "tags": "humanoid"
@@ -1014,7 +1014,7 @@
     "level": "3",
     "move": "near (burrow)",
     "name": "PLAGUE WORM",
-    "page": "AA-1610",
+    "page": "AA-55",
     "source": "AA",
     "statblock": "AC 12, HP 14, ATK 1 bite +3 (1d6 + infection), MV near (burrow), S +3, D +0, C +1, I -3, W +0, Ch -3, AL N, LV 3",
     "tags": "beast, vermin"
@@ -1022,11 +1022,11 @@
   {
     "alignment": "L",
     "attack": "as weapon +0",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, ruins, underground",
     "level": "1",
     "move": "near",
     "name": "PRISONERS",
-    "page": "AA-0000",
+    "page": "AA-212",
     "source": "AA",
     "statblock": "AC 10, HP 4, ATK as weapon +0, MV near, S +0, D +0, C +0, I +0, W +0, Ch +0, AL L, LV 1",
     "tags": "humanoid"
@@ -1034,11 +1034,11 @@
   {
     "alignment": "C",
     "attack": "2 cutlass +4 (1d6) or 1 dagger (close/ near) +1 (1d4)",
-    "biome": "ruins, underground, cave",
+    "biome": "aquatic, river/coast",
     "level": "4",
     "move": "near",
     "name": "QUARTERMASTER BARNABUS",
-    "page": "AA-0000",
+    "page": "AA-44",
     "source": "AA",
     "statblock": "AC 11 (leather), HP 19, ATK 2 cutlass +4 (1d6) or 1 dagger (close/ near) +1 (1d4), MV near, S +3, D +0, C +3, I +1, W +0, Ch +2, AL C, LV 4",
     "tags": "humanoid"
@@ -1046,38 +1046,38 @@
   {
     "alignment": "N",
     "attack": "1 dagger (close/near) +2 (1d4) or 1 shortsword +0 (1d6)",
-    "biome": "ruins, urban, mountain",
+    "biome": "urban, ruins",
     "level": "3",
     "move": "near",
     "name": "RATCATCHER, GANG LORD",
-    "page": "AA-0000",
+    "page": "AA-34",
     "source": "AA",
     "statblock": "AC 13 (leather), HP 13, ATK 1 dagger (close/near) +2 (1d4) or 1 shortsword +0 (1d6), MV near, S +0, D +2, C +0, I +0, W +0, Ch +1, AL N, LV 3",
-    "tags": "humanoid, troll, elf, beast, giant"
+    "tags": "humanoid"
   },
   {
     "alignment": "C",
     "attack": "1 bite +3 (1d8)",
-    "biome": "deeps, ruins, river/coast, cave, dungeon, underground, mountain",
+    "biome": "underground, deeps, cave, mountain",
     "level": "2",
     "move": "near",
     "name": "ROCK BURROWING ANNELIDS",
-    "page": "AA-0000",
+    "page": "AA-184",
     "source": "AA",
     "statblock": "AC 10 HP 11, ATK 1 bite +3 (1d8), MV near (burrow), S +1, D +0, C +1, I -3, W -2, Ch -1, AL C, LV 2",
-    "tags": "humanoid, vermin, ooze, beast, giant"
+    "tags": "vermin"
   },
   {
     "name": "RUCKUS, DWARF FIGHTER",
     "alignment": "L",
     "attack": "2 axe +3 (1d8)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, underground",
     "level": "6",
     "move": "near",
     "page": "AA-221",
     "source": "AA",
     "statblock": "AC 17 (plate mail + shield), HP 33, ATK 2 axe +3 (1d8), MV near, S +3, D +0, C +1, I +0, W +0, Ch +1, AL L, LV 6",
-    "tags": "dwarf"
+    "tags": "humanoid"
   },
   {
     "name": "RUTGER, MERCENARY CAPTAIN",
@@ -1095,19 +1095,19 @@
     "name": "SANDSTONE GOLEM",
     "alignment": "N",
     "attack": "2 slam +5 (1d8)",
-    "biome": "desert, urban",
+    "biome": "swamp, cave, ruins",
     "level": "6",
     "move": "near",
     "page": "AA-145",
     "source": "AA",
     "statblock": "AC 15, HP 30, ATK 2 slam +5 (1d8), MV near, S +4, D +0, C +3, I -2, W +0, Ch -2, AL N, LV 6",
-    "tags": "elemental, construct, golem"
+    "tags": "construct, golem"
   },
   {
     "name": "SEMPER",
     "alignment": "N",
     "attack": "1 club +0 (1d4)",
-    "biome": "urban",
+    "biome": "urban, ruins, desert",
     "level": "1",
     "move": "near",
     "page": "AA-104",
@@ -1130,71 +1130,71 @@
   {
     "alignment": "N",
     "attack": "1 bite +3 (1d3 + poison) or 1 spit (near) +3 (1d4 acid)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban",
     "level": "1",
     "move": "near",
     "name": "SKANTA'S LITTLE HELPERS",
     "page": "AA-68",
     "source": "AA",
     "statblock": "AC 13, HP 4, ATK 1 bite +3 (1d3 + poison) or 1 spit (near) +3 (1d4 acid), MV near (fly), S -2, D +3, C +0, I +1, W +0, Ch +1, AL N, LV 1",
-    "tags": "aberration, fey"
+    "tags": "fey"
   },
   {
     "alignment": "C",
     "attack": "1 spear +1 (1d6)",
-    "biome": "ruins, underground, cave",
+    "biome": "desert, ruins, tomb",
     "level": "3",
     "move": "double near",
     "name": "SKELETAL HORSEMEN",
-    "page": "AA-196",
+    "page": "AA-192",
     "source": "AA",
     "statblock": "AC 13 (chainmail), HP 15, ATK 1 spear +1 (1d6), MV double near, S +1, D +0, C +2, I -2, W +0, Ch -1, AL C, LV 3",
-    "tags": "aberration, undead"
+    "tags": "undead"
   },
   {
     "alignment": "C",
     "attack": "1 shortsword +1 (1d6) or 1 shortbow (far) +0 (1d4)",
-    "biome": "ruins, underground, cave",
+    "biome": "forest, mountain, ruins",
     "level": "2",
     "move": "near",
     "name": "SKELETAL MERCENARY",
     "page": "AA-124",
     "source": "AA",
     "statblock": "AC 13 (chainmail), HP 11, ATK 1 shortsword +1 (1d6) or 1 shortbow (far) +0 (1d4), MV near, S +1, D +0, C +2, I -2, W +0, Ch -1, AL C, LV 2",
-    "tags": "aberration, undead"
+    "tags": "undead"
   },
   {
     "alignment": "C",
     "attack": "1 shortsword +1 (1d6) or 1 shortbow (far) +0 (1d4)",
-    "biome": "ruins, underground, cave",
+    "biome": "forest, hills, ruins",
     "level": "2",
     "move": "near",
     "name": "SKELETAL WARRIOR",
     "page": "AA-152",
     "source": "AA",
     "statblock": "AC 13 (chainmail), HP 11, ATK 1 shortsword +1 (1d6) or 1 shortbow (far) +0 (1d4), MV near, S +1, D +0, C +2, I -2, W +0, Ch -1, AL C, LV 2",
-    "tags": "aberration, humanoid, undead"
+    "tags": "undead"
   },
   {
     "alignment": "C",
     "attack": "1 curved sword +1 (1d8)",
-    "biome": "underground, ruins, dungeon",
+    "biome": "underground, ruins, tomb",
     "level": "2",
     "move": "near",
     "name": "SKELETON, CURVED SWORD",
     "page": "AA-201",
     "source": "AA",
     "statblock": "AC 12, HP 11, ATK 1 curved sword +1 (1d8), MV near, S +1, D +0, C +2, I -2, W +0, Ch -1, AL C, LV 2",
-    "tags": "aberration, undead"
+    "tags": "undead"
   },
   {
     "alignment": "C",
     "attack": "1 bite +0 (poison), or 1 hypnotize",
-    "biome": "ruins, underground, cave, deeps",
+    "biome": "grassland, forest, rural",
     "level": "0",
     "move": "near (climb)",
     "name": "SKITTER EYE",
-    "page": "AA-2272",
+    "page": "AA-80",
     "source": "AA",
     "statblock": "AC 12, HP 1, ATK 1 bite +0 (poison), or 1 hypnotize MV near (climb), S -4, D +2, C -3, I -3, W +0, Ch -3, AL C, LV 0",
     "tags": "aberration, vermin"
@@ -1202,11 +1202,11 @@
   {
     "alignment": "C",
     "attack": "1 club +0 (1d4)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, ruins",
     "level": "1",
     "move": "near",
     "name": "SLAVER",
-    "page": "AA-0000",
+    "page": "AA-34",
     "source": "AA",
     "statblock": "AC 11 (leather), HP 4, ATK 1 club +0 (1d4), MV near, S +1, D +0, C +0, I -1, W +1, Ch -1, AL C, LV 1",
     "tags": "humanoid"
@@ -1214,26 +1214,26 @@
   {
     "alignment": "C",
     "attack": "2 claw +3 (1d6) or 1 song",
-    "biome": "ruins, underground, cave",
+    "biome": "ruins, hills, mountain, forest",
     "level": "3",
     "move": "near",
     "name": "SLEEMI, HARPY",
-    "page": "AA-0000",
+    "page": "AA-126",
     "source": "AA",
     "statblock": "AC 13, HP 24, ATK 2 claw +3 (1d6) or 1 song, MV near (fly), S +1, D +3, C +1, I +0, W +0, Ch +1, AL C, LV 3",
-    "tags": "humanoid"
+    "tags": "monstrosity"
   },
   {
     "alignment": "C",
     "attack": "1 club +3 (1d4) or 1 spell +3",
-    "biome": "ruins, underground, cave",
+    "biome": "desert, ruins, mountain",
     "level": "3",
     "move": "near",
     "name": "SLILB, URGOZER",
-    "page": "AA-0000",
+    "page": "AA-205",
     "source": "AA",
     "statblock": "AC 13 (leather), HP 15, ATK 1 club +3 (1d4) or 1 spell +3, MV near, S +1, D +2, C +2, I +0, W +1, Ch -2, AL C, LV 3",
-    "tags": "humanoid"
+    "tags": "plant, humanoid"
   },
   {
     "alignment": "C",
@@ -1242,7 +1242,7 @@
     "level": "3",
     "move": "near",
     "name": "SNERKLES, JAWJACK BOSS",
-    "page": "AA-528",
+    "page": "AA-23",
     "source": "AA",
     "statblock": "AC 12, HP 17, ATK 2 shock rod (near) +4 (1d6+1 + 1d4 DEX loss) MV near, S -1, D +2, C +0, I +2, W +0, Ch +1, AL C, LV 3",
     "tags": "humanoid, goblin"
@@ -1250,14 +1250,14 @@
   {
     "alignment": "C",
     "attack": "1 spine (near) +3 (1d8)",
-    "biome": "ruins, underground, cave",
+    "biome": "aquatic, river/coast",
     "level": "4",
     "move": "near",
     "name": "SPINE HOST",
-    "page": "AA-0000",
+    "page": "AA-44",
     "source": "AA",
     "statblock": "AC 12, HP 11, ATK 1 spine (near) +3 (1d8), MV near (swim), S +2, D -1, C +3, I -4, W -1, Ch -4, AL C, LV 4",
-    "tags": "ooze"
+    "tags": "aberration"
   },
   {
     "alignment": "L",
@@ -1266,7 +1266,7 @@
     "level": "1",
     "move": "near",
     "name": "TAVERN BRAWLER",
-    "page": "AA-0000",
+    "page": "AA-146",
     "source": "AA",
     "statblock": "AC 10, HP 4, ATK 1 fist +0 (1) or 1 bottle (near) +0 (1), MV near, S +0, D +0, C +0, I +0, W +0, Ch +0, AL L, LV 1",
     "tags": "humanoid"
@@ -1274,14 +1274,14 @@
   {
     "alignment": "N",
     "attack": "1 axe +3 (1d10+2) or 1 shortbow (far) +3 (1d4)",
-    "biome": "ruins, underground, cave",
+    "biome": "forest, hills, ruins, river/coast",
     "level": "3",
     "move": "near",
     "name": "THRAANI",
-    "page": "AA-0000",
+    "page": "AA-146",
     "source": "AA",
     "statblock": "AC 14 (leather), HP 18, ATK 1 axe +3 (1d10+2) or 1 shortbow (far) +3 (1d4), MV near, S +2, D +3, C +3, I +0, W +0, Ch +1, AL N, LV 3",
-    "tags": "troll, giant"
+    "tags": "giant"
   },
   {
     "alignment": "C",
@@ -1290,19 +1290,19 @@
     "level": "8",
     "move": "near",
     "name": "THREE MOONS, COSMIC HORROR",
-    "page": "AA-0000",
+    "page": "AA-126",
     "source": "AA",
     "statblock": "AC 14 (leather), HP 36, ATK 4 tentacle +5 (1d8 + latch) or 1 mind blast or 1 mind control, MV near, S +2, D +3, C +0, I +4, W +2, Ch +4, AL C, LV 8",
-    "tags": "aberration, monstrosity, beast, giant"
+    "tags": "aberration, monstrosity"
   },
   {
     "alignment": "L",
     "attack": "2 greatsword +3 (1d12)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, ruins, desert",
     "level": "3",
     "move": "near",
     "name": "TOMEN",
-    "page": "AA-0000",
+    "page": "AA-94",
     "source": "AA",
     "statblock": "AC 15 (plate mail), HP 14, ATK 2 greatsword +3 (1d12), MV near, S +3, D +0, C +1, I +0, W +0, Ch +1, AL L, LV 3",
     "tags": "humanoid"
@@ -1310,19 +1310,19 @@
   {
     "alignment": "C",
     "attack": "2 bite +4 (1d10 + poison)",
-    "biome": "river/coast, mountain",
+    "biome": "forest, hills, river/coast, ruins",
     "level": "7",
     "move": "near",
     "name": "TROLLSPIDER",
-    "page": "AA-0000",
+    "page": "AA-146",
     "source": "AA",
     "statblock": "AC 12, HP 33, ATK 2 bite +4 (1d10 + poison), MV near (climb), S +3, D +2, C +2, I -1, W +0, Ch -1, AL C, LV 7",
-    "tags": "troll, aberration, vermin, giant"
+    "tags": "aberration, giant"
   },
   {
     "alignment": "N",
     "attack": "4 rend +9 (2d10) or 1 death breath",
-    "biome": "underground, ruins, dungeon",
+    "biome": "desert, ruins, tomb",
     "level": "18",
     "move": "double near",
     "name": "UNDEAD DRAGON",
@@ -1335,7 +1335,7 @@
     "name": "URGOT",
     "alignment": "C",
     "attack": "1 club +1 (1d4)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, ruins, desert",
     "level": "1",
     "move": "near",
     "page": "AA-97",
@@ -1347,13 +1347,13 @@
     "name": "VOG, OGRE MAGE",
     "alignment": "C",
     "attack": "1 sword +6 (1d10) or 1 spell +5",
-    "biome": "ruins, hills, mountain",
+    "biome": "desert, ruins, mountain",
     "level": "7",
     "move": "near",
     "page": "AA-211",
     "source": "AA",
     "statblock": "AC 12, HP 33, ATK 1 sword +6 (1d10) or 1 spell +5, MV near, S +5, D +1, C +2, I +2, W +1, Ch +3, AL C, LV 7",
-    "tags": "humanoid, elf, fiend, demon, giant"
+    "tags": "giant, demon"
   },
   {
     "name": "VOID GROPER",
@@ -1371,34 +1371,34 @@
     "name": "VOMITOR",
     "alignment": "C",
     "attack": "1 vomit (near) +2 (1d6 + infection)",
-    "biome": "ruins, underground, cave",
+    "biome": "aquatic, river/coast",
     "level": "3",
     "move": "near",
     "page": "AA-47",
     "source": "AA",
     "statblock": "AC 9, HP 13, ATK 1 vomit (near) +2 (1d6 + infection), MV near, S +1, D -1, C +1, I -2, W -1, Ch -4, AL C, LV 3",
-    "tags": "vermin, aberration, humanoid"
+    "tags": "aberration"
   },
   {
     "name": "WASP MONSTROSITY",
     "alignment": "C",
     "attack": "2 stinger +4 (1d8)",
-    "biome": "ruins, underground, cave",
+    "biome": "rural, grassland, forest",
     "level": "4",
     "move": "near",
     "page": "AA-21",
     "source": "AA",
     "statblock": "AC 12, HP 19 or PC hp (whichever is higher), ATK 2 stinger +4 (1d8), MV near (fly), S +2, D +3, C +1, I +1, W +2, Ch +2, AL C, LV 4",
-    "tags": "vermin, humanoid, monstrosity"
+    "tags": "vermin, monstrosity"
   },
   {
     "alignment": "N",
     "attack": "1 Partially Absorbed +2 (1d6)",
-    "biome": "body",
+    "biome": "ruins, underground",
     "level": "2",
     "move": "near",
     "name": "WHITE BLOOD CELL",
-    "page": "AA-0000",
+    "page": "AA-156",
     "source": "AA",
     "statblock": "AC 11, HP 9, ATK 1 Partially Absorbed +2 (1d6), MV near (climb), S +1, D +1, C +0, I -4, W -3, Ch -4, AL N, LV 2",
     "tags": "cell"
@@ -1406,35 +1406,35 @@
   {
     "alignment": "C",
     "attack": "1 talons +0 (1d8) or 1 screech",
-    "biome": "ruins, underground, cave",
+    "biome": "desert, ruins, tomb",
     "level": "2",
     "move": "near",
     "name": "WINGED ABOMINATIONS",
-    "page": "AA-0000",
+    "page": "AA-192",
     "source": "AA",
     "statblock": "AC 12, HP 11, ATK 1 talons +0 (1d8) or 1 screech, MV near (fly), S +2, D +2, C +2, I -1, W +1, Ch +0, AL C, LV 2",
-    "tags": "humanoid"
+    "tags": "aberration, monstrosity"
   },
   {
     "alignment": "C",
     "attack": "2 mace +3 (1d6)",
-    "biome": "urban",
+    "biome": "urban, ruins",
     "level": "4",
     "move": "near",
     "name": "WOMEK, CULT LEADER",
-    "page": "AA-0000",
+    "page": "AA-7",
     "source": "AA",
     "statblock": "AC 11, HP 20, ATK 2 mace +3 (1d6), MV near, S +1, D +1, C +2, I +0, W +2, Ch -1, AL C, LV 4",
-    "tags": "elf, plant, humanoid, orc"
+    "tags": "humanoid"
   },
   {
     "alignment": "C",
     "attack": "1d6 eyestalk rays",
-    "biome": "ruins, underground, cave",
+    "biome": "underground, deeps, cave, mountain",
     "level": "12",
     "move": "near",
     "name": "XOCHNOMOGU",
-    "page": "AA-0000",
+    "page": "AA-184",
     "source": "AA",
     "statblock": "AC 12, HP 56, ATK 1d6 eyestalk rays, MV near (fly), S +2, D +1, C +2, I +3, W +4, Ch +3, AL C, LV 12",
     "tags": "aberration"
@@ -1442,23 +1442,23 @@
   {
     "alignment": "N",
     "attack": "1 bite +4 (1d12 + wreck)",
-    "biome": "underground, mountain",
+    "biome": "underground, cave, deeps, mountain",
     "level": "5",
     "move": "near",
     "name": "XORN",
-    "page": "AA-0000",
+    "page": "AA-164",
     "source": "AA",
     "statblock": "AC 15, HP 24, ATK 1 bite +4 (1d12 + wreck), MV near (burrow), S +3, D +0, C +2, I +0, W +0, Ch -1, AL N, LV 5",
-    "tags": "beast, giant"
+    "tags": "aberration"
   },
   {
     "alignment": "N",
     "attack": "1 bite +1 (1d2 + poison)",
-    "biome": "underground",
+    "biome": "underground, deeps, cave",
     "level": "1",
     "move": "near",
     "name": "XORNLINGS",
-    "page": "AA-0000",
+    "page": "AA-173",
     "source": "AA",
     "statblock": "AC 15, HP 1, ATK 1 bite +1 (1d2 + poison), MV near (burrow/spider climb), S +1, D +0, C +2, I +0, W +0, Ch -1, AL N, LV 1",
     "tags": "aberration, vermin"
@@ -1466,26 +1466,26 @@
   {
     "alignment": "C",
     "attack": "1 dagger +3 (1d4) or 1 spell +5",
-    "biome": "ruins, mountain",
+    "biome": "forest, hills, ruins, river/coast",
     "level": "5",
     "move": "near",
     "name": "YOGGZUL, NECROMANCER",
-    "page": "AA-0000",
+    "page": "AA-146",
     "source": "AA",
     "statblock": "AC 12, HP 22, ATK 1 dagger +3 (1d4) or 1 spell +5, MV near, S -2, D +2, C +0, I +1, W +1, Ch -2, AL C, LV 5",
-    "tags": "humanoid, beast, orc"
+    "tags": "humanoid"
   },
   {
     "alignment": "C",
     "attack": "1 ceremonial dagger +0 (1d4)",
-    "biome": "ruins, underground, cave",
+    "biome": "urban, ruins",
     "level": "1",
     "move": "near",
     "name": "ZEALOT OF YARGOTH",
-    "page": "AA-0000",
+    "page": "AA-7",
     "source": "AA",
     "statblock": "AC 10, HP 4, ATK 1 ceremonial dagger +0 (1d4), MV near, S +0, D +0, C +0, I +0, W +0, Ch +0, AL C, LV 1",
-    "tags": "aberration"
+    "tags": "humanoid"
   },
   {
     "alignment": "N",
@@ -1494,7 +1494,7 @@
     "level": "7",
     "move": "near",
     "name": "ZISH'MA, COSMIC HORROR",
-    "page": "AA-0000",
+    "page": "AA-126",
     "source": "AA",
     "statblock": "AC 12, HP 35, ATK 2 Tongue lash +6 (2d6), MV near (fly), S +4, D +0, C +4, -2, I W +1, Ch -2, AL N, LV 7",
     "tags": "aberration, monstrosity"
@@ -1502,13 +1502,13 @@
   {
     "alignment": "C",
     "attack": "1 fist +4 (1d8)",
-    "biome": "urban",
+    "biome": "underground, cave",
     "level": "4",
     "move": "near",
     "name": "ZORNOG, GOBLIN STONEBLOOD",
-    "page": "AA-0000",
+    "page": "AA-23",
     "source": "AA",
     "statblock": "AC 16, HP 15, ATK 1 fist +4 (1d8), MV near, S +3, D +1, C +2, I +0, W +1, Ch -1, AL C, LV 4",
-    "tags": "orc, goblin"
+    "tags": "humanoid, goblin"
   }
 ]

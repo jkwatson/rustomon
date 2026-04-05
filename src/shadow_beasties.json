@@ -9,7 +9,18 @@
     "attack": "1 bite +2 (1d4 + blood drain)",
     "page": "SB1-4",
     "statblock": "AC 12, HP 9, ATK 1 bite +2 (1d4 + blood drain), MV half near (run), double near (fl y), S -2, D +2, C +1, I -2, W +2, Ch -2, AL C, LV 2",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "These bat-winged demons, roughly the size of a cat, are created when demonologists combine vampire ashes, demon blood, and the heart of a small animal in a powerful ritual. They are often used as familiars by wizards of chaos alignment. Loyal and cunning, the Aschendämon requires only a few drops of blood each day to survive.",
+    "abilities": [
+      {
+        "name": "Blood Drain",
+        "description": "Once latched on, Aschendämon heals 2d6 HP and target permanently loses 1d4 CON. At 0 CON, target dies and rises as a vampire spawn. Auto-hits each subsequent round. DC 12 STR on turn to break free."
+      },
+      {
+        "name": "Shapechange",
+        "description": "In place of attacks, turn into smoke form or back into regular form. In smoke form the Aschendämon may pass through small cracks and holes."
+      }
+    ]
   },
   {
     "name": "BRUXA LULA",
@@ -21,7 +32,22 @@
     "attack": "2 claw +4 (1d6 + disease), or Tentacle Grab (drain 1d6 / heal 1d6)",
     "page": "SB1-7",
     "statblock": "AC 13 HP 23, ATK 2 claw +4 (1d6 + disease), or Tentacle Grab (drain 1d6 / heal 1d6), MV near, S +0, D +1, C +2, I +2, W +1, Ch +1, AL C, LV 5",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "Bruxa Lula (The Gull's Wife) are terrifying, mostly solitary, cannibalistic sea witches known for their clawed hands, seagull-like feet, hunched backs, and writhing tentacle hair. Delighting in summoning storms to sink boats, they also steal human babies and have Sea Hags transform them into the next generation of Bruxa Lula.",
+    "abilities": [
+      {
+        "name": "Tentacles",
+        "description": "A successful grab drains 1d6 damage from the target and heals 1d6 HP to the Bruxa Lula. Auto-hits each subsequent round. DC 15 STR on turn to break free."
+      },
+      {
+        "name": "Storm Song",
+        "description": "Once per day a Bruxa Lula can cause storm clouds to blacken the sky and make waters treacherous for a one mile radius surrounding her. Storms last 2d4 rounds. Water vessels have a 1 in 6 chance of capsizing each round."
+      },
+      {
+        "name": "Claws",
+        "description": "1d6 DMG plus the target must successfully roll a DC 15 CON or is infected by Gull Fever. DC 15 CON each day or lose 1d6 HP (can't heal). Ends on success."
+      }
+    ]
   },
   {
     "name": "FLYING MONKEY",
@@ -33,7 +59,18 @@
     "attack": "1 bite +3 (1d4) or Screech",
     "page": "SB1-8",
     "statblock": "AC 13 (15 in flight), HP 4, ATK 1 bite +3 (1d4) or Screech (see below) MV double near (fly), S +1, D +3, C +0, I -2, W +0, Ch -2, AL C, LV 1",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "Flying Monkeys are dwarf-sized inhabitants of the vast southern Klagwald Jungles. They are prized for their keen eyesight and acrobatic flying skills. Often favoured by evil sorcerers, they also serve as winged messengers in various kingdoms. Flying Monkeys are creatures of Chaos, originally created through vile magic in an ancient time.",
+    "abilities": [
+      {
+        "name": "Acrobatic Flight",
+        "description": "Their seemingly haphazard flight appears awkward and unsure but they are very nimble and their AC is raised by 2 points due to their unpredictable movements."
+      },
+      {
+        "name": "Screech",
+        "description": "When two or more Flying Monkeys spend an action screeching, any near targets who can hear them must make a DC 12 CON check or lose 1d6 rounds holding their ears in agony. The screech also has a 3 in 6 chance of shattering glass."
+      }
+    ]
   },
   {
     "name": "FROSCHMÖNCH",
@@ -45,7 +82,22 @@
     "attack": "1 club +2 (1d4)",
     "page": "SB1-10",
     "statblock": "AC 11, HP 9, ATK 1 club +2 (1d4), MV double near (hop), near (swim), S +1, D +1, C +2, I +0, W +1, Ch +1, AL C, LV 2",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "Created by a lost god of Chaos from wayward monks as a parody of the holy clergy of Lawful gods, the Froschmönch are often found hiding in plain sight in monasteries, toiling away on copying texts but always adding their own scandalous notes and illustrations in the margins. They also wander the land, spreading chaos and starting conflict while disguised as holy men.",
+    "abilities": [
+      {
+        "name": "Amphibious",
+        "description": "The Froschmönch can breathe air and water and is at home in both environments."
+      },
+      {
+        "name": "Life Force Drain",
+        "description": "Touching the skin of the Froschmönch drains 1d4 HP. The damage is added to the HP of the Froschmönch and may exceed starting HP. If the HP ever exceeds double starting HP the Froschmönch explodes in a blast of flesh and bone (1d6 DMG to Near bystanders)."
+      },
+      {
+        "name": "Spellcasting",
+        "description": "Casts 3 tier 1 priest spells (most often Cure/Cause Wounds, Unholy Weapon, Protection from Lawful). +2 Spellcasting (DC 11)."
+      }
+    ]
   },
   {
     "name": "HUSCHENKLEIN",
@@ -57,7 +109,18 @@
     "attack": "1 bite +1 (1d4)",
     "page": "SB1-12",
     "statblock": "AC 15, HP 4, ATK 1 bite +1 (1d4), MV double near (run and climb), S -1, D +4, C +0, I +0, W +0, Ch +0, AL N, LV 1",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "Huschenklein are small (2-3 foot) beasts known for their haphazard scamper and short piercing screams. Hailing from the northern forests, their natural curiosity and intelligence has created a hazard for farmers and rural travelers. Their haphazard scamper isn't just clumsy, it's also highly agile. They can climb any surface making them very difficult to chase or capture. They are prized pets known for their ability to sense people with dangerous intent.",
+    "abilities": [
+      {
+        "name": "Stealthy",
+        "description": "Once per day a Huschenklein can become invisible for 3 rounds."
+      },
+      {
+        "name": "Sense Alignment",
+        "description": "The Huschenklein can sense the alignment of every character they encounter."
+      }
+    ]
   },
   {
     "name": "KINDERDRACHE",
@@ -69,7 +132,18 @@
     "attack": "2 claw/tail swipes +4 (1d4), or 1 bite +4 (1d6), or Flame Breath +3 (2d6)",
     "page": "SB1-14",
     "statblock": "AC 16, HP 16, ATK 2 Claw/Tail Swipes +4 (1d4), or 1 bite +4 (1d6), or Flame Breath +3 (2d6) MV near (swim), S +4, D +3, C +3, I +0, W +1, Ch -2, AL C, LV 3",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "The Kinderdrache are dragonfolk who live under the Great Totenberg Volcano in the southern Klagwald Jungles. Once, they were pressed into service of the Great Dragon Lords but when the Dragon Empire collapsed Kinderdrache dispersed across every country on the continent. Feared by most, the Kinderdrache deliberately keep to themselves and live on the fringes of civilization. They prefer living in caverns and ruins and are known for their excellent metallurgy.",
+    "abilities": [
+      {
+        "name": "Dragon Scaled",
+        "description": "Immune to heat and fire damage and effects."
+      },
+      {
+        "name": "Flame Breath",
+        "description": "Once a day they may fire a thin line of flame out of their mouth doing 2d6 damage and igniting anything flammable which burns for 1d4 rounds (1d4 DMG)."
+      }
+    ]
   },
   {
     "name": "LORD STANSBARES",
@@ -81,7 +155,18 @@
     "attack": "1 Greatsword +6 (1d12)",
     "page": "SB1-16",
     "statblock": "AC 11, HP 31, ATK 1 Greatsword +6 (1d12), MV near, S +5, D +1, C +2, I+0, W +0, Ch +2, AL C, LV 7",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "Lord Stansbares, a powerful wizard's creation thousands of years ago, is described in ancient poems as a vengeful demon lord. He is summoned when the poem cycle is read aloud in the hour just before sunrise. Lord Stansbares will slay one foe but demands a trial by combat with a champion of the summoner's choice after his success. If he wins, another champion must face him, until he is defeated.",
+    "abilities": [
+      {
+        "name": "Can Only Be One",
+        "description": "If Lord Stansbares defeats his opponent he will heal up 2d6 Hit Points and his AC will increase by one for each foe defeated (Max 18)."
+      },
+      {
+        "name": "Tracking",
+        "description": "Can always sense the general direction and location of its chosen quarry and the person who summoned him."
+      }
+    ]
   },
   {
     "name": "NATURE SPIRIT",
@@ -93,7 +178,22 @@
     "attack": "Breath of Life (+/- 1d6), Stomp +3 (2d6)",
     "page": "SB1-18",
     "statblock": "AC 15, HP 30, ATK Breath of Life (+/- 1d6), Stomp +3 (2d6) MV near, S +3, D +0, C +3, I +1, W +3, Ch +2, AL L, LV 6",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "These lumbering gentle giants are mystical forest dwellers creating large spirals that they carve into the ground. They see themselves as protectors of nature and all of the plants and animals. They are on reasonable terms with the elves but often run afoul of human and dwarf use and misuse of the field and forest.",
+    "abilities": [
+      {
+        "name": "Breath of Life",
+        "description": "If exhaled, the Breath of Life heals 1d6 HP to one near target once a day. If inhaled, the target loses 1d6 HP. This can also cause plants to spontaneously grow or wither."
+      },
+      {
+        "name": "Force of Nature",
+        "description": "Without an ability check you can accurately identify animals, plants, the source of tracks and droppings, as well as the quality of plants and water. You pass through nature without a trace and are immune to magic and spells that control nature."
+      },
+      {
+        "name": "Impervious",
+        "description": "Only damaged by magical effects/weapons."
+      }
+    ]
   },
   {
     "name": "NIGHT WALKER",
@@ -105,7 +205,26 @@
     "attack": "2 mauling (claws and bites) +4 (1d6)",
     "page": "SB1-20",
     "statblock": "AC 13, HP 30, ATK 2 mauling (claws and bites) +4 (1d6), MV double near, S +3, D +3, C +2, I +0, W +1, Ch +1, AL C, LV 6",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "The Night Walker is a boogeyman used by parents to scare children. In reality, it stalks the starry night, hunting the lost and vulnerable and tearing them apart with cruel claws. A hulking, hairy beast, the Night Walker is a cursed criminal, transformed into a monster by his past crimes. The only defense is a holy candle or symbol.",
+    "abilities": [
+      {
+        "name": "Cursed to Walk the Night",
+        "description": "Unwillingly transforms into a monster at dusk, with the appearance of the first star. Fear of Holy ground, symbols, and candles. WIS 15 or it will lose an action cowering from the place or item. Priest can turn as undead."
+      },
+      {
+        "name": "Claws",
+        "description": "1d6 DMG plus the target must successfully roll a DC 15 CON or is cursed by the Night Walker. DC 15 CON each day or lose 1d6 HP (can't heal). If the character dies of the curse they will return that night as a Night Walker. The curse is broken if the CON roll is successful before the character dies."
+      },
+      {
+        "name": "Tracking",
+        "description": "Can always sense the direction of its chosen quarry."
+      },
+      {
+        "name": "Mythic Beast",
+        "description": "Immune to morale checks. Only damaged by silver, holy or magical sources."
+      }
+    ]
   },
   {
     "name": "PUGGERS",
@@ -117,7 +236,26 @@
     "attack": "1 sword or similar weapon +3 (1d6)",
     "page": "SB1-22",
     "statblock": "AC 13, HP 14, ATK 1 sword or similar weapon +3 (1d6), MV near, S +1, D +1, C +0, I +4, W +1, Ch +2, AL N, LV 3",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "Puggers, as they are pejoratively known, were once mundane lapdogs magically transformed into loyal dwarf-sized bipedal sidekicks, secretaries, and bodyguards for spoiled nobles. Due to the nature of the transformative magic used, all Puggers are female. Possessed with uncanny intelligence and self awareness, they are well-respected companions prized for their loyalty, tenacity, and advice.",
+    "abilities": [
+      {
+        "name": "Sword Mastery",
+        "description": "Expert with melee bladed weapons. Puggers may feint or parry on their round. A feint subtracts 2 from their AC but adds either +2 to DMG or To Hit. A Parry adds +2 to AC and if missed they do an automatic 2 points of damage to the attacker."
+      },
+      {
+        "name": "Scholar",
+        "description": "Puggers are very well read and roll DC 12 INT to know a specific fact helpful to a current situation."
+      },
+      {
+        "name": "Transformed Aura",
+        "description": "Hostile spells targeting the Pugger are DC 15."
+      },
+      {
+        "name": "Bulging Eyes",
+        "description": "Can see all invisible creatures and objects."
+      }
+    ]
   },
   {
     "name": "SAVANT",
@@ -129,7 +267,22 @@
     "attack": "2 Claws +5 (1d6)",
     "page": "SB1-25",
     "statblock": "AC 15 (Breastplate), HP 28, ATK 2 Claws +5 (1d6), MV near, S +1, D +1, C +1, I +4, W +3, Ch +2, AL N, LV 6",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "The Savant is a rare magical creature mystically aligned with the night and the realm of the dead. They live near crypts and graveyards and are sought after for their advice and wisdom.",
+    "abilities": [
+      {
+        "name": "Insight",
+        "description": "Once a day the Savant can give 1d6 others temporary bursts of knowledge or clarity, enabling them to excel when they need it. Provides +2 to all rolls for 1d6 rounds to each target."
+      },
+      {
+        "name": "Undead Communication",
+        "description": "The Savant can communicate with ancient beings, spirits, or otherworldly entities, and can also communicate with undead and give them commands. If the command is directly harmful to the creature, it may make a DC 15 Charisma check. On a success, the spell ends."
+      },
+      {
+        "name": "Mindflight",
+        "description": "The Savant can send its mind to distant locations, watching events unfold and gathering information without being physically present. It appears as a shimmering ghost-like vision in the location."
+      }
+    ]
   },
   {
     "name": "SCHROTTTIER",
@@ -141,7 +294,30 @@
     "attack": "2 claws +3 (1d6)",
     "page": "SB1-26",
     "statblock": "AC 13, HP 14, ATK 2 claws +3 (1d6), MV near (climb), S +2, D +1, C +1, I -1, W -1, Ch -2, AL C, LV 3",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "The Schrotttier is a construct formed from the reanimated remains of multiple demons, blending necromancy and demonology to create a truly horrifying entity. Neither fully demon nor entirely undead, it is immune to the Priest class's Turn Undead ability. When the name of a chosen victim is inscribed in blood from a sacrificed dove on parchment and placed into its mouth, the Schrotttier will dutifully track its target and eliminate them.",
+    "abilities": [
+      {
+        "name": "Claws",
+        "description": "1d6 DMG plus the target must successfully roll a DC 15 CON or the wound is infected. DC 15 CON each day or lose 1d6 HP (can't heal). Ends on success."
+      },
+      {
+        "name": "Iron Hide",
+        "description": "Non-magical weapons do half damage."
+      },
+      {
+        "name": "Tracking",
+        "description": "Instinctively knows the direction of its prey (only one target at a time)."
+      },
+      {
+        "name": "Immunity",
+        "description": "Is not affected by a Priest's Turn Undead ability."
+      },
+      {
+        "name": "Sickening Aura",
+        "description": "Plants fade and wither and any living creature within near of the Schrotttier must succeed DC 15 CON once per encounter or violently vomit for 1d4 rounds."
+      }
+    ]
   },
   {
     "name": "SCRATCHER",
@@ -153,7 +329,26 @@
     "attack": "1 bite +2 (1d6) or 2 claws +2 (1d4)",
     "page": "SB1-28",
     "statblock": "AC 10, HP 11, ATK 1 bite +2 (1d6) or 2 claws +2 (1d4), MV near, S +2, D -2, C +2, I -2, W -2, Ch -3, AL C, LV 2",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "The Ancient Empire punished thieves by strapping them over a Dorylus Ant hill. The practice was eventually abandoned because it was linked to the appearance of a new type of undead created by a parasite in the ants that was passed on to the corpse and animated it. Thousands of parasitic worms swarm through the body of a Scratcher and can be passed on with a bite.",
+    "abilities": [
+      {
+        "name": "Undead",
+        "description": "Immune to morale checks."
+      },
+      {
+        "name": "Ant Features",
+        "description": "Chitin shell, mandibles, claws."
+      },
+      {
+        "name": "Relentless",
+        "description": "If reduced to 0 HP by a non magical source DC 15 CON to go to 1 HP instead."
+      },
+      {
+        "name": "Parasite Infection",
+        "description": "Any creature bitten by a Scratcher might pick up parasites. DC 12 CON must be rolled or the worms will drill deeper into the body doing 1d6 DMG a day until the roll is made or the character dies. Those who die from the infection rise as a Scratcher in 1d4 rounds."
+      }
+    ]
   },
   {
     "name": "SEA PLODDER",
@@ -165,7 +360,22 @@
     "attack": "1 bite +1 (1d4 + venom)",
     "page": "SB1-30",
     "statblock": "AC 11, HP 5, ATK 1 bite +1 (1d4 + venom), MV near (crawl/swim), S +0, D +1, C +1, I +0, W +1, Ch -3, AL N, LV 1",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "Sea Plodders are mutant fish that have grown articulated arms and developed lungs that allow them to exist as comfortably out of water as in water. Once a month the Sea Plodder is overcome by a ferocious appetite shared by pheromones, attracting a school of 2d6 others that swarm food sources. As dangerous as they are, Sea Plodders are hunted for their valuable eggs which are known for their mind-altering and addictive qualities.",
+    "abilities": [
+      {
+        "name": "Surf and Turf",
+        "description": "Sea Plodders exist comfortably in and out of water."
+      },
+      {
+        "name": "Pack Animal",
+        "description": "Deal +1 DMG in melee when beside an ally."
+      },
+      {
+        "name": "Mind-Altering Venom",
+        "description": "If bitten by a Sea Plodder, the target must make a DC 12 CON roll or lose 1d6 rounds having terrifying visions. The DC increases by one for every Sea Plodder bite the target receives in a 24 hour period."
+      }
+    ]
   },
   {
     "name": "SILVER LION",
@@ -177,7 +387,22 @@
     "attack": "2 claws and 1 bite +6 (1d6/1d8) or produce Fetch",
     "page": "SB1-32",
     "statblock": "AC 15, HP 29, ATK 2 claws and 1 bite +6 (1d6/1d8) or produce Fetch, MV double near (run)near (fly), S +3, D +3, C +2, I +3, W +2, Ch +3, AL L, LV 5",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "The Silver Lion is a herald of good fortune but can perceive past crimes and evil deeds. As a pure embodiment of Law, it is a foe to the Chaotic and will not relent until some kind of restitution is made or they are destroyed. Players may plead for mercy, but the lion will demand trial by combat, summoning a Lawful fetch from a reflection in its silver fur.",
+    "abilities": [
+      {
+        "name": "Sense Alignment",
+        "description": "The Silver Lion can sense the alignment of every character they encounter. They can see all of the times Chaotic characters have done bad things."
+      },
+      {
+        "name": "Create Fetch",
+        "description": "The reflection of Chaotic characters steps out of their silver fur and becomes an exact copy with all abilities and magic items. This doppelganger fades away if they are defeated (0 HP) or if they defeat (0 HP) the true Chaotic self."
+      },
+      {
+        "name": "Impervious",
+        "description": "Cosmic Creature, only damaged by magical sources."
+      }
+    ]
   },
   {
     "name": "SMILER",
@@ -189,7 +414,18 @@
     "attack": "1 Melee Weapon +3 (sword, spear, etc.) (1d6)",
     "page": "SB1-34",
     "statblock": "AC 11, HP 13, ATK 1 Melee Weapon +3 (sword, spear, etc.) (1d6), MV near, S +1, D +1, C +0, I -2, W +1, Ch -2, AL N, LV 3",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "Smilers are magical creatures summoned by powerful wizards to act as loyal servants and valets. Slightly bird-like in appearance, they are noseless creatures that breathe heavily through a grinning mouth of jagged teeth. Their bodies are twisted and covered in fur. They are mute and barely make a hoarse cough-like laugh when amused. As terrifying as they are attentive, Smilers dutifully and silently follow their masters, following every order.",
+    "abilities": [
+      {
+        "name": "Tenacious",
+        "description": "If reduced to 0 HP by a non magical source DC 15 CON to go to 1 HP instead."
+      },
+      {
+        "name": "Keen Senses",
+        "description": "Can't be surprised."
+      }
+    ]
   },
   {
     "name": "SNICKER FRITZ",
@@ -201,7 +437,18 @@
     "attack": "2 tail swipes +3 (1d6)",
     "page": "SB1-36",
     "statblock": "AC 13, HP 14, ATK 2 tail swipes +3 (1d6), MV near (fly), S +1, D +1, C +2, I +1, W +1, Ch +1, AL C, LV 3",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "Sinister giggles foretell the approach of this evil creature who takes great delight in the misfortune of its victims. A Snicker Fritz usually mimics an ally of the Player Characters or an innocent victim and calls for help. It then immobilizes them with a snicker, attacks with a bladed tail, and consumes its victims. If outnumbered, it will grab a victim, fly up and drop them from a height.",
+    "abilities": [
+      {
+        "name": "Snicker",
+        "description": "All who can hear in double near, DC 12 CHA or freeze in fear uncontrollably for 1d4 rounds."
+      },
+      {
+        "name": "Mimic",
+        "description": "The demon perfectly mimics the voice of any creature it has heard in the past day, using it to taunt, mislead, or confuse others. If it mimics an ally's voice, listeners must make a DC 12 CHA save or believe the deception for 1d6 rounds."
+      }
+    ]
   },
   {
     "name": "SPINED HOWLER",
@@ -213,7 +460,18 @@
     "attack": "2 bite +5 (2d6) or 3 spine launch (far) +4 (1d8)",
     "page": "SB1-38",
     "statblock": "AC 13, HP 23, ATK 2 bite +5 (2d6) or 3 spine launch (far) +4 (1d8), MV double near, S +5, D +1, C +2, I -3, W +1, Ch -3, AL N, LV 5",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "The Spined Howler's cry can often be heard echoing through the jungles of the Southern Lands, striking fear in all who hear it. Most Spined Howlers enjoy a solitary existence. The first response to a threat is to chase off opponents with a howl, but if that fails they will launch a volley of spines at far targets. Engaging in melee combat is very dangerous.",
+    "abilities": [
+      {
+        "name": "Howl",
+        "description": "Instead of an attack, the Spined Howler may opt to howl. All within Far of the Spined Howler roll DC 12 WIS or run away from the Howler in terror for 1d6 rounds."
+      },
+      {
+        "name": "Spine Launcher",
+        "description": "2d6 launchable spines that regrow each day."
+      }
+    ]
   },
   {
     "name": "VEERGUS HOUND",
@@ -225,7 +483,22 @@
     "attack": "1 bite +2 (1d6) or flame breath (near) +3 (2d6, flame)",
     "page": "SB1-40",
     "statblock": "AC 13, HP 5, ATK 1 bite +2 (1d6) or flame breath (near) +3 (2d6, flame), MV double near, S +1, D +3, C +0, I -3, W +0, Ch +0, AL C, LV 1",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "Veergus Hounds are demonic beasts that hunt in packs within the demon realm. Occasionally, unlucky summoners bring them into our world, unaware that these creatures are largely immune to magic and magical items. Though smaller and weaker than their larger cousins, the Hell Hounds, Veergus Hounds compensate with cunning pack tactics, powerful bites, and the ability to unleash a stream of fire at their enemies once per day.",
+    "abilities": [
+      {
+        "name": "Immunity",
+        "description": "Immune to fire. Half effect or damage from magic spells and magic items."
+      },
+      {
+        "name": "Fire Breath",
+        "description": "Fills a near-sized cube extending from the Veergus Hound. DC 15 DEX or 1d8 damage. Usable only once per day."
+      },
+      {
+        "name": "Pack Animal",
+        "description": "Deal +1 DMG in melee when beside an ally."
+      }
+    ]
   },
   {
     "name": "WÜRMSCHLAGEN",
@@ -237,6 +510,25 @@
     "attack": "1 bite +1 (1d6)",
     "page": "SB1-42",
     "statblock": "AC 11, HP 5, ATK 1 bite +1 (1d6), MV near (run/tunnel), S -2, D +1, C +1, I -1, W +1, Ch -2, AL N, LV 1",
-    "source": "SB1"
+    "source": "SB1",
+    "description": "This cunning creature, the size of a cat, scurries under floorboards and inside walls passively reading thoughts and intentions of anything within near distance. Consuming minerals, they prefer the taste of metal and metallic rocks and have been known to chew through thick wooden joists and beams to access the tasty nails within. When alarmed they may fire off a blast of electrical energy from their antennae. They are found in packs of 1d6 individuals.",
+    "abilities": [
+      {
+        "name": "Tunnel",
+        "description": "Würmschlagen can chew through wooden walls at half speed and may dig through dirt to create tunnels at regular speed."
+      },
+      {
+        "name": "Passive Telepathy",
+        "description": "Read surface thoughts and intentions of all near creatures and send specific messages to other Würmschlagen."
+      },
+      {
+        "name": "Electrical Blast",
+        "description": "Once per day a Würmschlagen may emit a strong electric shock out of their antennae that can affect one target +2 (2d6)."
+      },
+      {
+        "name": "Eat Metal",
+        "description": "Metal that is chewed upon is destroyed on a d6 roll of 1-3."
+      }
+    ]
   }
 ]
