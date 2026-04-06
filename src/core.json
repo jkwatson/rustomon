@@ -1114,7 +1114,7 @@
       },
       {
         "name": "Poison",
-        "description": "DC 12 CON or fitful sleep for 1d4 hours. 山"
+        "description": "DC 12 CON or fitful sleep for 1d4 hours."
       }
     ]
   },
@@ -1214,7 +1214,7 @@
       },
       {
         "name": "Fire Breath",
-        "description": "Fills a double nearsized cube extending from dragon. DC 15 DEX or 6d10 damage. 山"
+        "description": "Fills a double nearsized cube extending from dragon. DC 15 DEX or 6d10 damage."
       }
     ]
   },
@@ -4394,7 +4394,7 @@
     "alignment": "N",
     "attack": "",
     "biome": "*",
-    "description": "山川 A colossal, four-legged reptile with crocodilian jaws, amber scales, and a diamond-hard, spiked carapace. It towers overhead like a mountain, able to swallow entire villages in one gulp. The tarrasque hibernates deep in the earth or at the bottom of the sea for centuries, only awakening long enough to fill its vast belly in an indiscriminate rampage of terror and destruction. There is only one tarrasque, and it is the most dreaded creature to walk the earth.",
+    "description": "川 A colossal, four-legged reptile with crocodilian jaws, amber scales, and a diamond-hard, spiked carapace. It towers overhead like a mountain, able to swallow entire villages in one gulp. The tarrasque hibernates deep in the earth or at the bottom of the sea for centuries, only awakening long enough to fill its vast belly in an indiscriminate rampage of terror and destruction. There is only one tarrasque, and it is the most dreaded creature to walk the earth.",
     "level": "30",
     "move": "burrow",
     "page": "256",
@@ -4464,7 +4464,7 @@
     "alignment": "L",
     "attack": "",
     "biome": "*",
-    "description": "山 A cheerful merchant who appears to be a hale, middle-aged human man with a handlebar mustache. He wears a white shirt, breeches, and leather apron, and he hauls a towering backpack bursting at the seams. Few know the merchant's true nature and origins, though some theorize he is an immortal being or a god (they are not entirely incorrect). The Wandering Merchant always has something useful, far-flung, or incredible to sell at a reasonable price, and there's no telling when or where he'll show up next...",
+    "description": " A cheerful merchant who appears to be a hale, middle-aged human man with a handlebar mustache. He wears a white shirt, breeches, and leather apron, and he hauls a towering backpack bursting at the seams. Few know the merchant's true nature and origins, though some theorize he is an immortal being or a god (they are not entirely incorrect). The Wandering Merchant always has something useful, far-flung, or incredible to sell at a reasonable price, and there's no telling when or where he'll show up next...",
     "level": "15",
     "move": "",
     "page": "258",
@@ -4623,7 +4623,7 @@
     "alignment": "N",
     "attack": "",
     "biome": "grassland,jungle,swamp",
-    "description": "山 Towering, bipedal lizards with a massive head, jaws, and neck.",
+    "description": "Towering, bipedal lizards with a massive head, jaws, and neck.",
     "level": "9",
     "move": "",
     "page": "208",

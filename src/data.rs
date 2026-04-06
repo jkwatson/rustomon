@@ -83,7 +83,7 @@ impl StatBlock {
 
 impl Monster {
     pub fn detailed_summary(&self) -> String {
-        format!(
+        let mut out = format!(
             "{} [ref: {}]\n\t{}\t{}\t{}\tLV:{}\tAL:{}\n\t{}\n\t{}",
             self.name,
             self.page,
@@ -94,7 +94,16 @@ impl Monster {
             self.alignment,
             self.stat_block.attack,
             self.stat_block.stats
-        )
+        );
+        if let Some(desc) = &self.description {
+            out.push_str(&format!("\n\t{}", desc));
+        }
+        if let Some(abilities) = &self.abilities {
+            for ability in abilities {
+                out.push_str(&format!("\n\t{}. {}", ability.name, ability.description));
+            }
+        }
+        out
     }
 
     pub fn html_summary(&self) -> String {
