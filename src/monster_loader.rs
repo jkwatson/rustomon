@@ -12,6 +12,7 @@ pub fn load_monsters() -> Vec<Monster> {
         include_str!("cs2.json"),
         include_str!("cs3.json"),
         include_str!("cs4.json"),
+        include_str!("cs5.json"),
         include_str!("custom.json"),
         include_str!("unnatural_selection.json"),
         include_str!("dragontown.json"),
