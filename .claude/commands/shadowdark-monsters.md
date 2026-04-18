@@ -34,9 +34,35 @@ AC [#], HP [#], ATK [attacks], MV [movement], S [mod], D [mod], C [mod], I [mod]
 - **Stat line**: Always in this exact order — AC, HP, ATK, MV, S, D, C, I, W, Ch, AL, LV
 - **AL**: L (Lawful), N (Neutral), or C (Chaotic) only
 - **Talents**: Listed below the stat line, one per line, name followed by a period
+- **No "saving throws"**: Shadowdark has no saving throw mechanic. Use "check" instead — e.g. "DC 12 CON or paralyzed" not "Save vs. paralysis". Bonuses to saves are written as "+2 to checks against magical effects".
 
 ### Stat Abbreviations
 S = Strength, D = Dexterity, C = Constitution, I = Intelligence, W = Wisdom, Ch = Charisma, AL = Alignment, LV = Level
+
+---
+
+## Markdown Format
+
+When writing stat blocks to a markdown file, use this layout:
+
+```markdown
+## MONSTER NAME
+_1–2 sentence flavor description._
+
+**AC** #, **HP** #, **ATK** attacks, **MV** movement, **S** mod, **D** mod, **C** mod, **I** mod, **W** mod, **Ch** mod, **AL** X, **LV** #
+
+**Talent Name**. Talent description.
+
+**Talent Name**. Talent description.
+
+---
+```
+
+Rules:
+- Flavor text in `_italics_`, on its own line, blank line after
+- Stat line has each abbreviation in `**bold**`, blank line after
+- Each talent on its own line with `**bold name**`, blank line between talents
+- `---` horizontal rule after every entry
 
 ---
 

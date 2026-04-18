@@ -20,6 +20,7 @@ pub fn load_monsters() -> Vec<Monster> {
         include_str!("monster_monday.json"),
         include_str!("adventure_anthology.json"),
         include_str!("gamemaster_companion.json"),
+        include_str!("dolmenwood.json"),
     ];
     for file in files {
         raw_monsters.append(&mut load_raw_monsters(file));
