@@ -16,6 +16,20 @@ A skill for generating lore-rich, mechanically balanced Shadowdark monsters and 
 5. **Design talents** — 0–3 talents that make the creature memorable
 6. **Present the full entry** — Name, flavor, stat line, then talents
 
+## Dolmenwood Monsters — File Workflow
+
+When converting Dolmenwood monsters to Shadowdark, the canonical markdown file is:
+
+`/mnt/c/Users/jkwat/IdeaProjects/dolmendark/dolmenwood_shadowdark.md`
+
+After adding entries there, sync to the JSON and web app in this order:
+
+1. Add/update entries in `dolmendark/dolmenwood_shadowdark.md` (alphabetical order, markdown format)
+2. Parse into `rustbook/src/dolmenwood.json` (alphabetical order, same JSON schema as other source files)
+3. Copy JSON to `randommon-web/public/data/dolmenwood.json`
+
+The rustbook copy at `temp/dolmenwood_shadowdark.md` has been retired — do not use it.
+
 ---
 
 ## Stat Block Format
